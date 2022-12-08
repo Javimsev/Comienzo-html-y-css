@@ -1,0 +1,144 @@
+
+
+
+
+/*POSITION: con esta propiedad le damos posicion a los elementos. Dentro de 
+position tenemos;
+
+position: static; con static se considera que no está posicionado.
+
+position: relative; con rrelative, un elemento se puede posicionar tomando como 
+punto de referencia su posicion actual y aunque lo ajustemos en otra posicion 
+conservará el espacio original que ocupa, como si siguiese ahí y sin afectar a las
+demás cajas.
+
+position: absolute; con absolute damos posision pero toma como referencia el viewport, 
+y si afecta al resto de elementos porque no mantiene su espacio.
+
+position; fixed;
+position: stiky;
+
+Al posicionar un elemento adquiere nuevas propiedades, por ejemplo top, rigth,
+bottom,left, z.index.
+
+
+*/
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+
+
+/*menu*/
+
+header{
+	margin-bottom: 40px;
+}
+.nav__ul {
+	list-style: none;
+	background: #6BACC9;
+	width: 100%;
+	}
+
+.nav__ul li a {
+	color: #fff;
+}
+
+
+.nav__ul li {
+	margin-left: 20px;
+	display: inline-block;
+	padding: 10px;
+	color: #fff;
+
+}
+.nav__ul li:hover {
+	background: whitesmoke;
+	box-shadow:  0px 0px 2px gray;
+	color: #0B6B96;
+}
+.nav__ul li a {
+	text-decoration: none;
+}
+
+.nav__ul li:hover > a {
+		color: #0B6B96;
+
+}
+
+
+.nav__ul i {
+	margin-right: 10px;
+}
+@media only screen and (max-width: 500px) {
+	.nav__ul li {
+	display: block;
+	}
+
+}
+/*Fin menu*/
+
+/*Ejemplo cajas*/
+
+
+
+.contenedor-cajas {
+	background: rgb(248, 248, 233);
+	width: auto;
+	height: auto;
+}
+
+div{
+	width: 120px;
+	height: 120px;
+	display: block;
+
+}
+
+
+
+.caja1{
+	background: green;
+	
+
+}
+
+.caja2{
+	background: violet;
+	position: relative;  /*al darle position: relative; podemor darle propiedad 
+	top, rigth, bottom y left además de z.indez*/
+	top: 20px;
+	left: 20px;
+
+
+}
+
+.caja3{
+	position: relative;
+	background: orange;
+	z-index: 50;/*con z.index podemos dar jerarquía de orden en eje Z. Cuanto mayor 
+	es el numero mas al frente se mostrará. z.index es 0 por defecto, podemos posicionar
+	elementos por encima de 0 y por debajo de 0. en este ejemplo tenemos a caja3 por 
+	encima de caja2. Se recomienda dar valores de al menos de 50 en 50, así si vamos
+	añadiendo elementos tenemos margen de ir colocandolos es la capa correspondiente.
+	*/
+	
+
+
+}
+.caja4{
+	background: grey;
+	position: relative;
+	top: 20px;/*cuando damos valor a top y left, bottom y rigth no se tendrán en cuenta, 
+	poque top y left tienen mas importancia y jerarquía. Si ponemos top y left a 0px 
+	veremos entonces que si toma los valores de bottom y rigth. (probar ejemplo)*/
+	left: 20px;
+	bottom: 20px;
+	right: 20px;
+
+}
+
+

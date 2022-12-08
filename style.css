@@ -9,7 +9,9 @@
 
 /*menu*/
 
-
+header{
+	margin-bottom: 40px;
+}
 .nav__ul {
 	list-style: none;
 	background: #6BACC9;
