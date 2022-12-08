@@ -75,5 +75,7 @@ header{
 
 }
 
-
+.contenedor-ejemplos a {
+	display: block;
+}
 

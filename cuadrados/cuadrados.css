@@ -3,7 +3,9 @@
 	padding: 0px;
 	font-family: sans-serif;
 }
-
+body {
+	width: 100%;
+}
 
 /*menu*/
 
@@ -54,33 +56,27 @@ header{
 }
 /*Fin menu*/
 
-body{
-	
-	margin: 10px 10px;
 
-}
 
-.bloque1{
+.bloque2 {
+
+	position: relative;
+	margin-left: 50px;
 	display: inline-block;
 	width: 500px;
 	height: 500px;
-	background: pink;
-}
-.bloque2{
-	display: inline-block;
-	width: 500px;
-	height: 500px;
-	background: pink;
+	background: rgb(226, 214, 216);
 }
 
 .caja1{
-	margin-right: 0px;
+	
 	position: absolute;
 	display: inline-block;
 	background: gray;
 	color: black;
 	width: 100px;
 	height: 100px;
+	
 }
 .caja2{
 	position: absolute;
@@ -89,6 +85,8 @@ body{
 	color: black;
 	width: 100px;
 	height: 100px;
+	right: 0px;
+
 }
 .caja3{
 	position: absolute;
@@ -97,22 +95,48 @@ body{
 	color: black;
 	width: 100px;
 	height: 100px;
+	bottom: 0px;
+	
 }
-.caja4{
-	position: absolute;
+.caja4 {
+	position:absolute;
 	display: inline-block;
 	background: violet;
 	color: black;
 	width: 100px;
 	height: 100px;
+	bottom: 0px;
+	right: 0px;
+	
 }
 .caja5{
 	position: absolute;
-	display: inline-block;
+	display: block;
 	background: orange;
 	color: black;
 	width: 100px;
 	height: 100px;
-	margin-bottom: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+	margin: auto;
+	
 
+}
+.contenedor {
+	margin-left: 50px;
+	position: absolute;
+	display: inline-block;
+	width: 500px;
+	height: auto;
+	background: rgb(226, 214, 216);
+}
+
+h2 {
+	padding: 20px;
+	text-decoration:underline;
+}
+p {
+ padding: 20px;
 }
