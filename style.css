@@ -1,0 +1,54 @@
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+
+
+/*MOBILE FIRST*/
+
+
+
+.nav__ul {
+	list-style: none;
+	background: #6BACC9;
+	width: 100%;
+	}
+
+.nav__ul li a {
+	color: #fff;
+}
+
+
+.nav__ul li {
+	display: inline-block;
+	padding: 10px;
+	color: #fff;
+
+}
+.nav__ul li:hover {
+	background: whitesmoke;
+	box-shadow:  0px 0px 2px gray;
+	color: #0B6B96;
+}
+.nav__ul li a {
+	text-decoration: none;
+}
+
+.nav__ul li:hover > a {
+		color: #0B6B96;
+
+}
+
+
+.nav__ul i {
+	margin-right: 10px;
+}
+@media only screen and (max-width: 500px) {
+	.nav__ul li {
+	display: block;
+	}
+
+}
