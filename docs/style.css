@@ -3,7 +3,7 @@
 * {
 	margin: 0px;
 	padding: 0px;
-	font-family: sans-serif;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -60,7 +60,6 @@ header{
 
 .contenedor{
 	width: 100%;
-	
 	padding:25px;
 }
 
@@ -68,7 +67,7 @@ header{
 	border-left:  15px  dotted rgb(4, 75, 155);
 	padding: 20px;
 	margin-top: 30px;
-	width: 200px;
+	width: 250px;
 	height: auto;
 	background: #6BACC9;
 	border-radius: 0px 10px 10px 0px;

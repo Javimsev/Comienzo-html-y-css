@@ -7,6 +7,8 @@ body {
 	width: 100%;
 }
 
+
+
 /*menu*/
 
 header{
@@ -55,6 +57,11 @@ header{
 
 }
 /*Fin menu*/
+
+
+
+
+
 
 
 
@@ -125,18 +132,51 @@ header{
 
 }
 .contenedor {
-	margin-left: 50px;
 	position: absolute;
+	margin-left: 50px;
 	display: inline-block;
 	width: 500px;
 	height: auto;
-	background: rgb(226, 214, 216);
+	background: #fff;
+
+	
 }
 
 h2 {
 	padding: 20px;
-	text-decoration:underline;
+	
 }
 p {
  padding: 20px;
+}
+
+
+/*boton*/
+
+ .boton {
+	box-sizing: border-box;
+	display: block;
+	width: 35%;
+	margin: 0 auto;
+	padding: 10px;
+	border: none;
+	background: #6BACC9;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 5px;
+	margin-top: 5px;
+	transition: all .2s;
+	
+}
+.boton:hover {
+	
+	box-sizing: border-box;
+	color: rgb(31, 87, 133);
+	background: #fff;
+	width: 45%;
+	border: 1px solid  rgb(31, 87, 133);;
+	border-radius: 30px 30px 30px 30px;
+
+	
 }
