@@ -1,61 +1,131 @@
-* {
-	margin: 0px;
-	padding: 0px;
-	font-family: sans-serif;
-}
-body {
-	width: 100%;
+*{
+	
+	margin: 0;
+	padding: 0;
 }
 
+body {
+	background: wheat;
+}
 
 
 /*menu*/
-
-header{
-	margin-bottom: 40px;
+.nav {
+	background: linear-gradient(rgb(112, 110, 105), rgb(46, 41, 31),rgb(105, 83, 41));
 }
-.nav__ul {
-	list-style: none;
-	background: #6BACC9;
-	width: 100%;
-	}
-
-.nav__ul li a {
-	color: #fff;
-}
-
-
-.nav__ul li {
-	margin-left: 20px;
+.nav__li {
 	display: inline-block;
-	padding: 10px;
-	color: #fff;
+	padding: 15px;
+	color: white;
+}
 
-}
-.nav__ul li:hover {
-	background: whitesmoke;
-	box-shadow:  0px 0px 2px gray;
-	color: #0B6B96;
-}
-.nav__ul li a {
+
+.nav__li a {
+	color: white;
 	text-decoration: none;
 }
+.nav__li i {
+	box-sizing: border-box;
+	text-align: right;
+	margin-right: 5px ;
+}
+/*fin menu*/
 
-.nav__ul li:hover > a {
-		color: #0B6B96;
+/*menu responsive*/
 
+
+.nav__responsive-button {
+	
+	padding: 15px 50px;
+	text-align: right;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/*fin menu responsive*/
+
+.nav__responsive-ul {
+	display: none;
+	
+	
+	
 }
 
 
-.nav__ul i {
-	margin-right: 10px;
-}
 @media only screen and (max-width: 500px) {
-	.nav__ul li {
-	display: block;
+	.nav__ul {
+		display: none;
+		width: 100%;
+		
+	}
+/* 	
+	.nav {
+		background: linear-gradient(rgb(112, 110, 105), rgb(46, 41, 31),rgb(105, 83, 41));
+		background: ;
+		width: 100%;
+		height: 45px
+	} */
+
+	
+	.nav__responsive-ul {
+		
+		display: block;
+		position: absolute;
+		height: auto;
+		width: 100%;
+		list-style: none;
+		
+		
+		
 	}
 
+	.nav__li-container {
+		position: absolute;
+		display: block;
+		width: 60%;
+		margin-top: -270px;
+		transition: .2s;
+		
+	}
+		
+	.nav__responsive-button {
+		position: relative;
+		background: #297396;
+		padding: 15px 50px;
+		text-align: right;
+		width: 100%;
+		box-sizing: border-box;
+		z-index: 1;
+		
+	}
+	
+	.nav__responsive-li {
+		position: relative;
+		padding: 10px;
+		background:#6BACC9;
+		
+		
+
+	}
+	.nav__responsive-li i {
+		box-sizing: border-box;
+		color: white;
+		padding: 10px;	
+	}
+		.nav__responsive-li a {
+			color: white;
+			text-decoration: none;
+
+		}
+		
+	.nav__responsive-ul:hover > .nav__li-container {
+		margin-top: 0px;
+	}
+
+
+	
 }
+
 /*Fin menu*/
 
 
