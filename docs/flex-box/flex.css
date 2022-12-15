@@ -1,0 +1,262 @@
+
+* {
+  
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: black;
+   
+   
+   
+}
+
+
+/*PROPIEDAD FLEX: Si tenemos por ejemplo un div y le damos display:flex;
+el div sique actuando como en display block, la diferencia es que ahora
+su hijos seran flexibles. Después, a los hijos podremos darles 
+propiedades flex.*/
+
+
+
+
+.flex-container {
+    margin: 50px auto;
+    max-width: 800px;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgb(58, 51, 51);
+    
+    padding: 20px;
+    border-radius: 20px;
+   
+   
+}
+
+.form__input {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom:  3px solid rgb(72, 145, 145);
+    background:  rgb(58, 51, 51);
+    outline: none;
+    color: aliceblue;
+}
+
+
+
+.form__input:focus {
+    background: #333;
+    border-bottom:  3px solid rgb(15, 250, 250);
+    background:linear-gradient(to bottom, transparent, rgb(80, 68, 68) );
+}
+
+.form {
+    min-width: 200px;
+    flex: 1;
+   text-align: center;
+   
+    order: 5;
+}
+
+.form-img {
+    display: flex;
+    flex: 1;
+    padding: 0px;
+    min-width: 280px;
+    max-width: 280px;
+  
+    
+}
+
+.form-img div {
+    padding: 20px;
+  
+}
+.img-container {
+    margin: auto;
+}
+.img-container div {
+    
+
+    background: transparent;
+    border-radius: 20px;
+   text-align: center;
+   padding: 40px;
+   
+}
+
+.form-img img {
+    width: 90%;
+    margin: auto;
+   
+}
+.form textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+.form input[type="submit"] {
+   width: 80px;
+   border-radius: 20px;
+    background: rgb(72, 145, 145);
+}
+
+.form input[type="submit"]:hover {
+    background: rgb(34, 97, 97);
+}
+
+
+
+
+
+
+
+
+
+/*menu*/
+.nav {
+	background: #297396;
+}
+.nav__li {
+	display: inline-block;
+	padding: 15px;
+	color: white;
+}
+
+
+
+.nav__li a {
+	color: white;
+	text-decoration: none;
+	padding: 14px;
+}
+.nav__li:hover >a {
+	color: orange;
+	
+}
+.nav__li i {
+    margin-right: 8px;
+}
+
+
+
+/*fin menu*/
+
+/*menu responsive*/
+
+
+.nav__responsive-button {
+	
+	padding: 15px 50px;
+	text-align: right;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/*fin menu responsive*/
+
+.nav__responsive-ul {
+	display: none;
+	
+	
+	
+}
+
+
+@media only screen and (max-width: 570px) {
+	.nav__ul {
+		display: none;
+		
+		
+	}
+/* 	
+	.nav {
+		background: linear-gradient(rgb(112, 110, 105), rgb(46, 41, 31),rgb(105, 83, 41));
+		background: ;
+		width: 100%;
+		height: 45px
+	} */
+
+	
+	.nav__responsive-ul {
+        min-width: 250px;
+		top: -2px;
+		display: block;
+		
+		height: auto;
+		width: 100%;
+		list-style: none;
+		
+		
+		
+	}
+
+	.nav__li-container {
+       
+		position: absolute;
+		display: block;
+		width: 60%;
+		margin-top: -270px;
+		transition: .2s;
+		
+	}
+	
+    
+    .nav__responsive-button-container {
+    
+		position: relative;
+		background: #297396;
+        padding: 2px;
+		text-align: right;
+		width: 100%;
+		box-sizing: border-box;
+		z-index: 1;
+		
+
+
+    }
+
+	.nav__responsive-button {
+     
+		
+	}
+	
+	.nav__responsive-li {
+		position: relative;
+		padding: 10px;
+		background:#6BACC9;
+		
+		
+
+	}
+	.nav__responsive-li i {
+		margin-right: 8px;
+	}
+		.nav__responsive-li a {
+			color: white;
+			text-decoration: none;
+
+		}
+        .nav__responsive-li a:hover {
+			color: orange;
+			text-decoration: none;
+
+		}
+		
+	.nav__responsive-ul:hover > .nav__li-container {
+		margin-top: 0px;
+	}
+
+
+	
+}
+
+
+
