@@ -23,7 +23,9 @@
 	padding: 10px;
 	color: #297396;
 	}
-
+	.contenedor p {
+		margin-bottom: 30px;
+	 }    
 
 /*PROPIEDAD FLEX: Si tenemos por ejemplo un div y le damos display:flex;
 el div sique actuando como en display block, la diferencia es que ahora
