@@ -159,7 +159,7 @@ propiedades flex.*/
 		
 		
 	}	.nav__li-container {
-       
+       text-align: left;
 		position: absolute;
 		display: block;
 		width: 60%;

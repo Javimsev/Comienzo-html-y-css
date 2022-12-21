@@ -183,7 +183,8 @@ p {
 		
 		
 	}	.nav__li-container {
-       z-index: 2;
+		text-align: left;
+        z-index: 2;
 		position: absolute;
 		display: block;
 		width: 60%;
