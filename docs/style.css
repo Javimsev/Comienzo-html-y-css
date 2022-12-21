@@ -9,6 +9,7 @@ body {
 
 /*================== ESTILOS CONTENEDOR =================*/
 .contenedor {
+  min-height: 500px;
   width: 90%;
   min-width: 250px;
   max-width: 900px;
