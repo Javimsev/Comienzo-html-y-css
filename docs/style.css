@@ -1,222 +1,383 @@
-
 * {
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-}body {
-	background: rgb(238, 235, 235);
-      
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
+body {
+  background: rgb(238, 235, 235);
+}
+
+/*================== ESTILOS CONTENEDOR =================*/
 .contenedor {
-	width: 90%;
-	min-width: 250px;
-	max-width: 900px;
-	background: rgb(223, 213, 213);
-	border-radius: 5px;
-	padding: 20px;
-	margin: 50px auto;
+  width: 90%;
+  min-width: 250px;
+  max-width: 900px;
+  background: rgb(223, 213, 213);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 50px auto;
 }
 .contenedor h1 {
-	background: linear-gradient(to top, rgb(223, 213, 213), rgb(238, 235, 235));
-	border-radius: 5px;
-	text-align: center;
-	padding: 10px;
-	color: #297396;
-	}
-	.contenedor p {
-		margin-bottom: 30px;
-	 }    
+  background: linear-gradient(to top, rgb(223, 213, 213), rgb(238, 235, 235));
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  color: #297396;
+}
+.contenedor p {
+  margin-bottom: 30px;
+}
+.explicación {
+  position: relative;
+  margin: 30px auto;
+  width: auto;
+  height: auto;
+  background: rgb(223, 213, 213);
+}
+
+h2 {
+  background: linear-gradient(to top, rgb(223, 213, 213), rgb(238, 235, 235));
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  color: #297396;
+}
+p {
+  padding: 20px;
+}
+
+/*================== ESTILOS CONTENEDOR FIN=================*/
 
 /*PROPIEDAD FLEX: Si tenemos por ejemplo un div y le damos display:flex;
 el div sique actuando como en display block, la diferencia es que ahora
 su hijos seran flexibles. Después, a los hijos podremos darles 
 propiedades flex.*/
+
 .flex-container {
-    margin: 50px auto;
-    max-width: 800px;
-    min-width: 200px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: rgb(58, 51, 51);
-    
-    padding: 20px;
-    border-radius: 20px;
-   
-   
-}.form__input {
-    width: 100%;
-    padding: 10px;
-    margin: 0;
-    box-sizing: border-box;
-    border: none;
-    border-bottom:  3px solid rgb(72, 145, 145);
-    background:  rgb(58, 51, 51);
-    outline: none;
-    color: aliceblue;
-}.form__input:focus {
-    background: #333;
-    border-bottom:  3px solid rgb(15, 250, 250);
-    background:linear-gradient(to bottom, transparent, rgb(80, 68, 68) );
-}.form {
-    min-width: 200px;
-    flex: 1;
-   text-align: center;
-   
-    order: 5;
-}.form-img {
-    display: flex;
-    flex: 1;
-    padding: 0px;
-    min-width: 280px;
-    max-width: 280px;
-  
-    
-}.form-img div {
-    padding: 20px;
-  
+  margin: 50px auto;
+  max-width: 800px;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: rgb(58, 51, 51);
+
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 3px solid rgb(72, 145, 145);
+  background: rgb(58, 51, 51);
+  outline: none;
+  color: aliceblue;
+}
+
+.form__input:focus {
+  background: #333;
+  border-bottom: 3px solid rgb(15, 250, 250);
+  background: linear-gradient(to bottom, transparent, rgb(80, 68, 68));
+}
+
+.form {
+  min-width: 200px;
+  flex: 1;
+  text-align: center;
+
+  order: 5;
+}
+
+.form-img {
+  display: flex;
+  flex: 1;
+  padding: 0px;
+  min-width: 280px;
+  max-width: 280px;
+}
+
+.form-img div {
+  padding: 20px;
 }
 .img-container {
-    margin: auto;
+  margin: auto;
 }
 .img-container div {
-        background: transparent;
-    border-radius: 20px;
-   text-align: center;
-   padding: 40px;
-   
-}.form-img img {
-    width: 90%;
-    margin: auto;
-   
+  background: transparent;
+  border-radius: 20px;
+  text-align: center;
+  padding: 40px;
+}
+
+.form-img img {
+  width: 90%;
+  margin: auto;
 }
 .form textarea {
-    min-height: 120px;
-    resize: none;
-}.form input[type="submit"] {
-   width: 80px;
-   border-radius: 20px;
-    background: rgb(72, 145, 145);
-}.form input[type="submit"]:hover {
-    background: rgb(34, 97, 97);
-}/*menu*/
-.nav {
+  min-height: 120px;
+  resize: none;
+}
+
+.form input[type="submit"] {
+  width: 80px;
+  border-radius: 20px;
+  background: rgb(72, 145, 145);
+}
+
+.form input[type="submit"]:hover {
+  background: rgb(34, 97, 97);
+}
+
+/*=========== EJEMPLO PROPIEDAD FLEX FIN====================*/
+
+
+/*===================== BOTON VOLVER A EJERCICIOS ===========================*/
+
+.boton {
+	box-sizing: border-box;
+	display: block;
+	width: 35%;
+	margin: 0 auto;
+	padding: 15px;
+	border: none;
+	background: #6BACC9;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 5px;
+	margin-top: 5px;
+	
+	
+}
+.boton:hover {
+	
+	display: block;
+	width: 35%;
+	margin: 0 auto;
+	padding: 15px;
+	border: none;
 	background: #297396;
 	text-align: center;
+	text-decoration: none;
+	color: orange;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+
+/*===================== BOTON VOLVER A EJERCICIOS FIN ===========================*/
+
+
+/*============== MENU PRINCIPAL Y RESPONSIVE ============================*/
+.nav {
+  background: #297396;
+  text-align: center;
 }
 .nav__li {
-	display: inline-block;
-	padding: 15px;
-	color: white;
+  display: inline-block;
+  padding: 15px;
+  color: white;
 }
 .nav__li a {
-	color: white;
-	text-decoration: none;
-	padding: 14px;
+  color: white;
+  text-decoration: none;
+  padding: 14px;
 }
-.nav__li:hover >a {
-	color: orange;
-	
+.nav__li:hover > a {
+  color: orange;
 }
 .nav__li i {
-    margin-right: 8px;
-}/*fin menu*//*menu responsive*/
+  margin-right: 8px;
+} /*fin menu*/ /*menu responsive*/
 .nav__responsive-button {
-	
-	padding: 15px 50px;
-	text-align: right;
-	width: 100%;
-	box-sizing: border-box;
-}/*fin menu responsive*/.nav__responsive-ul {
-	display: none;
-	
-	
-	
+  padding: 15px 50px;
+  text-align: right;
+  width: 100%;
+  box-sizing: border-box;
+} /*fin menu responsive*/
+.nav__responsive-ul {
+  display: none;
 }
-@media only screen and (max-width: 570px) {
-	.nav__ul {
-		display: none;
-		
-		
-	}
-/* 	
-	.nav {
-		background: linear-gradient(rgb(112, 110, 105), rgb(46, 41, 31),rgb(105, 83, 41));
-		background: ;
-		width: 100%;
-		height: 45px
-	} */	
-	.nav__responsive-ul {
-        min-width: 250px;
-		top: -2px;
-		display: block;
-		
-		height: auto;
-		width: 100%;
-		list-style: none;
-		
-		
-		
-	}	.nav__li-container {
-       text-align: left;
-		position: absolute;
-		display: block;
-		width: 60%;
-		margin-top: -270px;
-		transition: .2s;
-		
-	}
-	
-    
-    .nav__responsive-button-container {
-    
-		position: relative;
-		background: #297396;
-        padding: 2px;
-		text-align: right;
-		width: 100%;
-		box-sizing: border-box;
-		z-index: 1;
-		
-    }	.nav__responsive-button {
-     
-		
-	}
-	
-	.nav__responsive-li {
-		position: relative;
-		padding: 10px;
-		background:#6BACC9;
-		
-			}
-	.nav__responsive-li i {
-		margin-right: 8px;
-	}
-		.nav__responsive-li a {
-			color: white;
-			text-decoration: none;		}
-        .nav__responsive-li a:hover {
-			color: orange;
-			text-decoration: none;		}
-		
-	.nav__responsive-ul:hover > .nav__li-container {
-		margin-top: 0px;
-	}
-	
-}.contenedor-ejemplos {
-	border-left:  15px  dotted rgb(4, 75, 155);
-	padding: 20px;
-	margin-top: 30px;
-	width: 250px;
-	height: auto;
-	background: #6BACC9;
-	border-radius: 0px 10px 10px 0px;
-}.contenedor-ejemplos a {
-	display: block;
-	text-decoration: none;
-	margin: 5px;
+@media only screen and (max-width: 600px) {
+  .nav__ul {
+    display: none;
+  }
+  
+  .nav__responsive-ul {
+    min-width: 250px;
+    top: -2px;
+    display: block;
+
+    height: auto;
+    width: 100%;
+    list-style: none;
+  }
+  .nav__li-container {
+    text-align: left;
+    position: absolute;
+    display: block;
+    width: 60%;
+    margin-top: -270px;
+    transition: 0.2s;
+  }
+
+  .nav__responsive-button-container {
+    position: relative;
+    background: #297396;
+    padding: 2px;
+    text-align: right;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  .nav__responsive-button {
+  }
+
+  .nav__responsive-li {
+    position: relative;
+    padding: 10px;
+    background: #6bacc9;
+  }
+  .nav__responsive-li i {
+    margin-right: 8px;
+  }
+  .nav__responsive-li a {
+    color: white;
+    text-decoration: none;
+  }
+  .nav__responsive-li a:hover {
+    color: orange;
+    text-decoration: none;
+  }
+
+  .nav__responsive-ul:hover > .nav__li-container {
+    margin-top: 0px;
+  }
+}
+
+/*============== MENU PRINCIPAL FIN============================*/
+
+
+/*=============== ESTILO CONTENEDOR-EJEMPLOS ==============*/
+.contenedor-ejemplos {
+  border-left: 15px dotted rgb(4, 75, 155);
+  padding: 20px;
+  margin-top: 30px;
+  width: 250px;
+  height: auto;
+  background: #6bacc9;
+  border-radius: 0px 10px 10px 0px;
+}
+.contenedor-ejemplos a {
+  display: block;
+  text-decoration: none;
+  margin: 5px;
 }
 .contenedor-ejemplos a:visited {
-	color: orange;
+  color: orange;
 }
+
+
+/*=============== ESTILO CONTENEDOR-EJEMPLOS FIN ==============*/
+
+
+/*======== EJEMPLO DE LA PROPIEDAD GRID ======================*/
+.grid-container {
+	background: slategrey;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 150px 150px 1fr;
+	grid-template-rows: 150px 150px 150px;
+	gap: 5px;
+  }
+  .grid-item {
+	background: rgb(186, 221, 186);
+	border: 1px solid black;
+  }
+  .grid-item:first-child {
+	background: red;
+	grid-column: 1 / 3;
+	grid-row: 1 / 3;
+  }
+  .grid-item:nth-child(5) {
+	background: blue;
+	grid-column: 2 / span 2;
+  }
+  
+  
+  /*======== EJEMPLO DE LA PROPIEDAD GRID FIN======================*/
+  
+
+
+
+  /*CURSOR:  para cambiar el cursor al pasar por encima de algun elemento
+o al seleccionar o pulsar. Ver todas las opciones en la siguiente web:
+https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
+
+
+
+/*algunos ejemplos*/
+
+.contenedor-ejemplos-cursor {
+	display: flex;
+	justify-content: center;
+	gap: 20px;	
+	flex-wrap: wrap;
+}
+.contenedor-ejemplos-cursor div{
+	
+	width: 100px;
+	height: 100px;
+	border: 6px solid rgb(54, 32, 107);
+	background: rgb(181, 212, 212);
+	display: inline-block;
+	border-radius: 20px;
+}
+
+.caja1 {
+	
+	cursor: pointer;
+
+}
+.caja2 {
+	
+	cursor: e-resize;
+
+}
+.caja3 {
+	
+	cursor: crosshair;
+
+}
+.caja4 {
+	
+	cursor: copy;
+
+}
+.caja5 {
+	
+	cursor: grab;
+
+}
+.caja6 {
+	
+	cursor: help;
+
+}
+.caja7 {
+	
+	cursor: move ;
+
+
+}
+.caja8 {
+	
+	cursor: zoom-in;
+
+}
+
+/*============= EJEMPLO CURSOR FIN==================*/

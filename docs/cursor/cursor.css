@@ -1,0 +1,63 @@
+*{
+	margin: 0px;
+	padding: 0px;
+
+}
+
+/*CURSOR:  para cambiar el cursor al pasar por encima de algun elemento
+o al seleccionar o pulsar. Ver todas las opciones en la siguiente web:
+https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
+
+
+
+/*algunos ejemplos*/
+div{
+	margin: 25px;
+	width: 200px;
+	height: 300px;
+	border: 6px solid red;
+	background: pink;
+	display: inline-block;
+}
+
+.caja1 {
+	
+	cursor: pointer;
+
+}
+.caja2 {
+	
+	cursor: e-resize;
+
+}
+.caja3 {
+	
+	cursor: crosshair;
+
+}
+.caja4 {
+	
+	cursor: copy;
+
+}
+.caja5 {
+	
+	cursor: grab;
+
+}
+.caja6 {
+	
+	cursor: help;
+
+}
+.caja7 {
+	
+	cursor: move ;
+
+}.caja8 {
+	
+	cursor: zoom-in;
+
+}
+
+/*============= EJEMPLO CURSOR FIN==================*/

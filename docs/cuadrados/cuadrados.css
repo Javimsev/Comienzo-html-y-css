@@ -71,8 +71,8 @@
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	width: 250px;
-	height: 250px;
+	width: 350px;
+	height: 350px;
 	background: rgb(213, 236, 191);
 }
 
@@ -82,8 +82,8 @@
 	display: inline-block;
 	background: gray;
 	color: black;
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	
 }
 .caja2{
@@ -91,8 +91,8 @@
 	display: inline-block;
 	background: skyblue;
 	color: black;
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	right: 0px;
 
 }
@@ -101,8 +101,8 @@
 	display: inline-block;
 	background: green;
 	color: black;
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	bottom: 0px;
 	
 }
@@ -111,8 +111,8 @@
 	display: inline-block;
 	background: violet;
 	color: black;
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	bottom: 0px;
 	right: 0px;
 	
@@ -122,8 +122,8 @@
 	display: block;
 	background: orange;
 	color: black;
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	bottom: 0px;
 	right: 0px;
 	left: 0px;
@@ -157,7 +157,22 @@ p {
 
 
 
-
+@media only screen and (max-width: 700px) {
+	.contenedor {
+		
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		height: auto;
+		 width: 90%;
+		 min-width: 250px;
+		 max-width: 900px;
+		 background: rgb(223, 213, 213);
+		 border-radius: 5px;
+		 padding: 20px;
+		 margin: 50px auto;
+	 }
+}
 @media only screen and (max-width: 600px) {
 	.nav__ul {
 		display: none;
@@ -253,7 +268,7 @@ p {
 
 
 
-/*boton*/
+/*===================== BOTON VOLVER A EJERCICIOS ===========================*/
 
  .boton {
 	box-sizing: border-box;
@@ -284,7 +299,6 @@ p {
 	color: orange;
 	border-radius: 5px;
 	margin-top: 5px;
-	
-	
-
 }
+
+/*===================== BOTON VOLVER A EJERCICIOS ===========================*/
