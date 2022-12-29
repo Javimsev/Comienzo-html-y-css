@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 	<title></title>
@@ -8,67 +9,108 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/011cc9ac28.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-		
+
 	<nav class="nav">
 		<ul class="nav__ul">
 			<li class="nav__li"></i><a href="../index.html"><i class="fas fa-home"></i>Inicio</a></li>
-			<li class="nav__li"><a href="../sobre-mi.html" class="nav__item"><i class="fa-solid fa-circle-user"></i>Sobre mi</a></li>
-			<li class="nav__li"><a href="../ejercicios.html" class="nav__item"><i class="fa-solid fa-dumbbell"></i>Ejercicios</a></li>
-			<li class="nav__li"><a href="../contacto.html" class="nav__item"><i class="fa-solid fa-address-book"></i>Contacto</a></li>
+			<li class="nav__li"><a href="../sobre-mi.html" class="nav__item"><i
+						class="fa-solid fa-circle-user"></i>Sobre mi</a></li>
+			<li class="nav__li"><a href="../ejercicios.html" class="nav__item"><i
+						class="fa-solid fa-dumbbell"></i>Ejercicios</a></li>
+			<li class="nav__li"><a href="../contacto.html" class="nav__item"><i
+						class="fa-solid fa-address-book"></i>Contacto</a></li>
 		</ul>
 		<ul class="nav__responsive-ul">
 			<div class="nav__responsive-button-container">
-			<div class="nav__responsive-button fa-solid fa-bars"></div>
+				<div class="nav__responsive-button fa-solid fa-bars"></div>
 			</div>
 			<div class="nav__li-container">
-			<li class="nav__responsive-li "><a href="../index.html" class="nav__item"><i class="fas fa-home"></i>Inicio</a></li>
-			<li class="nav__responsive-li"><a href="../sobre-mi.html" class="nav__item"><i class="fa-solid fa-circle-user"></i>Sobre mi</a></li>
-			<li class="nav__responsive-li"><a href="../ejercicios.html" class="nav__item"><i class="fa-solid fa-dumbbell"></i>Ejercicios</a></li>
-			<li class="nav__responsive-li"><a href="../contacto.html" class="nav__item"><i class="fa-solid fa-address-book"></i>Contacto</a></li>
+				<li class="nav__responsive-li "><a href="../index.html" class="nav__item"><i
+							class="fas fa-home"></i>Inicio</a></li>
+				<li class="nav__responsive-li"><a href="../sobre-mi.html" class="nav__item"><i
+							class="fa-solid fa-circle-user"></i>Sobre mi</a></li>
+				<li class="nav__responsive-li"><a href="../ejercicios.html" class="nav__item"><i
+							class="fa-solid fa-dumbbell"></i>Ejercicios</a></li>
+				<li class="nav__responsive-li"><a href="../contacto.html" class="nav__item"><i
+							class="fa-solid fa-address-book"></i>Contacto</a></li>
 			</div>
 		</ul>
 	</nav>
-		
+
 	<div class="contenedor">
 		<h1>Grid</h1>
-		<p>Aquí vemos una de las formas de trabajar con grid.</p>
+		<p>Aquí vemos varias formas de trabajar con grid.</p>
 
+		<div class="explicación">
+			<h2>Grid no responsive</h2>
+			<hr>
+			<p>Hemos definido el grid-container con 3 columnas y 3 filas
+				(Grid explícito), al poner 9 item y darle a item 1 y 5 mas
+				espacio, automaticamente se nos crean mas filas para adaptar
+				los elementos que sobran (grid implícito). Nosotros podemos definir
+				también el tamaño que tendrán las columnas o fias extra
+				si tuviesen que crearse, con la propiedad grid-auto-row
+				y grid-auto-column, por defecto se creará una fila extra,
+				pero también podemos definir que sea una columna con la propiedad grid-auto-flow:column.</p>
+			<a class="boton" href="../ejercicios.html">volver a ejercicios</a>
+		</div>
 
+		<div class="grid-container">
+			<div class="grid-item">1</div>
+			<div class="grid-item">2</div>
+			<div class="grid-item">3</div>
+			<div class="grid-item">4</div>
+			<div class="grid-item">5</div>
+			<div class="grid-item">6</div>
+			<div class="grid-item">7</div>
+			<div class="grid-item">8</div>
+			<div class="grid-item">9</div>
+		</div>
 
-        <div class="grid-container">
-            <div class="grid-item">1</div>
-            <div class="grid-item">2</div>
-            <div class="grid-item">3</div>
-            <div class="grid-item">4</div>
-            <div class="grid-item">5</div>
-            <div class="grid-item">6</div>
-            <div class="grid-item">7</div>
-            <div class="grid-item">8</div>
-            <div class="grid-item">9</div>
-        </div>
-
-
-        <div class="explicación">
-            <h2>Ordenando elementos dentro de un div</h2><hr>
-            <p>En este ejemplo podemos ver como colocar distintos elementos en el interior de un div.<br>Dandole proiedades como position: absolute y distintos margin. Para posicionar la caja 5 en el centro le damos top:0px, rigth:0px, left:0px, bottom:0px y margin:aurto; y ella solase coloca correctamente en el centro de su caja contenedora.</p>
-            <a class="boton" href="../ejercicios.html">volver a ejercicios</a>
-        </div>
-
-
-       
-
-
-
-
-
-	</div>		
-			
-				
-				
-	
 		
-	
-		
+		<div class="explicación2">
+			<h2>Grid responsive</h2>
+			<hr>
+			<p>Ahora trabajamos con las propiedades minmax, auto-fill y auto-fit.
+				 Tenemos un	grid-container2 que ahora si se adapta a lo que le definamos, 
+				 con minmax le decimos que ancho min y max queremos, en este caso tiene 
+				 un min de 100px y un max de 1fr. Con auto-fill le 
+				 decimos que cree mas columnas con la propiedadades de minmax, y 
+				 con auto-fit le decimos que el contenido de los 3 item se adapten al 
+				 ancho total. 
+			</p>
+			<a class="boton" href="../ejercicios.html">volver a ejercicios</a>
+		</div>
+
+
+		<div class="grid-container2">
+			<div class="grid-item2">1</div>
+			<div class="grid-item2">2</div>
+			<div class="grid-item2">3</div>
+			<!-- <div class="grid-item2">4</div>
+			<div class="grid-item2">5</div>
+			<div class="grid-item2">6</div>
+			<div class="grid-item2">7</div>
+			<div class="grid-item2">8</div>
+			<div class="grid-item2">9</div> -->
+		</div>
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
 </body>
+
 </html>

@@ -35,6 +35,13 @@ body {
   height: auto;
   background: rgb(223, 213, 213);
 }
+.explicación2 {
+  position: relative;
+  margin: 30px auto;
+  width: auto;
+  height: auto;
+  background: rgb(223, 213, 213);
+}
 
 h2 {
   background: linear-gradient(to top, rgb(223, 213, 213), rgb(238, 235, 235));
@@ -294,9 +301,12 @@ propiedades flex.*/
 	grid-template-columns: 150px 150px 1fr;
 	grid-template-rows: 150px 150px 150px;
 	gap: 5px;
+  /* grid-auto-flow: column; */ /*descomenta esta propiedad para ver como crea columnas extra en vez de filas*/
+  grid-auto-rows: 100px;
+  grid-auto-columns: 100px;
   }
   .grid-item {
-	background: rgb(186, 221, 186);
+		background: rgb(186, 221, 186);
 	border: 1px solid black;
   }
   .grid-item:first-child {
@@ -308,12 +318,37 @@ propiedades flex.*/
 	background: blue;
 	grid-column: 2 / span 2;
   }
-  
+
   
   /*======== EJEMPLO DE LA PROPIEDAD GRID FIN======================*/
   
+/*======== EJEMPLO DE LA PROPIEDAD GRID RESPONSIVE======================*/
+.grid-container2 {
+	background: slategrey;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));/*ambiar auto-fit
+  por auto-fill para ver diferencia*/
+	grid-template-rows: 150px 150px 150px;
+	gap: 5px;
 
-
+  /* grid-auto-flow: column; */ /*descomenta esta propiedad para ver como crea columnas extra en vez de filas*/
+  grid-auto-rows: 100px;
+  grid-auto-columns: 100px;
+  }
+  .grid-item2 {
+	background: rgb(186, 221, 186);
+	border: 1px solid black;
+  }
+  .grid-item2:first-child {
+	background: red;
+	
+  }
+  .grid-item2:nth-child(5) {
+	background: blue;
+	
+  }
+/*=============FIN EJEMPLO DE LA PROPIEDAD GRID RESPONSIVE===============*/
 
   /*CURSOR:  para cambiar el cursor al pasar por encima de algun elemento
 o al seleccionar o pulsar. Ver todas las opciones en la siguiente web:
