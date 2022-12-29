@@ -3,12 +3,14 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   background: rgb(238, 235, 235);
 }
 
 /*================== ESTILOS CONTENEDOR =================*/
 .contenedor {
+  height: auto;
   min-height: 500px;
   width: 90%;
   min-width: 250px;
@@ -18,16 +20,21 @@ body {
   padding: 20px;
   margin: 50px auto;
 }
+
 .contenedor h1 {
   background: linear-gradient(to top, rgb(223, 213, 213), rgb(238, 235, 235));
+
   border-radius: 5px;
   text-align: center;
   padding: 10px;
   color: #297396;
 }
+
 .contenedor p {
   margin-bottom: 30px;
+  color: #7b888e;
 }
+
 .explicación {
   position: relative;
   margin: 30px auto;
@@ -35,6 +42,7 @@ body {
   height: auto;
   background: rgb(223, 213, 213);
 }
+
 .explicación2 {
   position: relative;
   margin: 30px auto;
@@ -50,11 +58,12 @@ h2 {
   padding: 10px;
   color: #297396;
 }
+
 p {
   padding: 20px;
 }
 
-/*================== ESTILOS CONTENEDOR FIN=================*/
+/*================== ESTILOS CONTENEDOR FIN =================*/
 
 /*PROPIEDAD FLEX: Si tenemos por ejemplo un div y le damos display:flex;
 el div sique actuando como en display block, la diferencia es que ahora
@@ -112,9 +121,11 @@ propiedades flex.*/
 .form-img div {
   padding: 20px;
 }
+
 .img-container {
   margin: auto;
 }
+
 .img-container div {
   background: transparent;
   border-radius: 20px;
@@ -126,6 +137,7 @@ propiedades flex.*/
   width: 90%;
   margin: auto;
 }
+
 .form textarea {
   min-height: 120px;
   resize: none;
@@ -144,40 +156,60 @@ propiedades flex.*/
 /*=========== EJEMPLO PROPIEDAD FLEX FIN====================*/
 
 
+
+
+
+
+
+
+
+
 /*===================== BOTON VOLVER A EJERCICIOS ===========================*/
 
 .boton {
-	box-sizing: border-box;
-	display: block;
-	width: 35%;
-	margin: 0 auto;
-	padding: 15px;
-	border: none;
-	background: #6BACC9;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-	border-radius: 5px;
-	margin-top: 5px;
-	
-	
+  box-sizing: border-box;
+  display: block;
+  width: 35%;
+  margin: 0 auto;
+  padding: 15px;
+  border: none;
+  background: #6BACC9;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 5px;
+
+
 }
+
 .boton:hover {
-	
-	display: block;
-	width: 35%;
-	margin: 0 auto;
-	padding: 15px;
-	border: none;
-	background: #297396;
-	text-align: center;
-	text-decoration: none;
-	color: orange;
-	border-radius: 5px;
-	margin-top: 5px;
+
+  display: block;
+  width: 35%;
+  margin: 0 auto;
+  padding: 15px;
+  border: none;
+  background: #297396;
+  text-align: center;
+  text-decoration: none;
+  color: orange;
+  border-radius: 5px;
+  margin-top: 5px;
 }
 
 /*===================== BOTON VOLVER A EJERCICIOS FIN ===========================*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*============== MENU PRINCIPAL Y RESPONSIVE ============================*/
@@ -185,36 +217,46 @@ propiedades flex.*/
   background: #297396;
   text-align: center;
 }
+
 .nav__li {
   display: inline-block;
   padding: 15px;
   color: white;
 }
+
 .nav__li a {
   color: white;
   text-decoration: none;
   padding: 14px;
 }
-.nav__li:hover > a {
+
+.nav__li:hover>a {
   color: orange;
 }
+
 .nav__li i {
   margin-right: 8px;
-} /*fin menu*/ /*menu responsive*/
+}
+
+/*fin menu*/
+/*menu responsive*/
 .nav__responsive-button {
   padding: 15px 50px;
   text-align: right;
   width: 100%;
   box-sizing: border-box;
-} /*fin menu responsive*/
+}
+
+/*fin menu responsive*/
 .nav__responsive-ul {
   display: none;
 }
+
 @media only screen and (max-width: 600px) {
   .nav__ul {
     display: none;
   }
-  
+
   .nav__responsive-ul {
     min-width: 250px;
     top: -2px;
@@ -224,6 +266,7 @@ propiedades flex.*/
     width: 100%;
     list-style: none;
   }
+
   .nav__li-container {
     text-align: left;
     position: absolute;
@@ -242,27 +285,30 @@ propiedades flex.*/
     box-sizing: border-box;
     z-index: 1;
   }
-  .nav__responsive-button {
-  }
+
+  .nav__responsive-button {}
 
   .nav__responsive-li {
     position: relative;
     padding: 10px;
     background: #6bacc9;
   }
+
   .nav__responsive-li i {
     margin-right: 8px;
   }
+
   .nav__responsive-li a {
     color: white;
     text-decoration: none;
   }
+
   .nav__responsive-li a:hover {
     color: orange;
     text-decoration: none;
   }
 
-  .nav__responsive-ul:hover > .nav__li-container {
+  .nav__responsive-ul:hover>.nav__li-container {
     margin-top: 0px;
   }
 }
@@ -270,87 +316,359 @@ propiedades flex.*/
 /*============== MENU PRINCIPAL FIN============================*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*=============== ESTILO CONTENEDOR-EJEMPLOS ==============*/
+
+.libro {
+  margin-top: 40px;
+}
+
 .contenedor-ejemplos {
+  position: absolute;
   border-left: 15px dotted rgb(4, 75, 155);
   padding: 20px;
-  margin-top: 30px;
+  margin-top: 35px;
   width: 250px;
-  height: auto;
+  height: 350px;
   background: #6bacc9;
   border-radius: 0px 10px 10px 0px;
+  z-index: 1;
 }
+
 .contenedor-ejemplos a {
   display: block;
   text-decoration: none;
   margin: 5px;
 }
+
+.contenedor-ejemplos a:hover {
+  color: #fff;
+}
+
 .contenedor-ejemplos a:visited {
   color: orange;
 }
 
+.hoja1 {
+  position: absolute;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  margin-top: 18px;
+  margin-left: 16px;
+  border-left: 15px dotted rgb(4, 75, 155);
+  padding: 20px;
+  width: 250px;
+  height: 350px;
+  background: #91a3ab;
+  border-radius: 0px 10px 10px 0px;
+
+}
+
+.hoja2 {
+  position: absolute;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  margin-top: 20px;
+  margin-left: 14px;
+  border-left: 15px dotted rgb(4, 75, 155);
+  padding: 20px;
+  width: 250px;
+  height: 350px;
+  background: #91a3ab;
+  border-radius: 0px 10px 10px 0px;
+
+}
+
+.hoja3 {
+  position: absolute;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  margin-top: 22px;
+  margin-left: 12px;
+  border-left: 15px dotted rgb(4, 75, 155);
+  padding: 20px;
+  width: 250px;
+  height: 350px;
+  background: #91a3ab;
+  border-radius: 0px 10px 10px 0px;
+
+}
+
+.hoja4 {
+  position: absolute;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  margin-top: 24px;
+  margin-left: 10px;
+  border-left: 15px dotted rgb(4, 75, 155);
+  padding: 20px;
+  width: 250px;
+  height: 350px;
+  background: #91a3ab;
+  border-radius: 0px 10px 10px 0px;
+
+}
+
+.hoja5 {
+  position: absolute;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  margin-top: 26px;
+  margin-left: 8px;
+  border-left: 15px dotted rgb(4, 75, 155);
+  padding: 20px;
+  width: 250px;
+  height: 350px;
+  background: #91a3ab;
+  border-radius: 0px 10px 10px 0px;
+
+}
+
+.hoja6 {
+  position: absolute;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  margin-top: 28px;
+  margin-left: 6px;
+  border-left: 15px dotted rgb(4, 75, 155);
+  padding: 20px;
+  width: 250px;
+  height: 350px;
+  background: #91a3ab;
+  border-radius: 0px 10px 10px 0px;
+
+}
+
+.hoja7 {
+  position: absolute;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  margin-top: 30px;
+  margin-left: 4px;
+  border-left: 15px dotted rgb(4, 75, 155);
+  padding: 20px;
+  width: 250px;
+  height: 350px;
+  background: #91a3ab;
+  border-radius: 0px 10px 10px 0px;
+
+}
+
+.hoja8 {
+  position: absolute;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  margin-top: 32px;
+  margin-left: 2px;
+  border-left: 15px dotted rgb(4, 75, 155);
+  padding: 20px;
+  width: 250px;
+  height: 350px;
+  background: #91a3ab;
+  border-radius: 0px 10px 10px 0px;
+
+}
+
+.hoja9 {
+  position: absolute;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  margin-top: 34px;
+  margin-left: 0px;
+  border-left: 15px dotted rgb(4, 75, 155);
+  padding: 20px;
+  width: 250px;
+  height: 350px;
+  background: #91a3ab;
+  border-radius: 0px 10px 10px 0px;
+
+}
+
+.tapa-trasera {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 19px;
+  border-left: 15px dotted rgb(4, 75, 155);
+  padding: 20px;
+  width: 250px;
+  height: 350px;
+  background: #4191b6;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: grey 5px -5px 50px;
+
+}
 
 /*=============== ESTILO CONTENEDOR-EJEMPLOS FIN ==============*/
 
 
+
+
+
+
+
+
+
 /*======== EJEMPLO DE LA PROPIEDAD GRID ======================*/
 .grid-container {
-	background: slategrey;
-	padding: 10px;
-	display: grid;
-	grid-template-columns: 150px 150px 1fr;
-	grid-template-rows: 150px 150px 150px;
-	gap: 5px;
-  /* grid-auto-flow: column; */ /*descomenta esta propiedad para ver como crea columnas extra en vez de filas*/
+  background: slategrey;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 150px 150px 1fr;
+  grid-template-rows: 150px 150px 150px;
+  gap: 5px;
+  /* grid-auto-flow: column; */
+  /*descomenta esta propiedad para ver como crea columnas extra en vez de filas*/
   grid-auto-rows: 100px;
   grid-auto-columns: 100px;
-  }
-  .grid-item {
-		background: rgb(186, 221, 186);
-	border: 1px solid black;
-  }
-  .grid-item:first-child {
-	background: red;
-	grid-column: 1 / 3;
-	grid-row: 1 / 3;
-  }
-  .grid-item:nth-child(5) {
-	background: blue;
-	grid-column: 2 / span 2;
-  }
+}
 
-  
-  /*======== EJEMPLO DE LA PROPIEDAD GRID FIN======================*/
-  
+.grid-item {
+  background: rgb(186, 221, 186);
+  border: 1px solid black;
+}
+
+.grid-item:first-child {
+  background: red;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+.grid-item:nth-child(5) {
+  background: blue;
+  grid-column: 2 / span 2;
+}
+
+
+/*======== EJEMPLO DE LA PROPIEDAD GRID FIN======================*/
+
+
+
+
+
+
+
+
+
+
+
+
 /*======== EJEMPLO DE LA PROPIEDAD GRID RESPONSIVE======================*/
 .grid-container2 {
-	background: slategrey;
-	padding: 10px;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));/*ambiar auto-fit
+  background: slategrey;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  /*ambiar auto-fit
   por auto-fill para ver diferencia*/
-	grid-template-rows: 150px 150px 150px;
-	gap: 5px;
+  grid-template-rows: 150px 150px 150px;
+  gap: 5px;
 
-  /* grid-auto-flow: column; */ /*descomenta esta propiedad para ver como crea columnas extra en vez de filas*/
+  /* grid-auto-flow: column; */
+  /*descomenta esta propiedad para ver como crea columnas extra en vez de filas*/
   grid-auto-rows: 100px;
   grid-auto-columns: 100px;
-  }
-  .grid-item2 {
-	background: rgb(186, 221, 186);
-	border: 1px solid black;
-  }
-  .grid-item2:first-child {
-	background: red;
-	
-  }
-  .grid-item2:nth-child(5) {
-	background: blue;
-	
-  }
+}
+
+.grid-item2 {
+  background: rgb(186, 221, 186);
+  border: 1px solid black;
+}
+
+.grid-item2:first-child {
+  background: red;
+
+}
+
+.grid-item2:nth-child(5) {
+  background: blue;
+
+}
+
 /*=============FIN EJEMPLO DE LA PROPIEDAD GRID RESPONSIVE===============*/
 
-  /*CURSOR:  para cambiar el cursor al pasar por encima de algun elemento
+
+
+
+
+
+
+
+
+
+/*============== EJEMPLO ALINECIÓN DE UN GRID =================*/
+.grid-container3 {
+  height: 700px;
+  background: slategrey;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 5px;
+}
+
+
+.grid-item3 {
+  width: 100px;
+  height: 100px;
+  background: rgb(186, 221, 186);
+  border: 1px solid black;
+}
+
+.grid-item3:first-child {
+  background: red;
+  order: 20;
+
+
+}
+
+.grid-item3:nth-child(5) {
+  background: blue;
+  align-self: end;
+  justify-self: end;
+  order: 15;
+}
+.grid-item3:nth-child(7) {
+  background: pink;
+  align-self: start;
+  justify-self: start;
+  order: 17;
+}
+/*============== EJEMPLO ALINECIÓN DE UN GRID FIN =================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CURSOR:  para cambiar el cursor al pasar por encima de algun elemento
 o al seleccionar o pulsar. Ver todas las opciones en la siguiente web:
 https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
@@ -359,61 +677,168 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 /*algunos ejemplos*/
 
 .contenedor-ejemplos-cursor {
-	display: flex;
-	justify-content: center;
-	gap: 20px;	
-	flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
-.contenedor-ejemplos-cursor div{
-	
-	width: 100px;
-	height: 100px;
-	border: 6px solid rgb(54, 32, 107);
-	background: rgb(181, 212, 212);
-	display: inline-block;
-	border-radius: 20px;
+
+.contenedor-ejemplos-cursor div {
+
+  width: 100px;
+  height: 100px;
+  border: 6px solid rgb(54, 32, 107);
+  background: rgb(181, 212, 212);
+  display: inline-block;
+  border-radius: 20px;
 }
 
 .caja1 {
-	
-	cursor: pointer;
+
+  cursor: pointer;
 
 }
+
 .caja2 {
-	
-	cursor: e-resize;
+
+  cursor: e-resize;
 
 }
+
 .caja3 {
-	
-	cursor: crosshair;
+
+  cursor: crosshair;
 
 }
+
 .caja4 {
-	
-	cursor: copy;
+
+  cursor: copy;
 
 }
+
 .caja5 {
-	
-	cursor: grab;
+
+  cursor: grab;
 
 }
+
 .caja6 {
-	
-	cursor: help;
+
+  cursor: help;
 
 }
+
 .caja7 {
-	
-	cursor: move ;
+
+  cursor: move;
 
 
 }
+
 .caja8 {
-	
-	cursor: zoom-in;
+
+  cursor: zoom-in;
 
 }
 
 /*============= EJEMPLO CURSOR FIN==================*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================== EJEMPLO CAJAS DE COLORES ================*/
+
+.contenedor-cajas {
+	background: rgb(248, 248, 233);
+	width: auto;
+	height: auto;
+}
+
+.contenedor-cajas div{
+	width: 120px;
+	height: 120px;
+	display: block;
+
+}
+
+
+
+.caja1{
+	background: green;
+	
+
+}
+
+.caja2{
+	background: violet;
+	position: relative;  /*al darle position: relative; podemor darle propiedad 
+	top, rigth, bottom y left además de z.indez*/
+	top: 20px;
+	left: 20px;
+
+
+}
+
+.caja3{
+	position: relative;
+	background: orange;
+	z-index: 50;/*con z.index podemos dar jerarquía de orden en eje Z. Cuanto mayor 
+	es el numero mas al frente se mostrará. z.index es 0 por defecto, podemos posicionar
+	elementos por encima de 0 y por debajo de 0. en este ejemplo tenemos a caja3 por 
+	encima de caja2. Se recomienda dar valores de al menos de 50 en 50, así si vamos
+	añadiendo elementos tenemos margen de ir colocandolos es la capa correspondiente.
+	*/
+	
+
+
+}
+.caja4{
+	background: grey;
+	position: relative;
+	top: 20px;/*cuando damos valor a top y left, bottom y rigth no se tendrán en cuenta, 
+	poque top y left tienen mas importancia y jerarquía. Si ponemos top y left a 0px 
+	veremos entonces que si toma los valores de bottom y rigth. (probar ejemplo)*/
+	left: 20px;
+	bottom: 20px;
+	right: 20px;
+
+}
+/* ======================== EJEMPLO CAJAS DE COLORES FIN ================*/
+
+
+
+
+
+
+
+
+/*============= EJEMPLO DE LA PROPIEDAD FLOAT =====================*/
+
+.contenedor-sobre-mi {
+
+	margin: 50px auto;
+	border-radius: 10px;
+	width:90%;
+	height: auto;
+	
+	background: ghostwhite;
+	padding: 30px;
+	
+}
+
+
+img{
+	float:right;
+	margin: 05px 20px 20px 20px;
+	border-radius: 10px;
+}
+/*============= EJEMPLO DE LA PROPIEDAD FLOAT FIN =====================*/
