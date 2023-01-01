@@ -852,9 +852,10 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 .grid-contenedor-galeria {  
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
  gap:10px;
  grid-auto-rows: 100px;
+ grid-auto-flow: dense;
 }
 
 .grid-contenedor-galeria img {
@@ -881,5 +882,3 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*========= GALERÍA DE FOTOS CON GRID FIN ============================*/
 
-
-/*========= GALERÍA DE FOTOS CON GRID FIN ============================*/
