@@ -882,3 +882,46 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*========= GALERÍA DE FOTOS CON GRID FIN ============================*/
 
+
+
+
+
+
+/*================ ESTRUCTURA WEB CON GRID ========================*/
+
+.contenedor-web-grid {
+  display: grid;
+  margin: 10px;
+  grid-template-areas: 
+  "header header header"
+  "aside main main"
+  "aside main main"
+  "aside main main"  
+  "footer footer footer";
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  height:70vh;
+}
+
+
+
+.item-grid {
+  padding: 20px;
+}
+
+.header {
+  grid-area: header;
+  background: orange;
+}
+.aside {
+  grid-area: aside;
+  background: rgb(190, 235, 190);
+}
+.main {
+  grid-area: main;
+  background:#aabdc6;
+}
+.footer {
+  grid-area: footer;
+  background: #c0c569;
+}
+/*================ ESTRUCTURA WEB CON GRID FIN ========================*/
