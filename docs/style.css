@@ -606,13 +606,9 @@ propiedades flex.*/
 
 
 
-
-
-
-
-
 /*============== EJEMPLO ALINECIÓN DE UN GRID =================*/
 .grid-container3 {
+  
   height: 700px;
   background: slategrey;
   padding: 10px;
@@ -654,6 +650,72 @@ propiedades flex.*/
   order: 17;
 }
 /*============== EJEMPLO ALINECIÓN DE UN GRID FIN =================*/
+
+
+
+
+
+
+
+/*======== EJEMPLO DE LA PROPIEDAD GRID-TEMPLATE-AREA ======================*/
+.grid-container4 {
+  background: rgb(56, 135, 213);
+  padding: 10px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns:
+  [primera-columna] 
+    150px
+  [segunda-columna]
+    150px
+  [tercera-columna]
+    150px;
+  
+  grid-template-rows: 
+  [primera-fila]
+  150px 
+  [segunda-fila]
+  150px
+  [tercera-fila]
+  150px;
+ 
+  gap: 1px;
+
+  /* grid-auto-flow: column; */
+  /*descomenta esta propiedad para ver como crea columnas extra en vez de filas*/
+  grid-auto-rows: 100px;
+  grid-auto-columns: 100px;
+}
+
+.grid-item4 {
+  background: rgb(186, 221, 186);
+ 
+}
+
+.grid-item4:first-child {
+  background: red;
+  grid-column: primera-columna/tercera-columna;
+
+}
+
+.grid-item4:nth-child(2) {
+  background: blue;
+  grid-row: primera-fila/tercera-fila;
+  grid-column: tercera-columna;
+
+}
+
+/*============= FIN EJEMPLO DE LA PROPIEDAD GRID-TEMPLATE-AREA ===============*/
+
+
+
+
+
+
+
+
+
+
 
 
 
