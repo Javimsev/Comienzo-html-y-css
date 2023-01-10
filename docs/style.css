@@ -608,7 +608,7 @@ propiedades flex.*/
 
 /*============== EJEMPLO ALINECIÓN DE UN GRID =================*/
 .grid-container3 {
-  
+
   height: 700px;
   background: slategrey;
   padding: 10px;
@@ -643,12 +643,14 @@ propiedades flex.*/
   justify-self: end;
   order: 15;
 }
+
 .grid-item3:nth-child(7) {
   background: pink;
   align-self: start;
   justify-self: start;
   order: 17;
 }
+
 /*============== EJEMPLO ALINECIÓN DE UN GRID FIN =================*/
 
 
@@ -664,21 +666,11 @@ propiedades flex.*/
   display: grid;
   justify-content: center;
   grid-template-columns:
-  [primera-columna] 
-    150px
-  [segunda-columna]
-    150px
-  [tercera-columna]
-    150px;
-  
-  grid-template-rows: 
-  [primera-fila]
-  150px 
-  [segunda-fila]
-  150px
-  [tercera-fila]
-  150px;
- 
+    [primera-columna] 150px [segunda-columna] 150px [tercera-columna] 150px;
+
+  grid-template-rows:
+    [primera-fila] 150px [segunda-fila] 150px [tercera-fila] 150px;
+
   gap: 5px;
 
   /* grid-auto-flow: column; */
@@ -689,7 +681,7 @@ propiedades flex.*/
 
 .grid-item4 {
   background: rgb(186, 221, 186);
- 
+
 }
 
 .grid-item4:first-child {
@@ -821,59 +813,64 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 /* ======================== EJEMPLO CAJAS DE COLORES ================*/
 
 .contenedor-cajas {
-	background: rgb(248, 248, 233);
-	width: auto;
-	height: auto;
+  background: rgb(248, 248, 233);
+  width: auto;
+  height: auto;
 }
 
-.contenedor-cajas div{
-	width: 120px;
-	height: 120px;
-	display: block;
-
-}
-
-
-
-.caja1{
-	background: green;
-	
+.contenedor-cajas div {
+  width: 120px;
+  height: 120px;
+  display: block;
 
 }
 
-.caja2{
-	background: violet;
-	position: relative;  /*al darle position: relative; podemor darle propiedad 
+
+
+.caja1 {
+  background: green;
+
+
+}
+
+.caja2 {
+  background: violet;
+  position: relative;
+  /*al darle position: relative; podemor darle propiedad 
 	top, rigth, bottom y left además de z.indez*/
-	top: 20px;
-	left: 20px;
+  top: 20px;
+  left: 20px;
 
 }
 
-.caja3{
-	position: relative;
-	background: orange;
-	z-index: 50;/*con z.index podemos dar jerarquía de orden en eje Z. Cuanto mayor 
+.caja3 {
+  position: relative;
+  background: orange;
+  z-index: 50;
+  /*con z.index podemos dar jerarquía de orden en eje Z. Cuanto mayor 
 	es el numero mas al frente se mostrará. z.index es 0 por defecto, podemos posicionar
 	elementos por encima de 0 y por debajo de 0. en este ejemplo tenemos a caja3 por 
 	encima de caja2. Se recomienda dar valores de al menos de 50 en 50, así si vamos
 	añadiendo elementos tenemos margen de ir colocandolos es la capa correspondiente.
 	*/
-	
+
 
 
 }
-.caja4{
-	background: grey;
-	position: relative;
-	top: 20px;/*cuando damos valor a top y left, bottom y rigth no se tendrán en cuenta, 
+
+.caja4 {
+  background: grey;
+  position: relative;
+  top: 20px;
+  /*cuando damos valor a top y left, bottom y rigth no se tendrán en cuenta, 
 	poque top y left tienen mas importancia y jerarquía. Si ponemos top y left a 0px 
 	veremos entonces que si toma los valores de bottom y rigth. (probar ejemplo)*/
-	left: 20px;
-	bottom: 20px;
-	right: 20px;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
 
 }
+
 /* ======================== EJEMPLO CAJAS DE COLORES FIN ================*/
 
 
@@ -887,22 +884,23 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 .contenedor-sobre-mi {
 
-	margin: 50px auto;
-	border-radius: 10px;
-	width:60%;
-	height: auto;
-	
-	background: ghostwhite;
-	padding: 30px;
-	
+  margin: 50px auto;
+  border-radius: 10px;
+  width: 60%;
+  height: auto;
+
+  background: ghostwhite;
+  padding: 30px;
+
 }
 
 
-.contenedor-sobre-mi img{
-	float:right;
-	margin: 05px 20px 20px 20px;
-	border-radius: 10px;
+.contenedor-sobre-mi img {
+  float: right;
+  margin: 05px 20px 20px 20px;
+  border-radius: 10px;
 }
+
 /*============= EJEMPLO DE LA PROPIEDAD FLOAT FIN =====================*/
 
 
@@ -912,20 +910,21 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 /*========= GALERÍA DE FOTOS CON GRID ============================*/
 
 
-.grid-contenedor-galeria {  
+.grid-contenedor-galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
- gap:10px;
- grid-auto-rows: 100px;
- grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  grid-auto-rows: 100px;
+  grid-auto-flow: dense;
 }
 
 .grid-contenedor-galeria img {
- 
+
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .grid-contenedor-galeria img:first-child {
   grid-column: 1/3;
   grid-row: 1/3;
@@ -938,7 +937,7 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 
 .grid-contenedor-galeria img:nth-child(7) {
-  
+
   grid-row: span 3;
 }
 
@@ -954,14 +953,14 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 .contenedor-web-grid {
   display: grid;
   margin: 10px;
-  grid-template-areas: 
-  "header header header"
-  "aside main main"
-  "aside main main"
-  "aside main main"  
-  "footer footer footer";
+  grid-template-areas:
+    "header header header"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "footer footer footer";
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  height:70vh;
+  height: 70vh;
 }
 
 
@@ -974,18 +973,22 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   grid-area: header;
   background: orange;
 }
+
 .aside {
   grid-area: aside;
   background: rgb(190, 235, 190);
 }
+
 .main {
   grid-area: main;
-  background:#aabdc6;
+  background: #aabdc6;
 }
+
 .footer {
   grid-area: footer;
   background: #c0c569;
 }
+
 /*================ ESTRUCTURA WEB CON GRID FIN ========================*/
 
 
@@ -1000,31 +1003,36 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 
 @media screen and (min-width:400px) AND (max-width: 600px) {
-  .div-responsive-design{
+  .div-responsive-design {
     background: rgb(155, 10, 10);
   }
-  
-} 
+
+}
+
 @media screen and (min-width:600px) AND (max-width: 700px) {
-  .div-responsive-design{
+  .div-responsive-design {
     background: rgb(243, 103, 103);
 
   }
-  .div-responsive-design p{
-    color:#333;
+
+  .div-responsive-design p {
+    color: #333;
   }
-} 
+}
+
 @media screen and (min-width:700px) AND (max-width: 800px) {
-  .div-responsive-design{
+  .div-responsive-design {
     background: rgb(95, 33, 33);
 
   }
-  .div-responsive-design p{
+
+  .div-responsive-design p {
     height: 500px;
-    color:rgb(251, 242, 242);
+    color: rgb(251, 242, 242);
     font-size: 20px;
   }
-} 
+}
+
 /*========= FIN EJEMPLO RESPONSIVE DESIGN CON @MEDIA=============*/
 
 
@@ -1039,54 +1047,69 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 300px);
   
-  
-  }
-  .header__responsive{
-    background: pink;
-  
-  }
-  .main__responsive {
-    background: green;
-  
-  }
-  .aside__responsive {
-    background: violet;
-  
-  }
-  .footer__responsive {
-    background: orange;
-   
-    
-  }
+}
+
+
+
+.header__responsive {
+  background: pink;
+
+}
+
+.main__responsive {
+  background: green;
+
+}
+
+.aside__responsive {
+  background: violet;
+
+}
+
+.footer__responsive {
+  background: orange;
+
+
+}
 
 @media screen and (min-width:400px) {
   .contenedor-reponsive-grid {
-    height: 90vh;  
-      padding: 5px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 50px 1fr 80px;
-      }
-  .header__responsive{
+   
+    height: 90vh;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 80px;
+  }
+  .contenedor-reponsive-grid div {
+    padding: 20px;
+    color: rgb(50, 67, 82);
+  
+  }
+
+  .header__responsive {
     background: pink;
     grid-column: 1/span 3;
   }
+
   .main__responsive {
     background: green;
-   
+
     grid-column: 1/span 2;
   }
+
   .aside__responsive {
     background: violet;
-  
+
   }
+
   .footer__responsive {
     background: orange;
     grid-column: 1/span 3;
-    
+
   }
-  
-} 
+
+}
 
 
 /*==========EJEMPLO RESPONSIVE DESIGN CON @MEDIA + GRID =============*/
