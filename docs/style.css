@@ -679,7 +679,7 @@ propiedades flex.*/
   [tercera-fila]
   150px;
  
-  gap: 1px;
+  gap: 5px;
 
   /* grid-auto-flow: column; */
   /*descomenta esta propiedad para ver como crea columnas extra en vez de filas*/
@@ -987,3 +987,106 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   background: #c0c569;
 }
 /*================ ESTRUCTURA WEB CON GRID FIN ========================*/
+
+
+
+
+
+
+/*========= EJEMPLO RESPONSIVE DESIGN CON @MEDIA=============*/
+
+.div-responsive-design {
+  background: rgb(15, 100, 100);
+}
+
+@media screen and (min-width:400px) AND (max-width: 600px) {
+  .div-responsive-design{
+    background: rgb(155, 10, 10);
+  }
+  
+} 
+@media screen and (min-width:600px) AND (max-width: 700px) {
+  .div-responsive-design{
+    background: rgb(243, 103, 103);
+
+  }
+  .div-responsive-design p{
+    color:#333;
+  }
+} 
+@media screen and (min-width:700px) AND (max-width: 800px) {
+  .div-responsive-design{
+    background: rgb(95, 33, 33);
+
+  }
+  .div-responsive-design p{
+    height: 500px;
+    color:rgb(251, 242, 242);
+    font-size: 20px;
+  }
+} 
+/*========= FIN EJEMPLO RESPONSIVE DESIGN CON @MEDIA=============*/
+
+
+
+
+
+/*==========EJEMPLO RESPONSIVE DESIGN CON @MEDIA + GRID =============*/
+.contenedor-reponsive-grid {
+  height: 500px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 300px);
+  
+  
+  }
+  .header__responsive{
+    background: pink;
+  
+  }
+  .main__responsive {
+    background: green;
+  
+  }
+  .aside__responsive {
+    background: violet;
+  
+  }
+  .footer__responsive {
+    background: orange;
+   
+    
+  }
+
+@media screen and (min-width:400px) {
+  .contenedor-reponsive-grid {
+    height: 90vh;  
+      padding: 5px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 50px 1fr 80px;
+      }
+  .header__responsive{
+    background: pink;
+    grid-column: 1/span 3;
+  }
+  .main__responsive {
+    background: green;
+   
+    grid-column: 1/span 2;
+  }
+  .aside__responsive {
+    background: violet;
+  
+  }
+  .footer__responsive {
+    background: orange;
+    grid-column: 1/span 3;
+    
+  }
+  
+} 
+
+
+/*==========EJEMPLO RESPONSIVE DESIGN CON @MEDIA + GRID =============*/
