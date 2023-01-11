@@ -179,7 +179,7 @@ propiedades flex.*/
   text-decoration: none;
   color: #fff;
   border-radius: 5px;
-  margin-top: 5px;
+  margin-top: 20px;
 
 
 }
@@ -196,7 +196,7 @@ propiedades flex.*/
   text-decoration: none;
   color: orange;
   border-radius: 5px;
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 /*===================== BOTON VOLVER A EJERCICIOS FIN ===========================*/
@@ -1113,3 +1113,54 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 
 /*==========EJEMPLO RESPONSIVE DESIGN CON @MEDIA + GRID =============*/
+
+
+
+
+
+/*======== EJEMPLO TRANSITION =================*/
+.box-container {
+  padding: 20px;
+  background: rgb(203, 129, 141);
+  position: relative;
+  }
+.box {
+  position: relative;
+   margin: 2px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  left: 0px;
+  transition-property: left, background;
+  transition-duration: 2s;
+ 
+}
+.box-container:hover>.box {
+left:80%;
+background: #297396;
+}
+
+.box:first-child{
+  background:  pink ;
+  transition-timing-function: ease;
+ }
+ .box:nth-child(2) {
+    background:  pink;
+   transition-timing-function: ease-in;
+ }
+ .box:nth-child(3) {
+  background:  pink;
+ transition-timing-function: ease-in-out;
+}
+.box:nth-child(4) {
+  background:  pink;
+ transition-timing-function: ease-out;
+}
+ .box:last-child{
+  background:  pink;
+ transition-timing-function: linear;
+ }
+
+
+
+/*======== EJEMPLO TRANSITION FIN =================*/
