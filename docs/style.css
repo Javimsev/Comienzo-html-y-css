@@ -287,7 +287,6 @@ propiedades flex.*/
     z-index: 1;
   }
 
-  .nav__responsive-button {}
 
   .nav__responsive-li {
     position: relative;
@@ -1046,7 +1045,7 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 300px);
-  
+
 }
 
 
@@ -1074,17 +1073,18 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 @media screen and (min-width:400px) {
   .contenedor-reponsive-grid {
-   
+
     height: 90vh;
     padding: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50px 1fr 80px;
   }
+
   .contenedor-reponsive-grid div {
     padding: 20px;
     color: rgb(50, 67, 82);
-  
+
   }
 
   .header__responsive {
@@ -1123,44 +1123,91 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   padding: 20px;
   background: rgb(203, 129, 141);
   position: relative;
-  }
+}
+
 .box {
   position: relative;
-   margin: 2px;
+  margin: 2px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   left: 0px;
   transition-property: left, background;
   transition-duration: 2s;
- 
-}
-.box-container:hover>.box {
-left:80%;
-background: #297396;
+
 }
 
-.box:first-child{
-  background:  pink ;
+.box-container:hover>.box {
+  left: 80%;
+  background: #297396;
+}
+
+.box:first-child {
+  background: pink;
   transition-timing-function: ease;
- }
- .box:nth-child(2) {
-    background:  pink;
-   transition-timing-function: ease-in;
- }
- .box:nth-child(3) {
-  background:  pink;
- transition-timing-function: ease-in-out;
 }
+
+.box:nth-child(2) {
+  background: pink;
+  transition-timing-function: ease-in;
+}
+
+.box:nth-child(3) {
+  background: pink;
+  transition-timing-function: ease-in-out;
+}
+
 .box:nth-child(4) {
-  background:  pink;
- transition-timing-function: ease-out;
+  background: pink;
+  transition-timing-function: ease-out;
 }
- .box:last-child{
-  background:  pink;
- transition-timing-function: linear;
- }
+
+.box:last-child {
+  background: pink;
+  transition-timing-function: linear;
+}
 
 
 
 /*======== EJEMPLO TRANSITION FIN =================*/
+
+
+
+/*======== EJEMPLO TRANSITIONS ==========================*/
+
+.circulo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: pink;
+  margin: 10px;
+  position: relative;
+  animation-name: desplazamiento;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+  /*valor infinite para que se repita siempre.*/
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  text-align: center;
+  font-size: 80px;
+}
+@keyframes desplazamiento {
+  0% {
+    color: transparent;
+    left: 0%;
+  }
+  50% {
+    color: orange;
+    left: 40%;
+    background: #297396;
+  }
+  100% {
+    color: transparent;
+    left: 80%;
+    background: pink;
+  }
+}
+
+
+/*======== EJEMPLO TRANSITIONS ==========================*/
