@@ -171,7 +171,7 @@ propiedades flex.*/
   box-sizing: border-box;
   display: block;
   width: 35%;
-  margin: 0 auto;
+  margin: 25px auto;
   padding: 15px;
   border: none;
   background: #6BACC9;
@@ -179,7 +179,7 @@ propiedades flex.*/
   text-decoration: none;
   color: #fff;
   border-radius: 5px;
-  margin-top: 20px;
+  
 
 
 }
@@ -188,7 +188,7 @@ propiedades flex.*/
 
   display: block;
   width: 35%;
-  margin: 0 auto;
+  margin: 25px auto;
   padding: 15px;
   border: none;
   background: #297396;
@@ -196,7 +196,7 @@ propiedades flex.*/
   text-decoration: none;
   color: orange;
   border-radius: 5px;
-  margin-top: 20px;
+ 
 }
 
 /*===================== BOTON VOLVER A EJERCICIOS FIN ===========================*/
@@ -1119,7 +1119,7 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 
 /*======== EJEMPLO TRANSITION =================*/
-.box-container {
+.box-container-transition{
   padding: 20px;
   background: rgb(203, 129, 141);
   position: relative;
@@ -1137,7 +1137,7 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 }
 
-.box-container:hover>.box {
+.box-container-transition:hover>.box {
   left: 80%;
   background: #297396;
 }
@@ -1173,24 +1173,27 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 
 
-/*======== EJEMPLO TRANSITIONS ==========================*/
-
+/*======== EJEMPLO ANIMATION ==========================*/
+.box-container-animation {
+  padding: 20px;
+  background: rgb(203, 129, 141);
+  position: relative;
+}
 .circulo {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: pink;
   margin: 10px;
   position: relative;
   animation-name: desplazamiento;
   animation-duration: 2s;
-  animation-iteration-count: 3;
-  /*valor infinite para que se repita siempre.*/
+  animation-iteration-count: infinite;/*valor infinite para que se repita siempre.*/
   animation-timing-function: ease;
   animation-direction: alternate;
   animation-fill-mode: forwards;
   text-align: center;
-  font-size: 80px;
+  font-size: 40px;
 }
 @keyframes desplazamiento {
   0% {
@@ -1210,4 +1213,106 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 
 
-/*======== EJEMPLO TRANSITIONS ==========================*/
+/*======== EJEMPLO ANIMATION FIN ==========================*/
+
+
+
+
+/*======== EJEMPLO ANIMATION Y CUBIC-BEZIER ==========================*/
+.box-container-animation-2 {
+  padding: 20px;
+  background: rgb(203, 129, 141);
+  position: relative;
+}
+.circulo-2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: pink;
+  margin: 10px;
+  position: relative;
+  animation-name: desplazamiento;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;/*valor infinite para que se repita siempre.*/
+  animation-timing-function: cubic-bezier(.57,.72,.42,-0.3);/*Con cubic-bezier podemor modificar la animacios a nuestro
+  gusto, podemor crear generarlos fácilmente en cubic-bezier.com*/
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  text-align: center;
+  font-size: 40px;
+}
+
+/*======== EJEMPLO ANIMATION Y CUBIC-BEZIER FIN ==========================*/
+
+
+
+
+
+/*=============== EJEMPLO TRANSFORM ========================*/
+
+.contenedor-recipiente-caja {
+background:#aabdc6;
+display: flex;
+width: 100%;
+height: 500px;
+border-radius: 5px;
+}
+.recipiente-caja {
+ 
+    display: flex;
+   margin: auto;
+  
+  
+  
+}
+.caja__transform {
+  position: relative;
+  display: flex;
+  margin: auto;
+  background: #5297b7;
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  transition: transform .2s;
+}
+.listo  {
+  margin: auto;
+
+}
+.adelante {
+  margin: auto;
+  display: none;
+}
+@keyframes adelante {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 10%;
+  }
+}
+.recipiente-caja:hover>.caja__transform {
+  /* transform:  translateX(50px); */
+  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%) ;
+  animation-name: adelante;
+  animation-duration: .3s;
+animation-direction: alternate;
+  animation-iteration-count: infinite;
+  
+ 
+
+}
+.recipiente-caja:hover>.caja__transform b {
+  color: orange;
+  
+}
+.recipiente-caja:hover>.caja__transform .adelante {
+  display: block;
+  font-size: 40px;
+}
+.recipiente-caja:hover>.caja__transform .listo {
+  display: none;
+}
+/*=============== EJEMPLO TRANSFORM FIN ========================*/
+
+
