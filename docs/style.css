@@ -1266,6 +1266,8 @@ border-radius: 5px;
   
 }
 .caja__transform {
+  color: orange;
+  font-size: 20px;
   position: relative;
   display: flex;
   margin: auto;
@@ -1291,8 +1293,27 @@ border-radius: 5px;
     left: 10%;
   }
 }
+.recipiente-volver-a-ejercicios {
+  margin: auto;
+  display: flex;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.volver-a-ejercicios {
+  text-decoration: none;
+  color:orange ;
+  background: #333;
+  border-radius: 5px;
+  padding: 5px;
+  margin: auto;
+  display: none;
+}
+
+
 .recipiente-caja:hover>.caja__transform {
-  /* transform:  translateX(50px); */
+  
+  transform:  translateX(100px);
   clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%) ;
   animation-name: adelante;
   animation-duration: .3s;
@@ -1312,6 +1333,16 @@ animation-direction: alternate;
 }
 .recipiente-caja:hover>.caja__transform .listo {
   display: none;
+}
+.recipiente-caja:hover>.recipiente-volver-a-ejercicios .volver-a-ejercicios {
+  text-decoration: none;
+  color:orange ;
+  background: #333;
+  border-radius: 5px;
+  padding: 15px;
+  margin: auto;
+  display: block;
+  
 }
 /*=============== EJEMPLO TRANSFORM FIN ========================*/
 
