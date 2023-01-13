@@ -6,7 +6,6 @@
 
 body {
   background: rgb(238, 235, 235);
-
 }
 
 /*================== ESTILOS CONTENEDOR =================*/
@@ -156,15 +155,6 @@ propiedades flex.*/
 
 /*=========== EJEMPLO PROPIEDAD FLEX FIN====================*/
 
-
-
-
-
-
-
-
-
-
 /*===================== BOTON VOLVER A EJERCICIOS ===========================*/
 
 .boton {
@@ -174,18 +164,14 @@ propiedades flex.*/
   margin: 25px auto;
   padding: 15px;
   border: none;
-  background: #6BACC9;
+  background: #6bacc9;
   text-align: center;
   text-decoration: none;
   color: #fff;
   border-radius: 5px;
-  
-
-
 }
 
 .boton:hover {
-
   display: block;
   width: 35%;
   margin: 25px auto;
@@ -196,22 +182,9 @@ propiedades flex.*/
   text-decoration: none;
   color: orange;
   border-radius: 5px;
- 
 }
 
 /*===================== BOTON VOLVER A EJERCICIOS FIN ===========================*/
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*============== MENU PRINCIPAL Y RESPONSIVE ============================*/
 .nav {
@@ -231,7 +204,7 @@ propiedades flex.*/
   padding: 14px;
 }
 
-.nav__li:hover>a {
+.nav__li:hover > a {
   color: orange;
 }
 
@@ -287,7 +260,6 @@ propiedades flex.*/
     z-index: 1;
   }
 
-
   .nav__responsive-li {
     position: relative;
     padding: 10px;
@@ -308,29 +280,12 @@ propiedades flex.*/
     text-decoration: none;
   }
 
-  .nav__responsive-ul:hover>.nav__li-container {
+  .nav__responsive-ul:hover > .nav__li-container {
     margin-top: 0px;
   }
 }
 
 /*============== MENU PRINCIPAL FIN============================*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*=============== ESTILO CONTENEDOR-EJEMPLOS ==============*/
 
@@ -376,7 +331,6 @@ propiedades flex.*/
   height: 350px;
   background: #91a3ab;
   border-radius: 0px 10px 10px 0px;
-
 }
 
 .hoja2 {
@@ -391,7 +345,6 @@ propiedades flex.*/
   height: 350px;
   background: #91a3ab;
   border-radius: 0px 10px 10px 0px;
-
 }
 
 .hoja3 {
@@ -406,7 +359,6 @@ propiedades flex.*/
   height: 350px;
   background: #91a3ab;
   border-radius: 0px 10px 10px 0px;
-
 }
 
 .hoja4 {
@@ -421,7 +373,6 @@ propiedades flex.*/
   height: 350px;
   background: #91a3ab;
   border-radius: 0px 10px 10px 0px;
-
 }
 
 .hoja5 {
@@ -436,7 +387,6 @@ propiedades flex.*/
   height: 350px;
   background: #91a3ab;
   border-radius: 0px 10px 10px 0px;
-
 }
 
 .hoja6 {
@@ -451,7 +401,6 @@ propiedades flex.*/
   height: 350px;
   background: #91a3ab;
   border-radius: 0px 10px 10px 0px;
-
 }
 
 .hoja7 {
@@ -466,7 +415,6 @@ propiedades flex.*/
   height: 350px;
   background: #91a3ab;
   border-radius: 0px 10px 10px 0px;
-
 }
 
 .hoja8 {
@@ -481,7 +429,6 @@ propiedades flex.*/
   height: 350px;
   background: #91a3ab;
   border-radius: 0px 10px 10px 0px;
-
 }
 
 .hoja9 {
@@ -496,7 +443,6 @@ propiedades flex.*/
   height: 350px;
   background: #91a3ab;
   border-radius: 0px 10px 10px 0px;
-
 }
 
 .tapa-trasera {
@@ -510,18 +456,9 @@ propiedades flex.*/
   background: #4191b6;
   border-radius: 0px 10px 10px 0px;
   box-shadow: grey 5px -5px 50px;
-
 }
 
 /*=============== ESTILO CONTENEDOR-EJEMPLOS FIN ==============*/
-
-
-
-
-
-
-
-
 
 /*======== EJEMPLO DE LA PROPIEDAD GRID ======================*/
 .grid-container {
@@ -553,19 +490,7 @@ propiedades flex.*/
   grid-column: 2 / span 2;
 }
 
-
 /*======== EJEMPLO DE LA PROPIEDAD GRID FIN======================*/
-
-
-
-
-
-
-
-
-
-
-
 
 /*======== EJEMPLO DE LA PROPIEDAD GRID RESPONSIVE======================*/
 .grid-container2 {
@@ -591,23 +516,16 @@ propiedades flex.*/
 
 .grid-item2:first-child {
   background: red;
-
 }
 
 .grid-item2:nth-child(5) {
   background: blue;
-
 }
 
 /*=============FIN EJEMPLO DE LA PROPIEDAD GRID RESPONSIVE===============*/
 
-
-
-
-
 /*============== EJEMPLO ALINECIÓN DE UN GRID =================*/
 .grid-container3 {
-
   height: 700px;
   background: slategrey;
   padding: 10px;
@@ -621,7 +539,6 @@ propiedades flex.*/
   gap: 5px;
 }
 
-
 .grid-item3 {
   width: 100px;
   height: 100px;
@@ -632,8 +549,6 @@ propiedades flex.*/
 .grid-item3:first-child {
   background: red;
   order: 20;
-
-
 }
 
 .grid-item3:nth-child(5) {
@@ -652,23 +567,15 @@ propiedades flex.*/
 
 /*============== EJEMPLO ALINECIÓN DE UN GRID FIN =================*/
 
-
-
-
-
-
-
 /*======== EJEMPLO DE LA PROPIEDAD GRID-TEMPLATE-AREA ======================*/
 .grid-container4 {
   background: rgb(56, 135, 213);
   padding: 10px;
   display: grid;
   justify-content: center;
-  grid-template-columns:
-    [primera-columna] 150px [segunda-columna] 150px [tercera-columna] 150px;
+  grid-template-columns: [primera-columna] 150px [segunda-columna] 150px [tercera-columna] 150px;
 
-  grid-template-rows:
-    [primera-fila] 150px [segunda-fila] 150px [tercera-fila] 150px;
+  grid-template-rows: [primera-fila] 150px [segunda-fila] 150px [tercera-fila] 150px;
 
   gap: 5px;
 
@@ -680,53 +587,24 @@ propiedades flex.*/
 
 .grid-item4 {
   background: rgb(186, 221, 186);
-
 }
 
 .grid-item4:first-child {
   background: red;
   grid-column: primera-columna/tercera-columna;
-
 }
 
 .grid-item4:nth-child(2) {
   background: blue;
   grid-row: primera-fila/tercera-fila;
   grid-column: tercera-columna;
-
 }
 
 /*============= FIN EJEMPLO DE LA PROPIEDAD GRID-TEMPLATE-AREA ===============*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*CURSOR:  para cambiar el cursor al pasar por encima de algun elemento
 o al seleccionar o pulsar. Ver todas las opciones en la siguiente web:
 https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
-
-
 
 /*algunos ejemplos*/
 
@@ -738,7 +616,6 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 
 .contenedor-ejemplos-cursor div {
-
   width: 100px;
   height: 100px;
   border: 6px solid rgb(54, 32, 107);
@@ -748,66 +625,38 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 
 .caja-1 {
-
   cursor: pointer;
-
 }
 
 .caja-2 {
-
   cursor: e-resize;
-
 }
 
 .caja-3 {
-
   cursor: crosshair;
-
 }
 
 .caja-4 {
-
   cursor: copy;
-
 }
 
 .caja-5 {
-
   cursor: grab;
-
 }
 
 .caja-6 {
-
   cursor: help;
-
 }
 
 .caja-7 {
-
   cursor: move;
-
-
 }
 
 .caja-8 {
-
   cursor: zoom-in;
-
 }
 
 /*============= EJEMPLO CURSOR FIN==================*/
-
-
-
-
-
-
-
-
-
-
-
 
 /* ======================== EJEMPLO CAJAS DE COLORES ================*/
 
@@ -821,15 +670,10 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   width: 120px;
   height: 120px;
   display: block;
-
 }
-
-
 
 .caja1 {
   background: green;
-
-
 }
 
 .caja2 {
@@ -839,7 +683,6 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 	top, rigth, bottom y left además de z.indez*/
   top: 20px;
   left: 20px;
-
 }
 
 .caja3 {
@@ -852,9 +695,6 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 	encima de caja2. Se recomienda dar valores de al menos de 50 en 50, así si vamos
 	añadiendo elementos tenemos margen de ir colocandolos es la capa correspondiente.
 	*/
-
-
-
 }
 
 .caja4 {
@@ -867,22 +707,13 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   left: 20px;
   bottom: 20px;
   right: 20px;
-
 }
 
 /* ======================== EJEMPLO CAJAS DE COLORES FIN ================*/
 
-
-
-
-
-
-
-
 /*============= EJEMPLO DE LA PROPIEDAD FLOAT =====================*/
 
 .contenedor-sobre-mi {
-
   margin: 50px auto;
   border-radius: 10px;
   width: 60%;
@@ -890,9 +721,7 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
   background: ghostwhite;
   padding: 30px;
-
 }
-
 
 .contenedor-sobre-mi img {
   float: right;
@@ -902,12 +731,7 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*============= EJEMPLO DE LA PROPIEDAD FLOAT FIN =====================*/
 
-
-
-
-
 /*========= GALERÍA DE FOTOS CON GRID ============================*/
-
 
 .grid-contenedor-galeria {
   display: grid;
@@ -918,7 +742,6 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 
 .grid-contenedor-galeria img {
-
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -934,18 +757,11 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   grid-row: 3/5;
 }
 
-
 .grid-contenedor-galeria img:nth-child(7) {
-
   grid-row: span 3;
 }
 
 /*========= GALERÍA DE FOTOS CON GRID FIN ============================*/
-
-
-
-
-
 
 /*================ ESTRUCTURA WEB CON GRID ========================*/
 
@@ -961,8 +777,6 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   height: 70vh;
 }
-
-
 
 .item-grid {
   padding: 20px;
@@ -990,28 +804,21 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*================ ESTRUCTURA WEB CON GRID FIN ========================*/
 
-
-
-
-
-
 /*========= EJEMPLO RESPONSIVE DESIGN CON @MEDIA=============*/
 
 .div-responsive-design {
   background: rgb(15, 100, 100);
 }
 
-@media screen and (min-width:400px) AND (max-width: 600px) {
+@media screen and (min-width: 400px) AND (max-width: 600px) {
   .div-responsive-design {
     background: rgb(155, 10, 10);
   }
-
 }
 
-@media screen and (min-width:600px) AND (max-width: 700px) {
+@media screen and (min-width: 600px) AND (max-width: 700px) {
   .div-responsive-design {
     background: rgb(243, 103, 103);
-
   }
 
   .div-responsive-design p {
@@ -1019,10 +826,9 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   }
 }
 
-@media screen and (min-width:700px) AND (max-width: 800px) {
+@media screen and (min-width: 700px) AND (max-width: 800px) {
   .div-responsive-design {
     background: rgb(95, 33, 33);
-
   }
 
   .div-responsive-design p {
@@ -1034,10 +840,6 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*========= FIN EJEMPLO RESPONSIVE DESIGN CON @MEDIA=============*/
 
-
-
-
-
 /*==========EJEMPLO RESPONSIVE DESIGN CON @MEDIA + GRID =============*/
 .contenedor-reponsive-grid {
   height: 500px;
@@ -1045,35 +847,26 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 300px);
-
 }
-
-
 
 .header__responsive {
   background: pink;
-
 }
 
 .main__responsive {
   background: green;
-
 }
 
 .aside__responsive {
   background: violet;
-
 }
 
 .footer__responsive {
   background: orange;
-
-
 }
 
-@media screen and (min-width:400px) {
+@media screen and (min-width: 400px) {
   .contenedor-reponsive-grid {
-
     height: 90vh;
     padding: 5px;
     display: grid;
@@ -1084,42 +877,33 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   .contenedor-reponsive-grid div {
     padding: 20px;
     color: rgb(50, 67, 82);
-
   }
 
   .header__responsive {
     background: pink;
-    grid-column: 1/span 3;
+    grid-column: 1 / span 3;
   }
 
   .main__responsive {
     background: green;
 
-    grid-column: 1/span 2;
+    grid-column: 1 / span 2;
   }
 
   .aside__responsive {
     background: violet;
-
   }
 
   .footer__responsive {
     background: orange;
-    grid-column: 1/span 3;
-
+    grid-column: 1 / span 3;
   }
-
 }
-
 
 /*==========EJEMPLO RESPONSIVE DESIGN CON @MEDIA + GRID =============*/
 
-
-
-
-
 /*======== EJEMPLO TRANSITION =================*/
-.box-container-transition{
+.box-container-transition {
   padding: 20px;
   background: rgb(203, 129, 141);
   position: relative;
@@ -1134,10 +918,9 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   left: 0px;
   transition-property: left, background;
   transition-duration: 2s;
-
 }
 
-.box-container-transition:hover>.box {
+.box-container-transition:hover > .box {
   left: 80%;
   background: #297396;
 }
@@ -1167,11 +950,7 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   transition-timing-function: linear;
 }
 
-
-
 /*======== EJEMPLO TRANSITION FIN =================*/
-
-
 
 /*======== EJEMPLO ANIMATION ==========================*/
 .box-container-animation {
@@ -1188,7 +967,7 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   position: relative;
   animation-name: desplazamiento;
   animation-duration: 2s;
-  animation-iteration-count: infinite;/*valor infinite para que se repita siempre.*/
+  animation-iteration-count: infinite; /*valor infinite para que se repita siempre.*/
   animation-timing-function: ease;
   animation-direction: alternate;
   animation-fill-mode: forwards;
@@ -1212,11 +991,7 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   }
 }
 
-
 /*======== EJEMPLO ANIMATION FIN ==========================*/
-
-
-
 
 /*======== EJEMPLO ANIMATION Y CUBIC-BEZIER ==========================*/
 .box-container-animation-2 {
@@ -1233,8 +1008,13 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   position: relative;
   animation-name: desplazamiento;
   animation-duration: 2s;
-  animation-iteration-count: infinite;/*valor infinite para que se repita siempre.*/
-  animation-timing-function: cubic-bezier(.57,.72,.42,-0.3);/*Con cubic-bezier podemor modificar la animacios a nuestro
+  animation-iteration-count: infinite; /*valor infinite para que se repita siempre.*/
+  animation-timing-function: cubic-bezier(
+    0.57,
+    0.72,
+    0.42,
+    -0.3
+  ); /*Con cubic-bezier podemor modificar la animacios a nuestro
   gusto, podemor crear generarlos fácilmente en cubic-bezier.com*/
   animation-direction: alternate;
   animation-fill-mode: forwards;
@@ -1244,26 +1024,18 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*======== EJEMPLO ANIMATION Y CUBIC-BEZIER FIN ==========================*/
 
-
-
-
-
 /*=============== EJEMPLO TRANSFORM ========================*/
 
 .contenedor-recipiente-caja {
-background:#aabdc6;
-display: flex;
-width: 100%;
-height: 500px;
-border-radius: 5px;
+  background: #c7c7c8;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  border-radius: 5px;
 }
 .recipiente-caja {
- 
-    display: flex;
-   margin: auto;
-  
-  
-  
+  display: flex;
+  margin: auto;
 }
 .caja__transform {
   color: orange;
@@ -1271,16 +1043,23 @@ border-radius: 5px;
   position: relative;
   display: flex;
   margin: auto;
-  background:#297396;
+  background: #297396;
   width: 100px;
   height: 100px;
-  clip-path: polygon(0 26%, 100% 26%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  clip-path: polygon(
+    0 26%,
+    100% 26%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
 
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
-.listo  {
+.listo {
   margin: auto;
-
 }
 .adelante {
   margin: auto;
@@ -1303,52 +1082,55 @@ border-radius: 5px;
 }
 .volver-a-ejercicios {
   text-decoration: none;
-  color:orange ;
-  background:#297396;
+  color: orange;
+  background: #297396;
   border-radius: 5px;
   padding: 5px;
   margin: auto;
   display: none;
 }
 
-
-.recipiente-caja:hover>.caja__transform {
+.recipiente-caja:hover > .caja__transform {
+  transform: translateX(100px);
+  clip-path: polygon(
+    0% 20%,
+    60% 20%,
+    60% 0%,
+    100% 50%,
+    60% 100%,
+    60% 80%,
+    0% 80%
+  );
   
-  transform:  translateX(100px);
-  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%) ;
   animation-name: adelante;
-  animation-duration: .3s;
-animation-direction: alternate;
+  animation-duration: 0.3s;
+  animation-direction: alternate;
   animation-iteration-count: infinite;
- 
-  background: orange;
-  
- 
-
+  /* background-image: url(https://consejerodigital.com/wp-content/uploads/2019/11/go-lenguaje-programacion.jpg); */
+  background-image: url(https://cdn.domestika.org/c_limit,dpr_auto,f_auto,q_auto,w_820/v1444129479/content-items/001/418/265/goiniverd-original.jpg?1444129479);
+  background-size:110px ;
+  background-repeat: no-repeat;
+  /* background-position: -25px 20px; */
+background-position: 0px 0px;
 }
-.recipiente-caja:hover>.caja__transform b {
+.recipiente-caja:hover > .caja__transform b {
   color: orange;
-  
 }
-.recipiente-caja:hover>.caja__transform .adelante {
+.recipiente-caja:hover > .caja__transform .adelante {
   display: block;
   font-size: 30px;
-  color: #297396 ;
-
+  color: #297396;
 }
-.recipiente-caja:hover>.caja__transform .listo {
+.recipiente-caja:hover > .caja__transform .listo {
   display: none;
 }
-.recipiente-caja:hover>.recipiente-volver-a-ejercicios .volver-a-ejercicios {
+.recipiente-caja:hover > .recipiente-volver-a-ejercicios .volver-a-ejercicios {
   text-decoration: none;
-  color:orange ;
-  background:#297396;
+  color: orange;
+  background: #297396;
   border-radius: 5px;
   padding: 15px;
   margin: auto;
   display: block;
-  
 }
 /*=============== EJEMPLO TRANSFORM FIN ========================*/
-
-
