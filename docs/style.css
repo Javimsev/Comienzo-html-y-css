@@ -1271,10 +1271,11 @@ border-radius: 5px;
   position: relative;
   display: flex;
   margin: auto;
-  background: #5297b7;
+  background:#297396;
   width: 100px;
   height: 100px;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  clip-path: polygon(0 26%, 100% 26%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+
   transition: transform .2s;
 }
 .listo  {
@@ -1303,7 +1304,7 @@ border-radius: 5px;
 .volver-a-ejercicios {
   text-decoration: none;
   color:orange ;
-  background: #333;
+  background:#297396;
   border-radius: 5px;
   padding: 5px;
   margin: auto;
@@ -1319,6 +1320,8 @@ border-radius: 5px;
   animation-duration: .3s;
 animation-direction: alternate;
   animation-iteration-count: infinite;
+ 
+  background: orange;
   
  
 
@@ -1329,7 +1332,9 @@ animation-direction: alternate;
 }
 .recipiente-caja:hover>.caja__transform .adelante {
   display: block;
-  font-size: 40px;
+  font-size: 30px;
+  color: #297396 ;
+
 }
 .recipiente-caja:hover>.caja__transform .listo {
   display: none;
@@ -1337,7 +1342,7 @@ animation-direction: alternate;
 .recipiente-caja:hover>.recipiente-volver-a-ejercicios .volver-a-ejercicios {
   text-decoration: none;
   color:orange ;
-  background: #333;
+  background:#297396;
   border-radius: 5px;
   padding: 15px;
   margin: auto;
