@@ -10,8 +10,8 @@ body {
 
 /*================== ESTILOS CONTENEDOR =================*/
 .contenedor {
+  
   height: auto;
-  min-height: 500px;
   width: 90%;
   min-width: 250px;
   max-width: 1100px;
@@ -1134,3 +1134,36 @@ background-position: 0px 0px;
   display: block;
 }
 /*=============== EJEMPLO TRANSFORM FIN ========================*/
+
+
+
+
+/*============ EJEMPLO PROPIEDADES DE BACKGROUND ===========*/
+
+
+.caja__background {
+  background: pink;
+  background-image: url(https://www.creativosonline.org/wp-content/uploads/2014/07/0-fondos-escritorio-cataratas-1280.jpg);
+ display: flex;
+  height: 400px;
+ padding: 20px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin:padding-box ;
+  background-attachment: fixed;
+  margin: 20px 0px;
+ }
+ .relax {
+  color: orange;
+  margin: auto;
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+ }
+.lorem {
+  color: #7b888e;
+}
+
+
+
+/*============ EJEMPLO PROPIEDADES DE BACKGROUND ===========*/
