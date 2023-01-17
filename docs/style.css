@@ -10,7 +10,7 @@ body {
 
 /*================== ESTILOS CONTENEDOR =================*/
 .contenedor {
-  
+
   height: auto;
   width: 90%;
   min-width: 250px;
@@ -204,7 +204,7 @@ propiedades flex.*/
   padding: 14px;
 }
 
-.nav__li:hover > a {
+.nav__li:hover>a {
   color: orange;
 }
 
@@ -280,7 +280,7 @@ propiedades flex.*/
     text-decoration: none;
   }
 
-  .nav__responsive-ul:hover > .nav__li-container {
+  .nav__responsive-ul:hover>.nav__li-container {
     margin-top: 0px;
   }
 }
@@ -920,7 +920,7 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   transition-duration: 2s;
 }
 
-.box-container-transition:hover > .box {
+.box-container-transition:hover>.box {
   left: 80%;
   background: #297396;
 }
@@ -958,6 +958,7 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   background: rgb(203, 129, 141);
   position: relative;
 }
+
 .circulo {
   width: 50px;
   height: 50px;
@@ -967,23 +968,27 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   position: relative;
   animation-name: desplazamiento;
   animation-duration: 2s;
-  animation-iteration-count: infinite; /*valor infinite para que se repita siempre.*/
+  animation-iteration-count: infinite;
+  /*valor infinite para que se repita siempre.*/
   animation-timing-function: ease;
   animation-direction: alternate;
   animation-fill-mode: forwards;
   text-align: center;
   font-size: 40px;
 }
+
 @keyframes desplazamiento {
   0% {
     color: transparent;
     left: 0%;
   }
+
   50% {
     color: orange;
     left: 40%;
     background: #297396;
   }
+
   100% {
     color: transparent;
     left: 80%;
@@ -999,6 +1004,7 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   background: rgb(203, 129, 141);
   position: relative;
 }
+
 .circulo-2 {
   width: 50px;
   height: 50px;
@@ -1008,13 +1014,13 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   position: relative;
   animation-name: desplazamiento;
   animation-duration: 2s;
-  animation-iteration-count: infinite; /*valor infinite para que se repita siempre.*/
-  animation-timing-function: cubic-bezier(
-    0.57,
-    0.72,
-    0.42,
-    -0.3
-  ); /*Con cubic-bezier podemor modificar la animacios a nuestro
+  animation-iteration-count: infinite;
+  /*valor infinite para que se repita siempre.*/
+  animation-timing-function: cubic-bezier(0.57,
+      0.72,
+      0.42,
+      -0.3);
+  /*Con cubic-bezier podemor modificar la animacios a nuestro
   gusto, podemor crear generarlos fácilmente en cubic-bezier.com*/
   animation-direction: alternate;
   animation-fill-mode: forwards;
@@ -1033,10 +1039,12 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   height: 500px;
   border-radius: 5px;
 }
+
 .recipiente-caja {
   display: flex;
   margin: auto;
 }
+
 .caja__transform {
   color: orange;
   font-size: 20px;
@@ -1046,33 +1054,36 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   background: #297396;
   width: 100px;
   height: 100px;
-  clip-path: polygon(
-    0 26%,
-    100% 26%,
-    100% 75%,
-    75% 75%,
-    75% 100%,
-    50% 75%,
-    0% 75%
-  );
+  clip-path: polygon(0 26%,
+      100% 26%,
+      100% 75%,
+      75% 75%,
+      75% 100%,
+      50% 75%,
+      0% 75%);
 
   transition: transform 0.2s;
 }
+
 .listo {
   margin: auto;
 }
+
 .adelante {
   margin: auto;
   display: none;
 }
+
 @keyframes adelante {
   from {
     left: 0%;
   }
+
   to {
     left: 10%;
   }
 }
+
 .recipiente-volver-a-ejercicios {
   margin: auto;
   display: flex;
@@ -1080,6 +1091,7 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   width: 100px;
   height: 100px;
 }
+
 .volver-a-ejercicios {
   text-decoration: none;
   color: orange;
@@ -1090,41 +1102,43 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   display: none;
 }
 
-.recipiente-caja:hover > .caja__transform {
+.recipiente-caja:hover>.caja__transform {
   transform: translateX(100px);
-  clip-path: polygon(
-    0% 20%,
-    60% 20%,
-    60% 0%,
-    100% 50%,
-    60% 100%,
-    60% 80%,
-    0% 80%
-  );
-  
+  clip-path: polygon(0% 20%,
+      60% 20%,
+      60% 0%,
+      100% 50%,
+      60% 100%,
+      60% 80%,
+      0% 80%);
+
   animation-name: adelante;
   animation-duration: 0.3s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   /* background-image: url(https://consejerodigital.com/wp-content/uploads/2019/11/go-lenguaje-programacion.jpg); */
   background-image: url(https://cdn.domestika.org/c_limit,dpr_auto,f_auto,q_auto,w_820/v1444129479/content-items/001/418/265/goiniverd-original.jpg?1444129479);
-  background-size:110px ;
+  background-size: 110px;
   background-repeat: no-repeat;
   /* background-position: -25px 20px; */
-background-position: 0px 0px;
+  background-position: 0px 0px;
 }
-.recipiente-caja:hover > .caja__transform b {
+
+.recipiente-caja:hover>.caja__transform b {
   color: orange;
 }
-.recipiente-caja:hover > .caja__transform .adelante {
+
+.recipiente-caja:hover>.caja__transform .adelante {
   display: block;
   font-size: 30px;
   color: #297396;
 }
-.recipiente-caja:hover > .caja__transform .listo {
+
+.recipiente-caja:hover>.caja__transform .listo {
   display: none;
 }
-.recipiente-caja:hover > .recipiente-volver-a-ejercicios .volver-a-ejercicios {
+
+.recipiente-caja:hover>.recipiente-volver-a-ejercicios .volver-a-ejercicios {
   text-decoration: none;
   color: orange;
   background: #297396;
@@ -1133,6 +1147,7 @@ background-position: 0px 0px;
   margin: auto;
   display: block;
 }
+
 /*=============== EJEMPLO TRANSFORM FIN ========================*/
 
 
@@ -1144,22 +1159,24 @@ background-position: 0px 0px;
 .caja__background {
   background: pink;
   background-image: url(https://www.creativosonline.org/wp-content/uploads/2014/07/0-fondos-escritorio-cataratas-1280.jpg);
- display: flex;
+  display: flex;
   height: 400px;
- padding: 20px;
+  padding: 20px;
   box-sizing: border-box;
   background-size: cover;
   background-repeat: no-repeat;
-  background-origin:padding-box ;
+  background-origin: padding-box;
   background-attachment: fixed;
   margin: 20px 0px;
- }
- .relax {
+}
+
+.relax {
   color: orange;
   margin: auto;
   font-size: 50px;
   font-family: 'Courier New', Courier, monospace;
- }
+}
+
 .lorem {
   color: #7b888e;
 }
@@ -1167,3 +1184,61 @@ background-position: 0px 0px;
 
 
 /*============ EJEMPLO PROPIEDADES DE BACKGROUND ===========*/
+
+
+
+/*==================== EJEMPLO DE VARIABLES (COMMON PROPERTIES) GLOBALES Y LOCALES =================*/
+
+/*Para definir una variable:  --VarName: y aquí lo que quieres que haga*/
+/*para usarla: var(--VarName)*/
+
+
+
+:root {
+  /*Hemos definido una variable en :root (variable global), ahora podemos
+  usarla con cualquier elemento*/
+  --color-rojo: rgb(179, 46, 46);
+  --color-azul: rgb(26, 96, 146);
+
+}
+
+h6 {
+  /*Hemos definido una variable dentro de h6 (variable local), en este caso sólo 
+  podemos usar la variable dentro de los h6.*/
+  --color-verde: rgb(6, 134, 76);
+  --color-azul: rgb(120, 171, 207);
+  /*esta variable definida en dentro de h6,
+  tiene el mismo nombre que la definida en :root, pero son distintas porque esta sólo
+  se puede usar en h6, aunque comparte el mismo nombre son distintas*/
+  --color-rojo: rgb(179, 46, 46);
+  --font-size: 100px;
+}
+
+.contenedor__variables div {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+
+}
+
+.boxuno {
+  background: var(--color-rojo);
+  font-size: var(--font-size);
+  /*Aquí no funciona porque esta variable
+  se definió dentro de h6.*/
+}
+
+.boxdos {
+  background: var(--color-azul);
+}
+
+h6 {
+  background-color: var(--color-azul);
+  font-size: var(--font-size);
+  padding: 20px;
+}
+
+/*==================== EJEMPLO DE VARIABLES GLOBALES Y LOCALES FIN =================*/
