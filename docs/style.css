@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: rgb(238, 235, 235);
 }
@@ -1559,7 +1563,7 @@ scale-down:
   max-width: 1140px;
   align-self: center;
   filter: contrast(30);
-border-radius: 40px;
+  border-radius: 40px;
   background-color: rgb(223, 213, 213);
   margin: auto;
 
@@ -1613,3 +1617,74 @@ border-radius: 40px;
 
 
 /*============= EJEMPLO DE OBJET-FIT Y OBJET-POSITION MAS FILTER FIN ==============*/
+
+
+
+/*================ OTRAS PORPIEDADES CSS ===========================*/
+
+
+/*Propiedad DIRECTION:*/
+.contenedor__otras-propiedades {
+  border-radius: 5px;
+  background: #c3db82;
+  direction: rtl;
+  /*valores left to rigth (ltr) o rigth to left (rtl), 
+  cambia la direccion de las lineas. El valor por defecto es ltr.*/
+}
+
+/*Propiedad LETTER-SPACING: le da espaciado entre letra y letra.*/
+h3 {
+  letter-spacing: 20px;
+  font-size: 30px;
+  padding: 50px;
+}
+/*Propiedad LETTER-SPACING FIN*/
+
+/*Propiedad SCROLL-BEHAVIUR Y USER-SELECT*/
+#parrafo1 {
+  user-select: none;/* A este parrafo le hemos añadido la propiedad user-selectct:none,
+  ahora el usuario no podrá seleccionar ni copiar ninguna parte de este texto.*/
+  background: #6bacc9;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+#parrafo2 {
+  padding: 40px;
+  background: #7b888e;
+  border-radius: 5px;
+}
+
+#parrafo3 {
+  padding: 40px;
+  background: #c0c569;
+  border-radius: 5px;
+
+
+}
+
+.ir-a {
+  width: 120px;
+  padding: 2px;
+  border-radius: 5px;
+  text-decoration: none;
+  background:orange;
+  color: #297396 ;
+  text-align: center;
+  margin: 10px auto;
+  display: inline-block;
+}
+.scroll-inicio {
+  width: 120px;
+  padding: 2px;
+  border-radius: 5px;
+  color: orange;
+  text-decoration: none;
+  background: #297396;
+  text-align: center;
+  margin: 10px auto;
+  display: block;
+}
+/*Propiedad SCROLL-BEHAVIUR Y USER-SELECT FIN*/
+
+/*================ OTRAS PORPIEDADES CSS FIN ===========================*/
