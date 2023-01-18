@@ -1263,68 +1263,78 @@ scale-down:
 
 */
 .contenedor__perretes div {
-	margin:20px;
-	width: 250px;
-	height: 350px;
-	display: inline-block;
+  margin: 20px;
+  width: 250px;
+  height: 350px;
+  display: inline-block;
 
 }
-	.perrete1 img {
-	width: 100%;
-	box-sizing: border-box;
-	height: 100%;
-	border: 2px solid red;
-	object-fit: cover; /*con object-fit: cover; la img rellena el 
+
+.perrete1 img {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  border: 2px solid red;
+  object-fit: cover;
+  /*con object-fit: cover; la img rellena el 
 	tamaño de la perrete div sin estirar ni alargar la imagen. */
 
-	}
-	.perrete2 img {
-	width: 100%;
-	box-sizing: border-box;
-	height: 100%;
-	border: 2px solid red;
-	object-fit: contain;/* con object-fit: contain; la imagen se ajusta
+}
+
+.perrete2 img {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  border: 2px solid red;
+  object-fit: contain;
+  /* con object-fit: contain; la imagen se ajusta
 	lo máximo posible a la perrete pero sin deformar la img */
 }
 
 
-	.perrete3 {
-		width: 100px;
-		height: 100px;
-	}
-	.perrete3 img {
-	width: 100%;
-	box-sizing: border-box;
-	height: 100%;
-	border: 2px solid red;
-	object-fit: none;/* con object-fit: none; la imagen se muestra a 
+.perrete3 {
+  width: 100px;
+  height: 100px;
+}
+
+.perrete3 img {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  border: 2px solid red;
+  object-fit: none;
+  /* con object-fit: none; la imagen se muestra a 
 	su tamaño real.*/
 }
 
-	.perrete4 {
-		width: 200px;
-	}
-	.perrete4 img {
-	width: 100%;
-	box-sizing: border-box;
-	height: 100%;
-	border: 2px solid red;
-	object-fit: fill; /*con object-fit: fill; la imagen de adapta al 
+.perrete4 {
+  width: 200px;
+}
+
+.perrete4 img {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  border: 2px solid red;
+  object-fit: fill;
+  /*con object-fit: fill; la imagen de adapta al 
 	tamaño de la la perrete sin respetar las proporciones de la imagen, 
 	se alarga o estrecha si es necesario. */
 
 }
 
-	.perrete5 {
-		width: 200px;
-		height:100px;
-	}
-	.perrete5 img {
-	width: 100%;
-	box-sizing: border-box;
-	height: 100%;
-	border: 2px solid red;
-	object-fit: scale-down; /*con object-fit: scale-down; si la perrete es
+.perrete5 {
+  width: 200px;
+  height: 100px;
+}
+
+.perrete5 img {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  border: 2px solid red;
+  object-fit: scale-down;
+  /*con object-fit: scale-down; si la perrete es
 	mayor en dimensiones al tamñao de img, la imagen se muestra a tamaño
 	real, si la perrete es mas pequeña la img se adapta mantenido la 
 	proporcion.*/
@@ -1333,21 +1343,22 @@ scale-down:
 
 
 
- /*OBJET-POSITION: con esta propiedad podemos darle posiones; top,
+/*OBJET-POSITION: con esta propiedad podemos darle posiones; top,
  left,rigth, bottom y tambien pordemos moverla con px,em,%, etc.*/
 
- .perrete6 {
-		width: 300px;
-		height:450px;
-		display: block;
-	}
-	.perrete6 img {
-	width: 100%;
-	box-sizing: border-box;
-	height: 100%;
-	border: 5px solid blue;
-	object-fit: cover;
-	object-position: left;
+.perrete6 {
+  width: 300px;
+  height: 450px;
+  display: block;
+}
+
+.perrete6 img {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  border: 5px solid blue;
+  object-fit: cover;
+  object-position: left;
 }
 
 
@@ -1361,73 +1372,88 @@ scale-down:
 
 
 .contenedor__perretes__filter div {
-	margin:20px;
-	width: 250px;
-	height: 350px;
-	display: inline-block;
+  margin: 20px;
+  width: 250px;
+  height: 350px;
+  display: inline-block;
 
 }
+
 .perrete__filter1 img {
-    filter: blur(3px);/*desenfoca*/
-	width: 100%;
-	box-sizing: border-box;
-	height: 100%;
-	border: 2px solid red;
-	object-fit: cover; /*con object-fit: cover; la img rellena el 
+  filter: blur(3px);
+  /*desenfoca*/
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  border: 2px solid red;
+  object-fit: cover;
+  /*con object-fit: cover; la img rellena el 
 	tamaño de la perrete div sin estirar ni alargar la imagen. */
 
-	}
-	.perrete__filter2 img {
-    filter: brightness(3);/*añade brillo*/
-    width: 100%;
-	box-sizing: border-box;
-	height: 100%;
-	border: 2px solid red;
-	object-fit: contain;/* con object-fit: contain; la imagen se ajusta
+}
+
+.perrete__filter2 img {
+  filter: brightness(3);
+  /*añade brillo*/
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  border: 2px solid red;
+  object-fit: contain;
+  /* con object-fit: contain; la imagen se ajusta
 	lo máximo posible a la perrete pero sin deformar la img */
 }
 
 
-	.perrete__filter3 {
-    filter: contrast(3);/*contraste*/
-		width: 100px;
-		height: 100px;
-	}
-	.perrete__filter3 img {
-	width: 100%;
-	box-sizing: border-box;
-	height: 100%;
-	border: 2px solid red;
-	object-fit: none;/* con object-fit: none; la imagen se muestra a 
+.perrete__filter3 {
+  filter: contrast(3);
+  /*contraste*/
+  width: 100px;
+  height: 100px;
+}
+
+.perrete__filter3 img {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  border: 2px solid red;
+  object-fit: none;
+  /* con object-fit: none; la imagen se muestra a 
 	su tamaño real.*/
 }
 
-	.perrete__filter4 {
-    filter: hue-rotate(200deg);/*gira la gama de colores de la imagen*/
-		width: 200px;
-	}
-	.perrete__filter4 img {
-	width: 100%;
-	box-sizing: border-box;
-	height: 100%;
-	border: 2px solid red;
-	object-fit: fill; /*con object-fit: fill; la imagen de adapta al 
+.perrete__filter4 {
+  filter: hue-rotate(200deg);
+  /*gira la gama de colores de la imagen*/
+  width: 200px;
+}
+
+.perrete__filter4 img {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  border: 2px solid red;
+  object-fit: fill;
+  /*con object-fit: fill; la imagen de adapta al 
 	tamaño de la la perrete sin respetar las proporciones de la imagen, 
 	se alarga o estrecha si es necesario. */
 
 }
 
-	.perrete__filter5 {
-    filter: grayscale(0.8);/* scala de 0 a 1.*/
-		width: 200px;
-		height:100px;
-	}
-	.perrete__filter5 img {
-	width: 100%;
-	box-sizing: border-box;
-	height: 100%;
-	border: 2px solid red;
-	object-fit: scale-down; /*con object-fit: scale-down; si la perrete es
+.perrete__filter5 {
+  filter: grayscale(0.8);
+  /* scala de 0 a 1.*/
+  width: 200px;
+  height: 100px;
+}
+
+.perrete__filter5 img {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  border: 2px solid red;
+  object-fit: scale-down;
+  /*con object-fit: scale-down; si la perrete es
 	mayor en dimensiones al tamñao de img, la imagen se muestra a tamaño
 	real, si la perrete es mas pequeña la img se adapta mantenido la 
 	proporcion.*/
@@ -1436,71 +1462,83 @@ scale-down:
 
 
 
- /*OBJET-POSITION: con esta propiedad podemos darle posiones; top,
+/*OBJET-POSITION: con esta propiedad podemos darle posiones; top,
  left,rigth, bottom y tambien pordemos moverla con px,em,%, etc.*/
 
- .perrete__filter6 {
-  filter: invert(100%);/*invierte la gama de colores. (escala 0% a 100%)*/
-		width: 300px;
-		height:450px;
-		display: block;
-	}
-	.perrete__filter6 img {
-	width: 100%;
-	box-sizing: border-box;
-	height: 100%;
-	border: 5px solid blue;
-	object-fit: cover;
-	object-position: left;
+.perrete__filter6 {
+  filter: invert(100%);
+  /*invierte la gama de colores. (escala 0% a 100%)*/
+  width: 300px;
+  height: 450px;
+  display: block;
 }
+
+.perrete__filter6 img {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  border: 5px solid blue;
+  object-fit: cover;
+  object-position: left;
+}
+
 .perrete__filter7 {
-  filter: opacity(30%);/*opacidad*/
-width: 300px;
-height:450px;
-display: block;
+  filter: opacity(30%);
+  /*opacidad*/
+  width: 300px;
+  height: 450px;
+  display: block;
 }
+
 .perrete__filter7 img {
-width: 100%;
-box-sizing: border-box;
-height: 100%;
-border: 5px solid blue;
-object-fit: cover;
-object-position: left;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  border: 5px solid blue;
+  object-fit: cover;
+  object-position: left;
 }
+
 .perrete__filter8 {
-  filter: saturate(15%);/*Saturación de imagen*/
-width: 300px;
-height:450px;
-display: block;
+  filter: saturate(15%);
+  /*Saturación de imagen*/
+  width: 300px;
+  height: 450px;
+  display: block;
 }
+
 .perrete__filter8 img {
-width: 100%;
-box-sizing: border-box;
-height: 100%;
-border: 5px solid blue;
-object-fit: cover;
-object-position: left;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  border: 5px solid blue;
+  object-fit: cover;
+  object-position: left;
 }
 
 .perrete__filter9 {
-  filter: sepia(1);/*Le da tono sepia. (escala de 0 a 1)*/
-width: 300px;
-height:450px;
-display: block;
-}
-.perrete__filter9 img {
-width: 100%;
-box-sizing: border-box;
-height: 100%;
-border: 5px solid blue;
-object-fit: cover;
-object-position: left;
-}
-.perrete__filter10 {
+  filter: sepia(1);
+  /*Le da tono sepia. (escala de 0 a 1)*/
   width: 300px;
-  height:450px;
+  height: 450px;
   display: block;
 }
+
+.perrete__filter9 img {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  border: 5px solid blue;
+  object-fit: cover;
+  object-position: left;
+}
+
+.perrete__filter10 {
+  width: 300px;
+  height: 450px;
+  display: block;
+}
+
 .perrete__filter10 img {
   width: 100%;
   box-sizing: border-box;
@@ -1508,8 +1546,70 @@ object-position: left;
   border: 5px solid blue;
   object-fit: cover;
   object-position: left;
-  filter: drop-shadow(10px 10px 5px black);/*Con drop-shadow podemos dar sombra al dibujo
+  filter: drop-shadow(10px 10px 5px black);
+  /*Con drop-shadow podemos dar sombra al dibujo
   de imagenes .svg (transparentes), en este caso vemos sombra en todo el logo de react.*/
-  box-shadow: 30px 30px 100px blue;/*no aplica como drop-shadow, se aplica a la dimensión de la caja. Podemos combinar box-shadow con filte:drop-shadow.*/
+  box-shadow: 30px 30px 100px blue;
+  /*no aplica como drop-shadow, se aplica a la dimensión de la caja. Podemos combinar box-shadow con filte:drop-shadow.*/
 }
+
+.contenedor__animacion {
+  width: 90%;
+  min-width: 250px;
+  max-width: 1140px;
+  align-self: center;
+  filter: contrast(30);
+border-radius: 40px;
+  background-color: rgb(223, 213, 213);
+  margin: auto;
+
+
+
+}
+
+.contenedor__animacion div {
+
+  filter: blur(20px);
+  position: relative;
+  margin: 50px;
+  display: inline-block;
+  border-radius: 50%;
+
+}
+
+.bola1 {
+  width: 100px;
+  height: 100px;
+  animation-name: transladar;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  /*valor infinite para que se repita siempre.*/
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  background: red;
+}
+
+.bola2 {
+
+  width: 100px;
+  height: 100px;
+  left: 25%;
+  background: red;
+}
+
+@keyframes transladar {
+  0% {
+    left: 20%;
+  }
+
+  100% {
+    left: 45%;
+
+  }
+}
+
+
+
+
 /*============= EJEMPLO DE OBJET-FIT Y OBJET-POSITION MAS FILTER FIN ==============*/
