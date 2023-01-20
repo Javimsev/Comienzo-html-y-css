@@ -11,8 +11,10 @@ html {
 body {
   background: rgb(238, 235, 235);
   
- 
-}
+ }
+
+
+
 
 /*================== ESTILOS CONTENEDOR =================*/
 .contenedor {
@@ -69,6 +71,23 @@ p {
 }
 
 /*================== ESTILOS CONTENEDOR FIN =================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============EJEMPLO FLEX============================================*/
+
 
 /*PROPIEDAD FLEX: Si tenemos por ejemplo un div y le damos display:flex;
 el div sique actuando como en display block, la diferencia es que ahora
@@ -160,6 +179,19 @@ propiedades flex.*/
 
 /*=========== EJEMPLO PROPIEDAD FLEX FIN====================*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*===================== BOTON VOLVER A EJERCICIOS ===========================*/
 
 .boton {
@@ -191,16 +223,67 @@ propiedades flex.*/
 
 /*===================== BOTON VOLVER A EJERCICIOS FIN ===========================*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*============== MENU PRINCIPAL Y RESPONSIVE ============================*/
+.contenedor-contenedor-nav-principal-y-logo{
+  background:#297396;
+  display: flex;
+width: 100%;
+justify-content: center;
+}
+.contenedor-nav-principal-y-logo {
+  background: pink;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1140px;
+  
+
+  
+}
 .nav {
+  position: relative;
+  width: 90%;
+  display: flex;
   background: #297396;
-  text-align: center;
+  justify-content: right;
+}
+.logo-container{
+  display: flex;
+  position: relative;
+  justify-content: left;
+  font-size: 10px;
+  width: 10%;
+  background: #297396;
+}
+.logo {
+  position: relative;
+  align-self: center;
+  margin-left: 40px;
+  
+  color: orange;
+  font-size: 30px;
+  display: inline-block;
+
 }
 
 .nav__li {
   display: inline-block;
   padding: 15px;
   color: white;
+  margin-right: 20px ;
 }
 
 .nav__li a {
@@ -218,6 +301,8 @@ propiedades flex.*/
 }
 
 /*fin menu*/
+
+
 /*menu responsive*/
 .nav__responsive-button {
   padding: 15px 50px;
@@ -231,7 +316,13 @@ propiedades flex.*/
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+  body{
+    min-width: 300px;
+  }
+  .logo-container{
+    width: 30%;
+  }
   .nav__ul {
     display: none;
   }
@@ -288,9 +379,20 @@ propiedades flex.*/
   .nav__responsive-ul:hover>.nav__li-container {
     margin-top: 0px;
   }
+  
 }
 
-/*============== MENU PRINCIPAL FIN============================*/
+/*============== MENU PRINCIPAL Y RESPONSIVE FIN============================*/
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -507,6 +609,16 @@ propiedades flex.*/
 
 
 
+
+
+
+
+
+
+
+
+
+
 /*================ LIBRO EJEMPLOS NIVEL MEDIO ========================*/
 .libro__nivel-medio {
  
@@ -685,6 +797,19 @@ propiedades flex.*/
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*======== EJEMPLO DE LA PROPIEDAD GRID ======================*/
 .grid-container {
   background: slategrey;
@@ -717,6 +842,26 @@ propiedades flex.*/
 
 /*======== EJEMPLO DE LA PROPIEDAD GRID FIN======================*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*======== EJEMPLO DE LA PROPIEDAD GRID RESPONSIVE======================*/
 .grid-container2 {
   background: slategrey;
@@ -748,6 +893,23 @@ propiedades flex.*/
 }
 
 /*=============FIN EJEMPLO DE LA PROPIEDAD GRID RESPONSIVE===============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*============== EJEMPLO ALINECIÓN DE UN GRID =================*/
 .grid-container3 {
@@ -831,6 +993,15 @@ propiedades flex.*/
 
 
 
+
+
+
+
+
+
+
+
+
 /*CURSOR:  para cambiar el cursor al pasar por encima de algun elemento
 o al seleccionar o pulsar. Ver todas las opciones en la siguiente web:
 https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
@@ -887,6 +1058,17 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*============= EJEMPLO CURSOR FIN==================*/
 
+
+
+
+
+
+
+
+
+
+
+
 /* ======================== EJEMPLO CAJAS DE COLORES ================*/
 
 .contenedor-cajas {
@@ -940,6 +1122,20 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /* ======================== EJEMPLO CAJAS DE COLORES FIN ================*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*============= EJEMPLO DE LA PROPIEDAD FLOAT =====================*/
 
 .contenedor-sobre-mi {
@@ -959,6 +1155,20 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 
 /*============= EJEMPLO DE LA PROPIEDAD FLOAT FIN =====================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*========= GALERÍA DE FOTOS CON GRID ============================*/
 
@@ -991,6 +1201,24 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 
 /*========= GALERÍA DE FOTOS CON GRID FIN ============================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*================ ESTRUCTURA WEB CON GRID ========================*/
 
@@ -1033,6 +1261,21 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*================ ESTRUCTURA WEB CON GRID FIN ========================*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*========= EJEMPLO RESPONSIVE DESIGN CON @MEDIA=============*/
 
 .div-responsive-design {
@@ -1068,6 +1311,23 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 
 /*========= FIN EJEMPLO RESPONSIVE DESIGN CON @MEDIA=============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*==========EJEMPLO RESPONSIVE DESIGN CON @MEDIA + GRID =============*/
 .contenedor-reponsive-grid {
@@ -1131,6 +1391,25 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*==========EJEMPLO RESPONSIVE DESIGN CON @MEDIA + GRID =============*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*======== EJEMPLO TRANSITION =================*/
 .box-container-transition {
   padding: 20px;
@@ -1181,6 +1460,30 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*======== EJEMPLO TRANSITION FIN =================*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*======== EJEMPLO ANIMATION ==========================*/
 .box-container-animation {
   padding: 20px;
@@ -1227,6 +1530,26 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*======== EJEMPLO ANIMATION FIN ==========================*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*======== EJEMPLO ANIMATION Y CUBIC-BEZIER ==========================*/
 .box-container-animation-2 {
   padding: 20px;
@@ -1258,6 +1581,25 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 
 /*======== EJEMPLO ANIMATION Y CUBIC-BEZIER FIN ==========================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*=============== EJEMPLO TRANSFORM ========================*/
 
@@ -1382,6 +1724,21 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*============ EJEMPLO PROPIEDADES DE BACKGROUND ===========*/
 
 
@@ -1413,6 +1770,22 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 
 /*============ EJEMPLO PROPIEDADES DE BACKGROUND ===========*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1471,6 +1844,25 @@ h6 {
 }
 
 /*==================== EJEMPLO DE VARIABLES GLOBALES Y LOCALES FIN =================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1597,6 +1989,21 @@ scale-down:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*============= EJEMPLO DE OBJET-FIT Y OBJET-POSITION MAS FILTER ==============*/
 
 
@@ -1687,8 +2094,6 @@ scale-down:
 	real, si la perrete es mas pequeña la img se adapta mantenido la 
 	proporcion.*/
 }
-
-
 
 
 /*OBJET-POSITION: con esta propiedad podemos darle posiones; top,
@@ -1838,10 +2243,25 @@ scale-down:
   }
 }
 
-
-
-
 /*============= EJEMPLO DE OBJET-FIT Y OBJET-POSITION MAS FILTER FIN ==============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1917,6 +2337,17 @@ h3 {
 /*Propiedad SCROLL-BEHAVIUR Y USER-SELECT FIN*/
 
 /*================ OTRAS PORPIEDADES CSS FIN ===========================*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
