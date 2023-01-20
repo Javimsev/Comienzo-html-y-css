@@ -291,10 +291,49 @@ propiedades flex.*/
 
 /*============== MENU PRINCIPAL FIN============================*/
 
-/*=============== ESTILO CONTENEDOR-EJEMPLOS ==============*/
+
+
+
+
+
+/*=============== ESTILO CONTENEDOR-EJEMPLOS PRINCIPIANTE ==============*/
+
+.estanteria-libros {
+  
+  border: 20px red;
+  height: 60vh;  
+  display: grid;
+  /* grid-template-areas: 'libro1 libro2'; */
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 500px 500px;
+  justify-items: center;
+  
+
+
+}
+  @media screen  and (max-width:700px) {
+  .estanteria-libros {
+   grid-template-columns: 100%; 
+  }
+  }
+
+.titulo-libro{
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 20px;
+}
+.titulo-libro-nivel-medio {
+    color:#333;
+    font-size: 20px;
+}
+
+
+
 
 .libro {
-  margin-top: 0px;
+  width: 320px;
+  margin: 0px ;
+  grid-area: "libro1";
 }
 
 .contenedor-ejemplos {
@@ -303,7 +342,7 @@ propiedades flex.*/
   padding: 20px;
   margin-top: 35px;
   width: 250px;
-  height: 350px;
+  height: 390px;
   background: #6bacc9;
   border-radius: 0px 10px 10px 0px;
   z-index: 1;
@@ -332,7 +371,7 @@ propiedades flex.*/
   border-left: 15px dotted rgb(4, 75, 155);
   padding: 20px;
   width: 250px;
-  height: 350px;
+  height: 390px;
   background: #91a3ab;
   border-radius: 0px 10px 10px 0px;
 }
@@ -346,7 +385,7 @@ propiedades flex.*/
   border-left: 15px dotted rgb(4, 75, 155);
   padding: 20px;
   width: 250px;
-  height: 350px;
+  height: 390px;
   background: #91a3ab;
   border-radius: 0px 10px 10px 0px;
 }
@@ -360,7 +399,7 @@ propiedades flex.*/
   border-left: 15px dotted rgb(4, 75, 155);
   padding: 20px;
   width: 250px;
-  height: 350px;
+  height: 390px;
   background: #91a3ab;
   border-radius: 0px 10px 10px 0px;
 }
@@ -374,7 +413,7 @@ propiedades flex.*/
   border-left: 15px dotted rgb(4, 75, 155);
   padding: 20px;
   width: 250px;
-  height: 350px;
+  height: 390px;
   background: #91a3ab;
   border-radius: 0px 10px 10px 0px;
 }
@@ -388,7 +427,7 @@ propiedades flex.*/
   border-left: 15px dotted rgb(4, 75, 155);
   padding: 20px;
   width: 250px;
-  height: 350px;
+  height: 390px;
   background: #91a3ab;
   border-radius: 0px 10px 10px 0px;
 }
@@ -402,7 +441,7 @@ propiedades flex.*/
   border-left: 15px dotted rgb(4, 75, 155);
   padding: 20px;
   width: 250px;
-  height: 350px;
+  height: 390px;
   background: #91a3ab;
   border-radius: 0px 10px 10px 0px;
 }
@@ -413,10 +452,10 @@ propiedades flex.*/
   border-right: 1px solid white;
   margin-top: 30px;
   margin-left: 4px;
-  border-left: 15px dotted rgb(4, 75, 155);
+  border-left: 15px dotted rgb(140, 155, 4);
   padding: 20px;
   width: 250px;
-  height: 350px;
+  height: 390px;
   background: #91a3ab;
   border-radius: 0px 10px 10px 0px;
 }
@@ -430,7 +469,7 @@ propiedades flex.*/
   border-left: 15px dotted rgb(4, 75, 155);
   padding: 20px;
   width: 250px;
-  height: 350px;
+  height: 390px;
   background: #91a3ab;
   border-radius: 0px 10px 10px 0px;
 }
@@ -444,7 +483,7 @@ propiedades flex.*/
   border-left: 15px dotted rgb(4, 75, 155);
   padding: 20px;
   width: 250px;
-  height: 350px;
+  height: 390px;
   background: #91a3ab;
   border-radius: 0px 10px 10px 0px;
 }
@@ -456,13 +495,192 @@ propiedades flex.*/
   border-left: 15px dotted rgb(4, 75, 155);
   padding: 20px;
   width: 250px;
-  height: 350px;
+  height: 390px;
   background: #4191b6;
   border-radius: 0px 10px 10px 0px;
   box-shadow: grey 5px -5px 50px;
 }
 
-/*=============== ESTILO CONTENEDOR-EJEMPLOS FIN ==============*/
+/*=============== ESTILO CONTENEDOR-EJEMPLOS PRINCIPIANTE FIN ==============*/
+
+
+
+/*================ LIBRO EJEMPLOS NIVEL MEDIO ========================*/
+.libro__nivel-medio {
+  width: 320px;
+  margin: 0px;
+  grid-area: "libro2";
+}
+
+.contenedor__ejemplos-nivel-medio {
+  position: absolute;
+  border-left: 15px dotted rgb(2, 70, 20);
+  padding: 20px;
+  margin-top: 35px;
+  width: 250px;
+  height: 390px;
+  background: #36806c;
+  border-radius: 0px 10px 10px 0px;
+  z-index: 1;
+}
+
+.contenedor__ejemplos-nivel-medio a {
+  display: block;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.contenedor__ejemplos-nivel-medio a:hover {
+  color: #fff;
+}
+
+.contenedor__ejemplos-nivel-medio a:visited {
+  color: orange;
+}
+
+.hoja1 {
+  position: absolute;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  margin-top: 18px;
+  margin-left: 16px;
+  border-left: 15px dotted rgb(2, 70, 20);
+  padding: 20px;
+  width: 250px;
+  height: 390px;
+  background: #91a3ab;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.hoja2 {
+  position: absolute;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  margin-top: 20px;
+  margin-left: 14px;
+  border-left: 15px dotted rgb(2, 70, 20);
+  padding: 20px;
+  width: 250px;
+  height: 390px;
+  background: #91a3ab;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.hoja3 {
+  position: absolute;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  margin-top: 22px;
+  margin-left: 12px;
+  border-left: 15px dotted rgb(2, 70, 20);
+  padding: 20px;
+  width: 250px;
+  height: 390px;
+  background: #91a3ab;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.hoja4 {
+  position: absolute;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  margin-top: 24px;
+  margin-left: 10px;
+  border-left: 15px dotted rgb(2, 70, 20);
+  padding: 20px;
+  width: 250px;
+  height: 390px;
+  background: #91a3ab;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.hoja5 {
+  position: absolute;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  margin-top: 26px;
+  margin-left: 8px;
+  border-left: 15px dotted rgb(2, 70, 20);
+  padding: 20px;
+  width: 250px;
+  height: 390px;
+  background: #91a3ab;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.hoja6 {
+  position: absolute;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  margin-top: 28px;
+  margin-left: 6px;
+  border-left: 15px dotted rgb(2, 70, 20);
+  padding: 20px;
+  width: 250px;
+  height: 390px;
+  background: #91a3ab;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.hoja7 {
+  position: absolute;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  margin-top: 30px;
+  margin-left: 4px;
+  border-left: 15px dotted rgb(2, 70, 20);
+  padding: 20px;
+  width: 250px;
+  height: 390px;
+  background: #91a3ab;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.hoja8 {
+  position: absolute;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  margin-top: 32px;
+  margin-left: 2px;
+  border-left: 15px dotted rgb(2, 70, 20);
+  padding: 20px;
+  width: 250px;
+  height: 390px;
+  background: #91a3ab;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.hoja9 {
+  position: absolute;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  margin-top: 34px;
+  margin-left: 0px;
+  border-left: 15px dotted rgb(2, 70, 20);
+  padding: 20px;
+  width: 250px;
+  height: 390px;
+  background: #91a3ab;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.tapa-trasera__nivel-medio {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 19px;
+  border-left: 15px dotted rgb(2, 70, 20);
+  padding: 20px;
+  width: 250px;
+  height: 390px;
+  background:#26594b;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: grey 5px -5px 50px;
+}
+/*========= lIBRO EJEMPLOS NIVEL MEDIO FIN ======================*/
+
+
+
+
 
 /*======== EJEMPLO DE LA PROPIEDAD GRID ======================*/
 .grid-container {
@@ -605,6 +823,10 @@ propiedades flex.*/
 }
 
 /*============= FIN EJEMPLO DE LA PROPIEDAD GRID-TEMPLATE-AREA ===============*/
+
+
+
+
 
 /*CURSOR:  para cambiar el cursor al pasar por encima de algun elemento
 o al seleccionar o pulsar. Ver todas las opciones en la siguiente web:
@@ -1638,11 +1860,13 @@ h3 {
   font-size: 30px;
   padding: 50px;
 }
+
 /*Propiedad LETTER-SPACING FIN*/
 
 /*Propiedad SCROLL-BEHAVIUR Y USER-SELECT*/
 #parrafo1 {
-  user-select: none;/* A este parrafo le hemos añadido la propiedad user-selectct:none,
+  user-select: none;
+  /* A este parrafo le hemos añadido la propiedad user-selectct:none,
   ahora el usuario no podrá seleccionar ni copiar ninguna parte de este texto.*/
   background: #6bacc9;
   padding: 40px;
@@ -1668,12 +1892,13 @@ h3 {
   padding: 2px;
   border-radius: 5px;
   text-decoration: none;
-  background:orange;
-  color: #297396 ;
+  background: orange;
+  color: #297396;
   text-align: center;
   margin: 10px auto;
   display: inline-block;
 }
+
 .scroll-inicio {
   width: 120px;
   padding: 2px;
@@ -1685,6 +1910,125 @@ h3 {
   margin: 10px auto;
   display: block;
 }
+
 /*Propiedad SCROLL-BEHAVIUR Y USER-SELECT FIN*/
 
 /*================ OTRAS PORPIEDADES CSS FIN ===========================*/
+
+
+
+
+
+
+/*========== EJEMPLO PSEUDO-ELEMENTOS ========================*/
+
+
+/*PSEUDO-ELEMENTOS: Son elementos que no son elementos...es decir,
+los pseudo-elemendo no forman parte del DOM, pero si podemos ver 
+cambios visuales (como OUTLINE).
+
+Estos son algunos pseudo-elementos:
+
+::first-line: (no funciona en inline)
+
+::first-letter: (no funciona en inline)
+
+::placeholder: 	Para cambiar la los parametros de un input
+tipo text antes de empezar a escribir.
+
+::after: 
+
+::before:
+
+::selection: para cambiar los parametros del  
+texto seleccionado en un input type text.
+
+
+ */
+
+
+/*Ejemplo*/
+
+.text__first-line-first-letter::first-line {
+  /*El pseudo-elemento first-line y first-letter 
+ formman parte del DOM*/
+  color: chocolate;
+}
+
+.text__first-line-first-letter::first-letter {
+  color: #297396;
+  font-size: 50px;
+}
+
+
+/*Ejemplo */
+form {
+  margin: 50px auto;
+  display: block;
+  border-radius: 15px;
+  background: gray;
+  padding: 20px;
+  width: 300px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+
+
+}
+
+input::placeholder {
+  /* con ::placeholder pordemos cambiar
+algunas propiedades de lo que se muestra en casilla antes
+de empezar a escribir */
+  
+  color: #297396;
+  background: #c0c569;
+  
+
+}
+
+input::selection {
+  /*con ::selection podemos cambiar algunas 
+propiedades cuando ya hemos escrito algo y luego lo
+ seleccionamos.*/
+  color: whitesmoke;
+  background: green;
+}
+
+
+/*Ejemplo: En html tenemos un <p> que contiene la letra "a",
+ y en css podemos añadirle texto antes y después 
+ con before y after, tenemos que poner usar la propiedad content:"aquí el texto"*/
+
+.ejemplo__before-y-after{
+  margin: 50px auto;
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+.ejemplo__before-y-after p::before {
+  content: "me suscribí";
+  background: green;
+  color: orange;
+  border-radius: 20px;
+  padding: 10px;
+  letter-spacing: 5px;
+}
+
+.ejemplo__before-y-after p::after {
+  content: "almasindomitas";
+  color: pink;
+  background: brown;
+  padding: 10px;
+  border-radius: 20px;
+  letter-spacing: 5px;
+}
+
+/*========== EJEMPLO PSEUDO-ELEMENTOS FIN ========================*/
