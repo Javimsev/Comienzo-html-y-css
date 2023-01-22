@@ -341,11 +341,12 @@ justify-content: center;
     text-align: left;
     position: absolute;
     display: block;
-    width: 60%;
+    width: 100%;
     margin-top: -270px;
     transition: 0.2s;
+    
   }
-
+  
   .nav__responsive-button-container {
     position: relative;
     background: #297396;
@@ -354,12 +355,17 @@ justify-content: center;
     width: 100%;
     box-sizing: border-box;
     z-index: 1;
+    
   }
-
+  
   .nav__responsive-li {
+    
     position: relative;
     padding: 10px;
-    background: #6bacc9;
+    background: #297396;
+    box-shadow: -5px -5px 10px -10px rgb(106, 153, 182);
+   
+    
   }
 
   .nav__responsive-li i {
@@ -378,6 +384,7 @@ justify-content: center;
 
   .nav__responsive-ul:hover>.nav__li-container {
     margin-top: 0px;
+    
   }
   
 }
