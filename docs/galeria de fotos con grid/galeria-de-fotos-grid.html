@@ -1,62 +1,90 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="../style.css" />
-	<script src="https://kit.fontawesome.com/011cc9ac28.js" crossorigin="anonymous"></script>
-	<title>Ejemplo cursor</title>
-  </head>
-  <body>
-	<nav class="nav">
-		<ul class="nav__ul">
-			<li class="nav__li"></i><a href="../index.html"><i class="fas fa-home"></i>Inicio</a></li>
-			<li class="nav__li"><a href="../sobre-mi.html" class="nav__item"><i class="fa-solid fa-circle-user"></i>Sobre mi</a></li>
-			<li class="nav__li"><a href="../ejercicios.html" class="nav__item"><i class="fa-solid fa-dumbbell"></i>Ejercicios</a></li>
-			<li class="nav__li"><a href="../contacto.html" class="nav__item"><i class="fa-solid fa-address-book"></i>Contacto</a></li>
-		</ul>
-		<ul class="nav__responsive-ul">
-			<div class="nav__responsive-button-container">
-			<div class="nav__responsive-button fa-solid fa-bars"></div>
-			</div>
-			<div class="nav__li-container">
-			<li class="nav__responsive-li "><a href="../index.html" class="nav__item"><i class="fas fa-home"></i>Inicio</a></li>
-			<li class="nav__responsive-li"><a href="../sobre-mi.html" class="nav__item"><i class="fa-solid fa-circle-user"></i>Sobre mi</a></li>
-			<li class="nav__responsive-li"><a href="../ejercicios.html" class="nav__item"><i class="fa-solid fa-dumbbell"></i>Ejercicios</a></li>
-			<li class="nav__responsive-li"><a href="../contacto.html" class="nav__item"><i class="fa-solid fa-address-book"></i>Contacto</a></li>
-			</div>
-		</ul>
-	</nav>
-<div class="contenedor">
-    <h1>Galería con grid</h1>
-        <p>ejemplo de como usar grid para una galaria de fotos responsive.</p>
 
-    <div class="grid-contenedor-galeria">  
-        <img src="https://images.unsplash.com/photo-1511300636408-a63a89df3482?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9uZG9zJTIwZGUlMjBwYW50YWxsYSUyMGRlJTIwYWx0YSUyMGRlZmluaWNpJUMzJUIzbiUyMGNvbXBsZXRhfGVufDB8fDB8fA%3D%3D&w=1000&q=80">
-        <img src="https://images.unsplash.com/photo-1543946207-39bd91e70ca7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZnVsbCUyMGhkJTIwd2FsbHBhcGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80">
-        <img src="https://p4.wallpaperbetter.com/wallpaper/213/309/70/apple-4k-high-resolution-picture-wallpaper-preview.jpg">
-        <img src="https://p4.wallpaperbetter.com/wallpaper/636/592/951/beach-1920x1080-high-definition-wallpaper-preview.jpg">
-        <img src="https://fondosmil.com/fondo/11760.jpg">
-        <img src="https://fondosmil.com/fondo/11761.jpg">
-        <img src="https://p4.wallpaperbetter.com/wallpaper/769/76/924/1920x1080-green-mountain-nature-1920x1080-wallpaper-preview.jpg">
-        <img src="https://p4.wallpaperbetter.com/wallpaper/466/795/642/full-hd-nature-picture-download-1920x1200-wallpaper-preview.jpg">
-        <img src="https://www.creativosonline.org/wp-content/uploads/2014/07/03-fondo-de-pantalla-playa-en-alta-definicion-hd-resolucion-1920x1200-01.jpeg">
-        <img src="https://images3.alphacoders.com/853/85305.jpg">
-        <img src="https://p4.wallpaperbetter.com/wallpaper/41/681/303/pc-hd-1080p-nature-1920x1080-wallpaper-preview.jpg">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTWVC_6iHDKR6UKn7L6fGFTcc5siSzwje9MA&usqp=CAU">
-        <img src="https://fondosmil.com/fondo/28007.jpg">
-        <img src="https://fondosmil.com/fondo/28004.jpg">
-        <img src="https://p4.wallpaperbetter.com/wallpaper/257/726/378/5bd2021bf0da0-wallpaper-preview.jpg">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGUTKCH8hxJXWF2-0U6tRqf4m0OtUSE-aiZg&usqp=CAU">
-        <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2018/08/fondos-pantalla-hd_5.jpg?tf=3840x">
-        <img src="https://img.freepik.com/fotos-premium/fondo-pantalla-naturaleza-hermoso-fondo-pantalla-naturaleza-fondos-pantalla-naturaleza-4k-fondo-pantalla-naturaleza-hd-naturaleza-verde_722194-182.jpg?w=2000">
-        <img src="https://p4.wallpaperbetter.com/wallpaper/362/276/920/nature-4k-pc-full-hd-wallpaper-preview.jpg">
-        <img src="https://img.freepik.com/fotos-premium/fondo-pantalla-naturaleza-hermoso-fondo-pantalla-naturaleza-fondos-pantalla-naturaleza-4k-fondo-pantalla-naturaleza-hd-naturaleza-verde_722194-205.jpg?w=2000">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script src="https://kit.fontawesome.com/011cc9ac28.js" crossorigin="anonymous"></script>
+  <title>Ejemplo cursor</title>
+</head>
+
+<body>
+  <div class="contenedor-contenedor-nav-principal-y-logo">
+    <div class="contenedor-nav-principal-y-logo">
+      <div class="logo-container">
+        <b class="logo">JM</b>
+      </div>
+      <nav class="nav">
+        <ul class="nav__ul">
+          <li class="nav__li"></i><a href="../index.html"><i class="fas fa-home"></i>Inicio</a></li>
+          <li class="nav__li"><a href="../sobre-mi.html" class="nav__item"><i class="fa-solid fa-circle-user"></i>Sobre
+              mi</a></li>
+          <li class="nav__li"><a href="../ejercicios.html" class="nav__item"><i
+                class="fa-solid fa-dumbbell"></i>Ejercicios</a></li>
+          <li class="nav__li"><a href="../contacto.html" class="nav__item"><i
+                class="fa-solid fa-address-book"></i>Contacto</a></li>
+        </ul>
+        <ul class="nav__responsive-ul">
+          <div class="nav__responsive-button-container">
+            <div class="nav__responsive-button fa-solid fa-bars"></div>
+          </div>
+          <div class="nav__li-container">
+            <li class="nav__responsive-li "><a href="../index.html" class="nav__item"><i
+                  class="fas fa-home"></i>Inicio</a></li>
+            <li class="nav__responsive-li"><a href="../sobre-mi.html" class="nav__item"><i
+                  class="fa-solid fa-circle-user"></i>Sobre mi</a></li>
+            <li class="nav__responsive-li"><a href="../ejercicios.html" class="nav__item"><i
+                  class="fa-solid fa-dumbbell"></i>Ejercicios</a></li>
+            <li class="nav__responsive-li"><a href="../contacto.html" class="nav__item"><i
+                  class="fa-solid fa-address-book"></i>Contacto</a></li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="contenedor">
+    <h1>Galería con grid</h1>
+    <p>ejemplo de como usar grid para una galaria de fotos responsive.</p>
+
+    <div class="grid-contenedor-galeria">
+      <img
+        src="https://images.unsplash.com/photo-1511300636408-a63a89df3482?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9uZG9zJTIwZGUlMjBwYW50YWxsYSUyMGRlJTIwYWx0YSUyMGRlZmluaWNpJUMzJUIzbiUyMGNvbXBsZXRhfGVufDB8fDB8fA%3D%3D&w=1000&q=80">
+      <img
+        src="https://images.unsplash.com/photo-1543946207-39bd91e70ca7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZnVsbCUyMGhkJTIwd2FsbHBhcGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80">
+      <img
+        src="https://p4.wallpaperbetter.com/wallpaper/213/309/70/apple-4k-high-resolution-picture-wallpaper-preview.jpg">
+      <img
+        src="https://p4.wallpaperbetter.com/wallpaper/636/592/951/beach-1920x1080-high-definition-wallpaper-preview.jpg">
+      <img src="https://fondosmil.com/fondo/11760.jpg">
+      <img src="https://fondosmil.com/fondo/11761.jpg">
+      <img
+        src="https://p4.wallpaperbetter.com/wallpaper/769/76/924/1920x1080-green-mountain-nature-1920x1080-wallpaper-preview.jpg">
+      <img
+        src="https://p4.wallpaperbetter.com/wallpaper/466/795/642/full-hd-nature-picture-download-1920x1200-wallpaper-preview.jpg">
+      <img
+        src="https://www.creativosonline.org/wp-content/uploads/2014/07/03-fondo-de-pantalla-playa-en-alta-definicion-hd-resolucion-1920x1200-01.jpeg">
+      <img src="https://images3.alphacoders.com/853/85305.jpg">
+      <img src="https://p4.wallpaperbetter.com/wallpaper/41/681/303/pc-hd-1080p-nature-1920x1080-wallpaper-preview.jpg">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTWVC_6iHDKR6UKn7L6fGFTcc5siSzwje9MA&usqp=CAU">
+      <img src="https://fondosmil.com/fondo/28007.jpg">
+      <img src="https://fondosmil.com/fondo/28004.jpg">
+      <img src="https://p4.wallpaperbetter.com/wallpaper/257/726/378/5bd2021bf0da0-wallpaper-preview.jpg">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGUTKCH8hxJXWF2-0U6tRqf4m0OtUSE-aiZg&usqp=CAU">
+      <img
+        src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2018/08/fondos-pantalla-hd_5.jpg?tf=3840x">
+      <img
+        src="https://img.freepik.com/fotos-premium/fondo-pantalla-naturaleza-hermoso-fondo-pantalla-naturaleza-fondos-pantalla-naturaleza-4k-fondo-pantalla-naturaleza-hd-naturaleza-verde_722194-182.jpg?w=2000">
+      <img src="https://p4.wallpaperbetter.com/wallpaper/362/276/920/nature-4k-pc-full-hd-wallpaper-preview.jpg">
+      <img
+        src="https://img.freepik.com/fotos-premium/fondo-pantalla-naturaleza-hermoso-fondo-pantalla-naturaleza-fondos-pantalla-naturaleza-4k-fondo-pantalla-naturaleza-hd-naturaleza-verde_722194-205.jpg?w=2000">
     </div>
     <div class="explicación">
-		<h2>Galería hecha con grid</h2><hr>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At amet dignissimos unde non voluptas minima in nam eius sint illo vero ipsum fugiat, sapiente perferendis nihil dicta architecto quibusdam? Velit.</p>
-		<a class="boton" href="../ejercicios.html">volver a ejercicios</a>
-	</div>
+      <h2>Galería hecha con grid</h2>
+      <hr>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At amet dignissimos unde non voluptas minima in nam
+        eius sint illo vero ipsum fugiat, sapiente perferendis nihil dicta architecto quibusdam? Velit.</p>
+      <a class="boton" href="../ejercicios.html">volver a ejercicios</a>
+    </div>
 
-</div>
+  </div>

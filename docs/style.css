@@ -354,12 +354,12 @@ justify-content: center;
     text-align: right;
     width: 100%;
     box-sizing: border-box;
-    z-index: 1;
+    z-index: 20;
     
   }
   
   .nav__responsive-li {
-    
+    z-index: 10;
     position: relative;
     padding: 10px;
     background: #297396;
@@ -961,6 +961,20 @@ justify-content: center;
 
 /*============== EJEMPLO ALINECIÓN DE UN GRID FIN =================*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*======== EJEMPLO DE LA PROPIEDAD GRID-TEMPLATE-AREA ======================*/
 .grid-container4 {
   background: rgb(56, 135, 213);
@@ -1318,6 +1332,140 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 
 /*========= FIN EJEMPLO RESPONSIVE DESIGN CON @MEDIA=============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*========== EJEMPLO CUADRADOS =====================================*/
+.contenedor-ejemplos-cuadrados {
+	
+	display: grid;
+	grid-auto-flow: column;
+	gap: 20px;
+	height: auto;
+	 width: 90%;
+	 min-width: 250px;
+	 max-width: 1140px;
+	 background: rgb(223, 213, 213);
+	 border-radius: 5px;
+	 padding: 20px;
+	 margin: 50px auto;
+  
+ }
+ .bloque2 {
+	
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 350px;
+	height: 350px;
+	background: rgb(213, 236, 191);
+}
+
+.ejemplo-cuadrados-caja1{
+	
+	position: absolute;
+	display: inline-block;
+	background: gray;
+	color: black;
+	width: 100px;
+	height: 100px;
+	
+}
+.ejemplo-cuadrados-caja2{
+	position: absolute;
+	display: inline-block;
+	background: skyblue;
+	color: black;
+	width: 100px;
+	height: 100px;
+	right: 0px;
+
+}
+.ejemplo-cuadrados-caja3{
+	position: absolute;
+	display: inline-block;
+	background: green;
+	color: black;
+	width: 100px;
+	height: 100px;
+	bottom: 0px;
+	
+}
+.ejemplo-cuadrados-caja4 {
+	position:absolute;
+	display: inline-block;
+	background: violet;
+	color: black;
+	width: 100px;
+	height: 100px;
+	bottom: 0px;
+	right: 0px;
+	
+}
+.ejemplo-cuadrados-caja5{
+	position: absolute;
+	display: block;
+	background: orange;
+	color: black;
+	width: 100px;
+	height: 100px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+	margin: auto;
+}
+
+@media only screen and (max-width: 700px) {
+	.contenedor-ejemplos-cuadrados {
+		
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		height: auto;
+		 width: 90%;
+		 min-width: 250px;
+		 max-width: 1140px;
+		 background: rgb(223, 213, 213);
+		 border-radius: 5px;
+		 padding: 20px;
+		 margin: 50px auto;
+	 }
+}
+
+
+/*================= EJEMPLO CUADRADOS FIN ==============================*/
+
+
+
+
+
+
+
 
 
 
