@@ -102,10 +102,10 @@ propiedades flex.*/
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  background: rgb(58, 51, 51);
+  background:rgb(62, 59, 59);
 
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .form__input {
@@ -115,13 +115,14 @@ propiedades flex.*/
   box-sizing: border-box;
   border: none;
   border-bottom: 3px solid rgb(72, 145, 145);
-  background: rgb(58, 51, 51);
+  background: rgb(62, 59, 59) ;
   outline: none;
   color: aliceblue;
+  border-radius: 5px;
 }
 
 .form__input:focus {
-  background: #333;
+  background:rgb(62, 59, 59);
   border-bottom: 3px solid rgb(15, 250, 250);
   background: linear-gradient(to bottom, transparent, rgb(80, 68, 68));
 }
@@ -130,7 +131,7 @@ propiedades flex.*/
   min-width: 200px;
   flex: 1;
   text-align: center;
-
+  border-radius: 5px;
   order: 5;
 }
 
@@ -152,7 +153,7 @@ propiedades flex.*/
 
 .img-container div {
   background: transparent;
-  border-radius: 20px;
+  border-radius: 10px;
   text-align: center;
   padding: 40px;
 }
@@ -165,11 +166,12 @@ propiedades flex.*/
 .form textarea {
   min-height: 120px;
   resize: none;
+  border-radius: 5px;
 }
 
 .form input[type="submit"] {
   width: 80px;
-  border-radius: 20px;
+  border-radius: 10px;
   background: rgb(72, 145, 145);
 }
 
@@ -1352,13 +1354,6 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 
 
-
-
-
-
-
-
-
 /*========== EJEMPLO CUADRADOS =====================================*/
 .contenedor-ejemplos-cuadrados {
 	
@@ -2414,12 +2409,6 @@ scale-down:
 
 
 
-
-
-
-
-
-
 /*================ OTRAS PORPIEDADES CSS ===========================*/
 
 
@@ -2565,14 +2554,15 @@ input {
   border-radius: 10px;
   margin: auto;
   display: block;
-
-
+  background:white;
+  
 }
 
-input::placeholder {
+/* input::placeholder { */
+  .ejemplo-placeholder::placeholder{
   /* con ::placeholder pordemos cambiar
-algunas propiedades de lo que se muestra en casilla antes
-de empezar a escribir */
+  algunas propiedades de lo que se muestra en casilla antes
+  de empezar a escribir */
   
   color: #297396;
   background: #c0c569;
