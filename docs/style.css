@@ -496,10 +496,12 @@ z-index: 20;
   margin-bottom: 20px;
   color: #333;
   font-size: 20px;
+  text-decoration-line: underline;
 }
 .titulo-libro-nivel-medio {
     color:#333;
     font-size: 20px;
+    text-decoration-line: underline;
 }
 
 
@@ -528,6 +530,7 @@ z-index: 20;
   display: block;
   text-decoration: none;
   margin: 5px;
+  color: #2b5d74;
 }
 
 .contenedor-ejemplos a:hover {
@@ -697,7 +700,9 @@ z-index: 20;
   width: 320px;
   margin: 0px;
   
+  
 }
+
 
 .contenedor__ejemplos-nivel-medio {
   position: absolute;
@@ -714,6 +719,7 @@ z-index: 20;
 .contenedor__ejemplos-nivel-medio a {
   display: block;
   text-decoration: none;
+  color: #0a3609;
   margin: 5px;
 }
 
