@@ -25,7 +25,8 @@ body {
   background: rgb(223, 213, 213);
   border-radius: 5px;
   padding: 20px;
-  margin: 50px auto;
+  margin: 80px auto;
+  box-shadow:0px 0px 25px -15px rgb(0, 0, 0);
 }
 
 .contenedor h1 {
@@ -236,6 +237,62 @@ propiedades flex.*/
 
 
 
+/*=================== EJEMPLO OVERFLOW - ANIMACIOÓN PERRETE ============*/
+/*OVERFLOW: (significa desbordamienrto) 
+
+
+Con overflow podemor definir que queremos que pase cone el contenido que 
+sobresale de la caja. En el siguiente ejemplo hemos creado un div y le hemos
+dado dimensiones en forma de cuadrado con bordes redondos, también le hemos puesto
+borde verde y fondo gris. Luego le hemos añadido una imagen que hemos posicionado
+con un margin-top: 300px, para que se salga del cuadrado y hemos le hemos dado
+la propiedar overflow: hidden, para que oculte todo lo que no esté dentro de la caja.
+Finalmente hemos creado una pequeña animación que inicia al pasar por encima de la 
+caja, y hace que la imagen vuelva a su posición de origen con margin-top: 0px*/
+
+
+
+
+
+.contenedor-overflow{
+	margin: auto;
+	margin-top: 50px;
+	border-radius: 20%;
+	width: 300px;
+	height: 300px;
+	border: 4px solid #297396;
+	background: grey;
+	overflow:   hidden;/* overflow es un shorthand, podemos ajusta eje x,y en la misma 
+	linea de codigo. */
+
+
+}
+.img-perrete-overflow{
+	width: 300px;
+	height: 300px;
+	transition: all .3s;
+	margin-top: 300px;
+
+}
+.contenedor-overflow:hover img{
+		margin-top: 0px;
+		
+	
+}
+/*=================== EJEMPLO OVERFLOW - ANIMACIOÓN PERRETE FIN  ============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*============== MENU PRINCIPAL Y RESPONSIVE ============================*/
@@ -244,6 +301,11 @@ propiedades flex.*/
   display: flex;
 width: 100%;
 justify-content: center;
+position: fixed;
+top: 0px;
+z-index: 20;
+
+
 }
 .contenedor-nav-principal-y-logo {
   background: pink;
@@ -251,7 +313,7 @@ justify-content: center;
   justify-content: center;
   width: 100%;
   max-width: 1140px;
-  
+
 
   
 }
@@ -274,10 +336,11 @@ justify-content: center;
   position: relative;
   align-self: center;
   margin-left: 40px;
-  
+  text-decoration: none;
   color: orange;
   font-size: 30px;
   display: inline-block;
+  user-select: none;
 
 }
 
@@ -1160,23 +1223,66 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 
 /*============= EJEMPLO DE LA PROPIEDAD FLOAT =====================*/
-
+.contenerdor-sobre-mi-y-foto-de-javi {
+  display: flex;
+  width: 60%;
+  background:rgb(223, 213, 213);
+  margin: 0px auto;
+}
 .contenedor-sobre-mi {
   margin: 50px auto;
-  border-radius: 10px;
-  width: 60%;
-  height: auto;
-
-  background: ghostwhite;
+  
   padding: 30px;
+  border-left: 1px solid #297396;
+  border-top: 1px solid #297396;
 }
-
-.contenedor-sobre-mi img {
-  float: right;
-  margin: 05px 20px 20px 20px;
-  border-radius: 10px;
+.me-llamo-javi {
+  letter-spacing: 5px;
 }
-
+.contenerdor-sobre-mi-y-foto-de-javi img {
+  
+  margin: 20px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 500px) {
+  .contenerdor-sobre-mi-y-foto-de-javi{
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    display: block;
+    border: none;
+    border: 1px solid #297396;
+    border-radius: 5px;
+    background:linear-gradient(#297396,rgb(223, 213, 213));
+    
+  }
+  .contenedor-sobre-mi {
+    
+    position: relative;
+    margin: 20px auto;
+    margin-bottom: 0px;
+    padding: 10px;
+    border: none;
+  } 
+  .contenedor-sobre-mi p {
+    color: orange;
+  }
+  .contenedor-foto-de-javi {
+    width: 100%;
+    display: flex;
+  }
+  .contenerdor-sobre-mi-y-foto-de-javi img {
+    
+    position: relative;
+    margin: 40px auto;
+    margin-top: 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+     }
+}
 /*============= EJEMPLO DE LA PROPIEDAD FLOAT FIN =====================*/
 
 
