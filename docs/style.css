@@ -1237,13 +1237,12 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 .contenedor-sobre-mi {
   margin: 50px auto;
-  
   padding: 30px;
   border-left: 1px solid #297396;
   border-top: 1px solid #297396;
 }
 .me-llamo-javi {
-  letter-spacing: 5px;
+  letter-spacing: 15px;
 }
 .contenerdor-sobre-mi-y-foto-de-javi img {
   
