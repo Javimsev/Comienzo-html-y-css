@@ -12,6 +12,10 @@ body {
   background: rgb(238, 235, 235);
 }
 
+
+
+
+
 /*================== ESTILOS CONTENEDOR =================*/
 .contenedor {
   width: 90%;
@@ -26,7 +30,7 @@ body {
 
 .contenedor h1 {
   background: linear-gradient(
-    to top,
+     to top,
     rgb(223, 213, 213),
     rgba(238, 235, 235, 0.46)
   );
@@ -72,6 +76,16 @@ p {
 }
 
 /*================== ESTILOS CONTENEDOR FIN =================*/
+
+
+
+
+
+
+
+
+
+
 
 /*========== EJEMPLO CUADRADOS =====================================*/
 .contenedor-ejemplos-cuadrados {
@@ -168,6 +182,13 @@ p {
 
 /*================= EJEMPLO CUADRADOS FIN ==============================*/
 
+
+
+
+
+
+
+
 /*=============EJEMPLO FLEX============================================*/
 
 /*PROPIEDAD FLEX: Si tenemos por ejemplo un div y le damos display:flex;
@@ -262,6 +283,14 @@ propiedades flex.*/
 
 /*=========== EJEMPLO PROPIEDAD FLEX FIN====================*/
 
+
+
+
+
+
+
+
+
 /*===================== BOTON VOLVER A EJERCICIOS ===========================*/
 
 .boton {
@@ -292,6 +321,16 @@ propiedades flex.*/
 }
 
 /*===================== BOTON VOLVER A EJERCICIOS FIN ===========================*/
+
+
+
+
+
+
+
+
+
+
 
 /*=================== EJEMPLO OVERFLOW - ANIMACIOÓN PERRETE ============*/
 /*OVERFLOW: (significa desbordamienrto) 
@@ -337,6 +376,20 @@ caja, y hace que la imagen vuelva a su posición de origen con margin-top: 0px*/
   display: none;
 }
 /*=================== EJEMPLO OVERFLOW - ANIMACIOÓN PERRETE FIN  ============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*============== MENU PRINCIPAL Y RESPONSIVE ============================*/
 .contenedor-contenedor-nav-principal-y-logo {
@@ -397,6 +450,7 @@ caja, y hace que la imagen vuelva a su posición de origen con margin-top: 0px*/
 .nav__li:hover > a {
   color: orange;
 }
+
 
 .nav__li i {
   margin-right: 8px;
@@ -485,6 +539,16 @@ caja, y hace que la imagen vuelva a su posición de origen con margin-top: 0px*/
 }
 
 /*============== MENU PRINCIPAL Y RESPONSIVE FIN============================*/
+
+
+
+
+
+
+
+
+
+
 
 /*=============== ESTILO CONTENEDOR-EJEMPLOS PRINCIPIANTE ==============*/
 
@@ -689,6 +753,19 @@ caja, y hace que la imagen vuelva a su posición de origen con margin-top: 0px*/
 
 /*=============== ESTILO CONTENEDOR-EJEMPLOS PRINCIPIANTE FIN ==============*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*================ LIBRO EJEMPLOS NIVEL MEDIO ========================*/
 .libro__nivel-medio {
   width: 320px;
@@ -862,6 +939,19 @@ caja, y hace que la imagen vuelva a su posición de origen con margin-top: 0px*/
 }
 /*========= lIBRO EJEMPLOS NIVEL MEDIO FIN ======================*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*======== EJEMPLO DE LA PROPIEDAD GRID ======================*/
 .grid-container {
   background: slategrey;
@@ -894,6 +984,19 @@ caja, y hace que la imagen vuelva a su posición de origen con margin-top: 0px*/
 
 /*======== EJEMPLO DE LA PROPIEDAD GRID FIN======================*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*======== EJEMPLO DE LA PROPIEDAD GRID RESPONSIVE======================*/
 .grid-container2 {
   background: slategrey;
@@ -925,6 +1028,18 @@ caja, y hace que la imagen vuelva a su posición de origen con margin-top: 0px*/
 }
 
 /*=============FIN EJEMPLO DE LA PROPIEDAD GRID RESPONSIVE===============*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*============== EJEMPLO ALINECIÓN DE UN GRID =================*/
 .grid-container3 {
@@ -969,6 +1084,18 @@ caja, y hace que la imagen vuelva a su posición de origen con margin-top: 0px*/
 
 /*============== EJEMPLO ALINECIÓN DE UN GRID FIN =================*/
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*======== EJEMPLO DE LA PROPIEDAD GRID-TEMPLATE-AREA ======================*/
 .grid-container4 {
   background: rgb(56, 135, 213);
@@ -1003,6 +1130,22 @@ caja, y hace que la imagen vuelva a su posición de origen con margin-top: 0px*/
 }
 
 /*============= FIN EJEMPLO DE LA PROPIEDAD GRID-TEMPLATE-AREA ===============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============= EJEMPLO CURSOR ==================*/
+
 
 /*CURSOR:  para cambiar el cursor al pasar por encima de algun elemento
 o al seleccionar o pulsar. Ver todas las opciones en la siguiente web:
@@ -1060,6 +1203,20 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*============= EJEMPLO CURSOR FIN==================*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ======================== EJEMPLO CAJAS DE COLORES ================*/
 
 .contenedor-cajas {
@@ -1114,6 +1271,22 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 
 /* ======================== EJEMPLO CAJAS DE COLORES FIN ================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*============= PÁGINA SOBRE MI =====================*/
 .contenerdor-sobre-mi-y-foto-de-javi {
@@ -1173,6 +1346,17 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 /*============= PÁGINA SOBRE MI FIN =====================*/
 
+
+
+
+
+
+
+
+
+
+
+
 /*============= EJEMPLO DE LA PROPIEDAD FLOAT =====================*/
 .contenedor-foto-ejemplo-float {
   width: 60%;
@@ -1197,6 +1381,18 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   }
 }
 /*============= EJEMPLO DE LA PROPIEDAD FLOAT FIN =====================*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*========= GALERÍA DE FOTOS CON GRID ============================*/
 
@@ -1229,6 +1425,19 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 
 /*========= GALERÍA DE FOTOS CON GRID FIN ============================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*================ ESTRUCTURA WEB CON GRID ========================*/
 
@@ -1271,6 +1480,22 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*================ ESTRUCTURA WEB CON GRID FIN ========================*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*========= EJEMPLO RESPONSIVE DESIGN CON @MEDIA=============*/
 
 .div-responsive-design {
@@ -1306,6 +1531,25 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 
 /*========= FIN EJEMPLO RESPONSIVE DESIGN CON @MEDIA=============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*==========EJEMPLO RESPONSIVE DESIGN CON @MEDIA + GRID =============*/
 .contenedor-reponsive-grid {
@@ -1369,6 +1613,20 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*==========EJEMPLO RESPONSIVE DESIGN CON @MEDIA + GRID =============*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*======== EJEMPLO TRANSITION =================*/
 .box-container-transition {
   padding: 20px;
@@ -1419,6 +1677,22 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*======== EJEMPLO TRANSITION FIN =================*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*======== EJEMPLO ANIMATION ==========================*/
 .box-container-animation {
   padding: 20px;
@@ -1465,6 +1739,21 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*======== EJEMPLO ANIMATION FIN ==========================*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*======== EJEMPLO ANIMATION Y CUBIC-BEZIER ==========================*/
 .box-container-animation-2 {
   padding: 20px;
@@ -1493,6 +1782,25 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 
 /*======== EJEMPLO ANIMATION Y CUBIC-BEZIER FIN ==========================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*=============== EJEMPLO TRANSFORM ========================*/
 
@@ -1618,6 +1926,20 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*=============== EJEMPLO TRANSFORM FIN ========================*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*============ EJEMPLO PROPIEDADES DE BACKGROUND ===========*/
 
 .caja__background {
@@ -1646,6 +1968,17 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 
 /*============ EJEMPLO PROPIEDADES DE BACKGROUND ===========*/
+
+
+
+
+
+
+
+
+
+
+
 
 /*==================== EJEMPLO DE VARIABLES (COMMON PROPERTIES) GLOBALES Y LOCALES =================*/
 
@@ -1698,6 +2031,18 @@ h6 {
 }
 
 /*==================== EJEMPLO DE VARIABLES GLOBALES Y LOCALES FIN =================*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*============= EJEMPLO DE OBJET-FIT Y OBJET-POSITION ==============*/
 
@@ -1807,6 +2152,23 @@ scale-down:
 }
 
 /*============= EJEMPLO DE OBJET-FIT Y OBJET-POSITION FIN==============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*============= EJEMPLO DE OBJET-FIT Y OBJET-POSITION MAS FILTER ==============*/
 
@@ -2033,6 +2395,24 @@ scale-down:
 
 /*============= EJEMPLO DE OBJET-FIT Y OBJET-POSITION MAS FILTER FIN ==============*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*================ OTRAS PORPIEDADES CSS ===========================*/
 
 /*Propiedad DIRECTION:*/
@@ -2052,6 +2432,7 @@ h3 {
 }
 
 /*Propiedad LETTER-SPACING FIN*/
+
 
 /*Propiedad SCROLL-BEHAVIUR Y USER-SELECT*/
 #parrafo1 {
@@ -2102,6 +2483,19 @@ h3 {
 /*Propiedad SCROLL-BEHAVIUR Y USER-SELECT FIN*/
 
 /*================ OTRAS PORPIEDADES CSS FIN ===========================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*========== EJEMPLO PSEUDO-ELEMENTOS ========================*/
 
