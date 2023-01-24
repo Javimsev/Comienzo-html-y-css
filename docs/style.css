@@ -528,7 +528,7 @@ caja, y hace que la imagen vuelva a su posición de origen con margin-top: 0px*/
   margin-top: 35px;
   width: 250px;
   height: 390px;
-  background: #6bacc9;
+  background: radial-gradient(#53a1c5,#237ba4) ;
   border-radius: 0px 10px 10px 0px;
   z-index: 1;
 }
@@ -702,7 +702,7 @@ caja, y hace que la imagen vuelva a su posición de origen con margin-top: 0px*/
   margin-top: 35px;
   width: 250px;
   height: 390px;
-  background: #36806c;
+  background: radial-gradient(#5b9283,#48796c);
   border-radius: 0px 10px 10px 0px;
   z-index: 1;
 }
@@ -1668,7 +1668,7 @@ h6 {
   tiene el mismo nombre que la definida en :root, pero son distintas porque esta sólo
   se puede usar en h6, aunque comparte el mismo nombre son distintas*/
   --color-rojo: rgb(179, 46, 46);
-  --font-size: 50px;
+  --font-size: px;
 }
 
 .contenedor__variables div {
