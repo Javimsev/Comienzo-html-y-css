@@ -1668,7 +1668,7 @@ h6 {
   tiene el mismo nombre que la definida en :root, pero son distintas porque esta sólo
   se puede usar en h6, aunque comparte el mismo nombre son distintas*/
   --color-rojo: rgb(179, 46, 46);
-  --font-size: 100px;
+  --font-size: 50px;
 }
 
 .contenedor__variables div {
