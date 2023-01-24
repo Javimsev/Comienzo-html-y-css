@@ -10,15 +10,10 @@ html {
 
 body {
   background: rgb(238, 235, 235);
-  
- }
-
-
-
+}
 
 /*================== ESTILOS CONTENEDOR =================*/
 .contenedor {
-  
   width: 90%;
   min-width: 250px;
   max-width: 1100px;
@@ -26,12 +21,15 @@ body {
   border-radius: 5px;
   padding: 20px;
   margin: 80px auto;
-  box-shadow:0px 0px 25px -15px rgb(0, 0, 0);
+  box-shadow: 0px 0px 25px -15px rgb(0, 0, 0);
 }
 
 .contenedor h1 {
-  background: linear-gradient(to top, rgb(223, 213, 213), rgb(238, 235, 235));
-
+  background: linear-gradient(
+    to top,
+    rgb(223, 213, 213),
+    rgba(238, 235, 235, 0.46)
+  );
   border-radius: 5px;
   text-align: center;
   padding: 10px;
@@ -46,6 +44,7 @@ body {
 .explicación {
   position: relative;
   margin: 30px auto;
+  margin-top: 50px;
   width: auto;
   height: auto;
   background: rgb(223, 213, 213);
@@ -60,6 +59,7 @@ body {
 }
 
 h2 {
+  margin-top: 60px;
   background: linear-gradient(to top, rgb(223, 213, 213), rgb(238, 235, 235));
   border-radius: 5px;
   text-align: center;
@@ -73,22 +73,102 @@ p {
 
 /*================== ESTILOS CONTENEDOR FIN =================*/
 
+/*========== EJEMPLO CUADRADOS =====================================*/
+.contenedor-ejemplos-cuadrados {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+  height: auto;
+  width: 90%;
+  min-width: 250px;
+  max-width: 1140px;
+  background: rgb(223, 213, 213);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 50px auto;
+}
+.bloque2 {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+  background: rgb(213, 236, 191);
+}
+.bloque2 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ejemplo-cuadrados-caja1 {
+  position: absolute;
+  display: inline-block;
+  background: gray;
+  color: orange;
+  width: 100px;
+  height: 100px;
+}
+.ejemplo-cuadrados-caja2 {
+  position: absolute;
+  display: inline-block;
+  background: skyblue;
+  color: green;
+  width: 100px;
+  height: 100px;
+  right: 0px;
+}
+.ejemplo-cuadrados-caja3 {
+  position: absolute;
+  display: inline-block;
+  background: green;
+  color: pink;
+  width: 100px;
+  height: 100px;
+  bottom: 0px;
+}
+.ejemplo-cuadrados-caja4 {
+  position: absolute;
+  display: inline-block;
+  background: violet;
+  color: skyblue;
+  width: 100px;
+  height: 100px;
+  bottom: 0px;
+  right: 0px;
+}
+.ejemplo-cuadrados-caja5 {
+  position: absolute;
+  display: block;
+  background: orange;
+  color: gray;
+  width: 100px;
+  height: 100px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  margin: auto;
+}
 
+@media only screen and (max-width: 700px) {
+  .contenedor-ejemplos-cuadrados {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    width: 90%;
+    min-width: 250px;
+    max-width: 1140px;
+    background: rgb(223, 213, 213);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 50px auto;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
+/*================= EJEMPLO CUADRADOS FIN ==============================*/
 
 /*=============EJEMPLO FLEX============================================*/
-
 
 /*PROPIEDAD FLEX: Si tenemos por ejemplo un div y le damos display:flex;
 el div sique actuando como en display block, la diferencia es que ahora
@@ -103,7 +183,7 @@ propiedades flex.*/
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  background:rgb(62, 59, 59);
+  background: rgb(62, 59, 59);
 
   padding: 20px;
   border-radius: 5px;
@@ -116,14 +196,14 @@ propiedades flex.*/
   box-sizing: border-box;
   border: none;
   border-bottom: 3px solid rgb(72, 145, 145);
-  background: rgb(62, 59, 59) ;
+  background: rgb(62, 59, 59);
   outline: none;
   color: aliceblue;
   border-radius: 5px;
 }
 
 .form__input:focus {
-  background:rgb(62, 59, 59);
+  background: rgb(62, 59, 59);
   border-bottom: 3px solid rgb(15, 250, 250);
   background: linear-gradient(to bottom, transparent, rgb(80, 68, 68));
 }
@@ -182,19 +262,6 @@ propiedades flex.*/
 
 /*=========== EJEMPLO PROPIEDAD FLEX FIN====================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*===================== BOTON VOLVER A EJERCICIOS ===========================*/
 
 .boton {
@@ -226,17 +293,6 @@ propiedades flex.*/
 
 /*===================== BOTON VOLVER A EJERCICIOS FIN ===========================*/
 
-
-
-
-
-
-
-
-
-
-
-
 /*=================== EJEMPLO OVERFLOW - ANIMACIOÓN PERRETE ============*/
 /*OVERFLOW: (significa desbordamienrto) 
 
@@ -250,62 +306,47 @@ la propiedar overflow: hidden, para que oculte todo lo que no esté dentro de la
 Finalmente hemos creado una pequeña animación que inicia al pasar por encima de la 
 caja, y hace que la imagen vuelva a su posición de origen con margin-top: 0px*/
 
-
-
-
-
-.contenedor-overflow{
-	margin: auto;
-	margin-top: 50px;
-	border-radius: 20%;
-	width: 300px;
-	height: 300px;
-	border: 4px solid #297396;
-	background: grey;
-	overflow:   hidden;/* overflow es un shorthand, podemos ajusta eje x,y en la misma 
+.contenedor-overflow {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 20%;
+  width: 300px;
+  height: 300px;
+  border: 4px solid #297396;
+  background: grey;
+  overflow: hidden; /* overflow es un shorthand, podemos ajusta eje x,y en la misma 
 	linea de codigo. */
-
-
 }
-.img-perrete-overflow{
-	width: 300px;
-	height: 300px;
-	transition: all .3s;
-	margin-top: 300px;
-
+.contenedor-overflow p {
+  align-self: center;
+  position: absolute;
+  color: orange;
 }
-.contenedor-overflow:hover img{
-		margin-top: 0px;
-		
-	
+.img-perrete-overflow {
+  width: 300px;
+  height: 300px;
+  transition: all 0.3s;
+  margin-top: 300px;
+}
+.contenedor-overflow:hover img {
+  margin-top: 0px;
+}
+.contenedor-overflow:hover p {
+  display: none;
 }
 /*=================== EJEMPLO OVERFLOW - ANIMACIOÓN PERRETE FIN  ============*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*============== MENU PRINCIPAL Y RESPONSIVE ============================*/
-.contenedor-contenedor-nav-principal-y-logo{
-  background:#297396;
+.contenedor-contenedor-nav-principal-y-logo {
+  background: #297396;
   display: flex;
-width: 100%;
-justify-content: center;
-position: fixed;
-top: 0px;
-z-index: 20;
-
-
+  width: 100%;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  z-index: 20;
 }
 .contenedor-nav-principal-y-logo {
   background: pink;
@@ -313,9 +354,6 @@ z-index: 20;
   justify-content: center;
   width: 100%;
   max-width: 1140px;
-
-
-  
 }
 .nav {
   position: relative;
@@ -324,7 +362,7 @@ z-index: 20;
   background: #297396;
   justify-content: right;
 }
-.logo-container{
+.logo-container {
   display: flex;
   position: relative;
   justify-content: left;
@@ -341,14 +379,13 @@ z-index: 20;
   font-size: 30px;
   display: inline-block;
   user-select: none;
-
 }
 
 .nav__li {
   display: inline-block;
   padding: 15px;
   color: white;
-  margin-right: 20px ;
+  margin-right: 20px;
 }
 
 .nav__li a {
@@ -357,7 +394,7 @@ z-index: 20;
   padding: 14px;
 }
 
-.nav__li:hover>a {
+.nav__li:hover > a {
   color: orange;
 }
 
@@ -366,7 +403,6 @@ z-index: 20;
 }
 
 /*fin menu*/
-
 
 /*menu responsive*/
 .nav__responsive-button {
@@ -382,10 +418,10 @@ z-index: 20;
 }
 
 @media only screen and (max-width: 800px) {
-  body{
+  body {
     min-width: 300px;
   }
-  .logo-container{
+  .logo-container {
     width: 30%;
   }
   .nav__ul {
@@ -409,9 +445,8 @@ z-index: 20;
     width: 100%;
     margin-top: -270px;
     transition: 0.2s;
-    
   }
-  
+
   .nav__responsive-button-container {
     position: relative;
     background: #297396;
@@ -420,17 +455,14 @@ z-index: 20;
     width: 100%;
     box-sizing: border-box;
     z-index: 20;
-    
   }
-  
+
   .nav__responsive-li {
     z-index: 10;
     position: relative;
     padding: 10px;
     background: #297396;
     box-shadow: -5px -5px 10px -10px rgb(106, 153, 182);
-   
-    
   }
 
   .nav__responsive-li i {
@@ -447,71 +479,46 @@ z-index: 20;
     text-decoration: none;
   }
 
-  .nav__responsive-ul:hover>.nav__li-container {
+  .nav__responsive-ul:hover > .nav__li-container {
     margin-top: 0px;
-    
   }
-  
 }
 
 /*============== MENU PRINCIPAL Y RESPONSIVE FIN============================*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*=============== ESTILO CONTENEDOR-EJEMPLOS PRINCIPIANTE ==============*/
 
 .estanteria-libros {
   width: 100%;
   position: relative;
-  height:100%;  
+  height: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 480px;
   justify-items: center;
-  
-
-
 }
-  @media screen  and (max-width:700px) {
+@media screen and (max-width: 700px) {
   .estanteria-libros {
-   grid-template-columns: 100%; 
-   grid-template-rows:480px 480px;
+    grid-template-columns: 100%;
+    grid-template-rows: 480px 480px;
   }
-  }
+}
 
-.titulo-libro{
+.titulo-libro {
   margin-bottom: 20px;
   color: #333;
   font-size: 20px;
   text-decoration-line: underline;
 }
 .titulo-libro-nivel-medio {
-    color:#333;
-    font-size: 20px;
-    text-decoration-line: underline;
+  color: #333;
+  font-size: 20px;
+  text-decoration-line: underline;
 }
 
-
-
-
 .libro {
- 
   width: 320px;
-  margin: 0px ;
- 
+  margin: 0px;
 }
 
 .contenedor-ejemplos {
@@ -682,27 +689,11 @@ z-index: 20;
 
 /*=============== ESTILO CONTENEDOR-EJEMPLOS PRINCIPIANTE FIN ==============*/
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*================ LIBRO EJEMPLOS NIVEL MEDIO ========================*/
 .libro__nivel-medio {
- 
   width: 320px;
   margin: 0px;
-  
-  
 }
-
 
 .contenedor__ejemplos-nivel-medio {
   position: absolute;
@@ -865,28 +856,11 @@ z-index: 20;
   padding: 20px;
   width: 250px;
   height: 390px;
-  background:#26594b;
+  background: #26594b;
   border-radius: 0px 10px 10px 0px;
   box-shadow: grey 5px -5px 50px;
 }
 /*========= lIBRO EJEMPLOS NIVEL MEDIO FIN ======================*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*======== EJEMPLO DE LA PROPIEDAD GRID ======================*/
 .grid-container {
@@ -920,26 +894,6 @@ z-index: 20;
 
 /*======== EJEMPLO DE LA PROPIEDAD GRID FIN======================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*======== EJEMPLO DE LA PROPIEDAD GRID RESPONSIVE======================*/
 .grid-container2 {
   background: slategrey;
@@ -971,23 +925,6 @@ z-index: 20;
 }
 
 /*=============FIN EJEMPLO DE LA PROPIEDAD GRID RESPONSIVE===============*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*============== EJEMPLO ALINECIÓN DE UN GRID =================*/
 .grid-container3 {
@@ -1032,20 +969,6 @@ z-index: 20;
 
 /*============== EJEMPLO ALINECIÓN DE UN GRID FIN =================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*======== EJEMPLO DE LA PROPIEDAD GRID-TEMPLATE-AREA ======================*/
 .grid-container4 {
   background: rgb(56, 135, 213);
@@ -1080,19 +1003,6 @@ z-index: 20;
 }
 
 /*============= FIN EJEMPLO DE LA PROPIEDAD GRID-TEMPLATE-AREA ===============*/
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*CURSOR:  para cambiar el cursor al pasar por encima de algun elemento
 o al seleccionar o pulsar. Ver todas las opciones en la siguiente web:
@@ -1150,29 +1060,20 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*============= EJEMPLO CURSOR FIN==================*/
 
-
-
-
-
-
-
-
-
-
-
-
 /* ======================== EJEMPLO CAJAS DE COLORES ================*/
 
 .contenedor-cajas {
   background: rgb(248, 248, 233);
   width: auto;
   height: auto;
+  margin-top: 50px;
 }
 
 .contenedor-cajas div {
   width: 120px;
   height: 120px;
-  display: block;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .caja1 {
@@ -1214,25 +1115,11 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /* ======================== EJEMPLO CAJAS DE COLORES FIN ================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*============= EJEMPLO DE LA PROPIEDAD FLOAT =====================*/
+/*============= PÁGINA SOBRE MI =====================*/
 .contenerdor-sobre-mi-y-foto-de-javi {
   display: flex;
   width: 60%;
-  background:rgb(223, 213, 213);
+  background: rgb(223, 213, 213);
   margin: 0px auto;
 }
 .contenedor-sobre-mi {
@@ -1245,14 +1132,13 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   letter-spacing: 15px;
 }
 .contenerdor-sobre-mi-y-foto-de-javi img {
-  
   margin: 20px auto;
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
 @media screen and (max-width: 500px) {
-  .contenerdor-sobre-mi-y-foto-de-javi{
+  .contenerdor-sobre-mi-y-foto-de-javi {
     margin-top: 20px;
     position: relative;
     width: 100%;
@@ -1260,17 +1146,15 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
     border: none;
     border: 1px solid #297396;
     border-radius: 5px;
-    background:linear-gradient(#297396,rgb(223, 213, 213));
-    
+    background: linear-gradient(#297396, rgb(223, 213, 213));
   }
   .contenedor-sobre-mi {
-    
     position: relative;
     margin: 20px auto;
     margin-bottom: 0px;
     padding: 10px;
     border: none;
-  } 
+  }
   .contenedor-sobre-mi p {
     color: orange;
   }
@@ -1279,30 +1163,40 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
     display: flex;
   }
   .contenerdor-sobre-mi-y-foto-de-javi img {
-    
     position: relative;
     margin: 40px auto;
     margin-top: 0px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-     }
+  }
+}
+/*============= PÁGINA SOBRE MI FIN =====================*/
+
+/*============= EJEMPLO DE LA PROPIEDAD FLOAT =====================*/
+.contenedor-foto-ejemplo-float {
+  width: 60%;
+  background: rgb(223, 213, 213);
+  margin: 0px auto;
+  border: 1px solid #297396;
+  padding: 30px;
+  margin: 50px auto;
+}
+.contenedor-foto-ejemplo-float img {
+  float: right;
+  margin: 20px;
+}
+@media screen and (max-width: 600px) {
+  .contenedor-foto-ejemplo-float {
+    width: 80%;
+  }
+  .contenedor-foto-ejemplo-float img {
+    float: right;
+    width: 150px;
+    height: 150px;
+  }
 }
 /*============= EJEMPLO DE LA PROPIEDAD FLOAT FIN =====================*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*========= GALERÍA DE FOTOS CON GRID ============================*/
 
@@ -1335,24 +1229,6 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 
 /*========= GALERÍA DE FOTOS CON GRID FIN ============================*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*================ ESTRUCTURA WEB CON GRID ========================*/
 
@@ -1395,21 +1271,6 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*================ ESTRUCTURA WEB CON GRID FIN ========================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*========= EJEMPLO RESPONSIVE DESIGN CON @MEDIA=============*/
 
 .div-responsive-design {
@@ -1445,150 +1306,6 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 
 /*========= FIN EJEMPLO RESPONSIVE DESIGN CON @MEDIA=============*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*========== EJEMPLO CUADRADOS =====================================*/
-.contenedor-ejemplos-cuadrados {
-	
-	display: grid;
-	grid-auto-flow: column;
-	gap: 20px;
-	height: auto;
-	 width: 90%;
-	 min-width: 250px;
-	 max-width: 1140px;
-	 background: rgb(223, 213, 213);
-	 border-radius: 5px;
-	 padding: 20px;
-	 margin: 50px auto;
-  
- }
- .bloque2 {
-	
-	display: block;
-	position: relative;
-	margin: 0 auto;
-	width: 350px;
-	height: 350px;
-	background: rgb(213, 236, 191);
-}
-
-.ejemplo-cuadrados-caja1{
-	
-	position: absolute;
-	display: inline-block;
-	background: gray;
-	color: black;
-	width: 100px;
-	height: 100px;
-	
-}
-.ejemplo-cuadrados-caja2{
-	position: absolute;
-	display: inline-block;
-	background: skyblue;
-	color: black;
-	width: 100px;
-	height: 100px;
-	right: 0px;
-
-}
-.ejemplo-cuadrados-caja3{
-	position: absolute;
-	display: inline-block;
-	background: green;
-	color: black;
-	width: 100px;
-	height: 100px;
-	bottom: 0px;
-	
-}
-.ejemplo-cuadrados-caja4 {
-	position:absolute;
-	display: inline-block;
-	background: violet;
-	color: black;
-	width: 100px;
-	height: 100px;
-	bottom: 0px;
-	right: 0px;
-	
-}
-.ejemplo-cuadrados-caja5{
-	position: absolute;
-	display: block;
-	background: orange;
-	color: black;
-	width: 100px;
-	height: 100px;
-	bottom: 0px;
-	right: 0px;
-	left: 0px;
-	top: 0px;
-	margin: auto;
-}
-
-@media only screen and (max-width: 700px) {
-	.contenedor-ejemplos-cuadrados {
-		
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-		height: auto;
-		 width: 90%;
-		 min-width: 250px;
-		 max-width: 1140px;
-		 background: rgb(223, 213, 213);
-		 border-radius: 5px;
-		 padding: 20px;
-		 margin: 50px auto;
-	 }
-}
-
-
-/*================= EJEMPLO CUADRADOS FIN ==============================*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*==========EJEMPLO RESPONSIVE DESIGN CON @MEDIA + GRID =============*/
 .contenedor-reponsive-grid {
@@ -1652,25 +1369,6 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*==========EJEMPLO RESPONSIVE DESIGN CON @MEDIA + GRID =============*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*======== EJEMPLO TRANSITION =================*/
 .box-container-transition {
   padding: 20px;
@@ -1689,7 +1387,7 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   transition-duration: 2s;
 }
 
-.box-container-transition:hover>.box {
+.box-container-transition:hover > .box {
   left: 80%;
   background: #297396;
 }
@@ -1720,30 +1418,6 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 
 /*======== EJEMPLO TRANSITION FIN =================*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*======== EJEMPLO ANIMATION ==========================*/
 .box-container-animation {
@@ -1791,26 +1465,6 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*======== EJEMPLO ANIMATION FIN ==========================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*======== EJEMPLO ANIMATION Y CUBIC-BEZIER ==========================*/
 .box-container-animation-2 {
   padding: 20px;
@@ -1829,10 +1483,7 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   animation-duration: 2s;
   animation-iteration-count: infinite;
   /*valor infinite para que se repita siempre.*/
-  animation-timing-function: cubic-bezier(0.57,
-      0.72,
-      0.42,
-      -0.3);
+  animation-timing-function: cubic-bezier(0.57, 0.72, 0.42, -0.3);
   /*Con cubic-bezier podemor modificar la animacios a nuestro
   gusto, podemor crear generarlos fácilmente en cubic-bezier.com*/
   animation-direction: alternate;
@@ -1842,25 +1493,6 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 }
 
 /*======== EJEMPLO ANIMATION Y CUBIC-BEZIER FIN ==========================*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*=============== EJEMPLO TRANSFORM ========================*/
 
@@ -1886,13 +1518,15 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   background: #297396;
   width: 100px;
   height: 100px;
-  clip-path: polygon(0 26%,
-      100% 26%,
-      100% 75%,
-      75% 75%,
-      75% 100%,
-      50% 75%,
-      0% 75%);
+  clip-path: polygon(
+    0 26%,
+    100% 26%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
 
   transition: transform 0.2s;
 }
@@ -1934,15 +1568,17 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   display: none;
 }
 
-.recipiente-caja:hover>.caja__transform {
+.recipiente-caja:hover > .caja__transform {
   transform: translateX(100px);
-  clip-path: polygon(0% 20%,
-      60% 20%,
-      60% 0%,
-      100% 50%,
-      60% 100%,
-      60% 80%,
-      0% 80%);
+  clip-path: polygon(
+    0% 20%,
+    60% 20%,
+    60% 0%,
+    100% 50%,
+    60% 100%,
+    60% 80%,
+    0% 80%
+  );
 
   animation-name: adelante;
   animation-duration: 0.3s;
@@ -1956,21 +1592,21 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   background-position: 0px 0px;
 }
 
-.recipiente-caja:hover>.caja__transform b {
+.recipiente-caja:hover > .caja__transform b {
   color: orange;
 }
 
-.recipiente-caja:hover>.caja__transform .adelante {
+.recipiente-caja:hover > .caja__transform .adelante {
   display: block;
   font-size: 30px;
   color: #297396;
 }
 
-.recipiente-caja:hover>.caja__transform .listo {
+.recipiente-caja:hover > .caja__transform .listo {
   display: none;
 }
 
-.recipiente-caja:hover>.recipiente-volver-a-ejercicios .volver-a-ejercicios {
+.recipiente-caja:hover > .recipiente-volver-a-ejercicios .volver-a-ejercicios {
   text-decoration: none;
   color: orange;
   background: #297396;
@@ -1982,26 +1618,7 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 
 /*=============== EJEMPLO TRANSFORM FIN ========================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*============ EJEMPLO PROPIEDADES DE BACKGROUND ===========*/
-
 
 .caja__background {
   background: pink;
@@ -2021,48 +1638,25 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   color: orange;
   margin: auto;
   font-size: 50px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .lorem {
   color: #7b888e;
 }
 
-
-
 /*============ EJEMPLO PROPIEDADES DE BACKGROUND ===========*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*==================== EJEMPLO DE VARIABLES (COMMON PROPERTIES) GLOBALES Y LOCALES =================*/
 
 /*Para definir una variable:  --VarName: y aquí lo que quieres que haga*/
 /*para usarla: var(--VarName)*/
 
-
-
 :root {
   /*Hemos definido una variable en :root (variable global), ahora podemos
   usarla con cualquier elemento*/
   --color-rojo: rgb(179, 46, 46);
   --color-azul: rgb(26, 96, 146);
-
 }
 
 h6 {
@@ -2084,7 +1678,6 @@ h6 {
   color: #fff;
   text-align: center;
   padding: 20px;
-
 }
 
 .boxuno {
@@ -2106,30 +1699,7 @@ h6 {
 
 /*==================== EJEMPLO DE VARIABLES GLOBALES Y LOCALES FIN =================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*============= EJEMPLO DE OBJET-FIT Y OBJET-POSITION ==============*/
-
 
 /*OBJECT-FIT: es una propiedad que se aplica a las imagenes.
 
@@ -2146,10 +1716,9 @@ scale-down:
 */
 .contenedor__perretes div {
   margin: 20px;
-  width: 250px;
-  height: 350px;
+  width: 150px;
+  height: 250px;
   display: inline-block;
-
 }
 
 .perrete1 img {
@@ -2160,7 +1729,6 @@ scale-down:
   object-fit: cover;
   /*con object-fit: cover; la img rellena el 
 	tamaño de la perrete div sin estirar ni alargar la imagen. */
-
 }
 
 .perrete2 img {
@@ -2172,7 +1740,6 @@ scale-down:
   /* con object-fit: contain; la imagen se ajusta
 	lo máximo posible a la perrete pero sin deformar la img */
 }
-
 
 .perrete3 {
   width: 100px;
@@ -2202,7 +1769,6 @@ scale-down:
   /*con object-fit: fill; la imagen de adapta al 
 	tamaño de la la perrete sin respetar las proporciones de la imagen, 
 	se alarga o estrecha si es necesario. */
-
 }
 
 .perrete5 {
@@ -2222,9 +1788,6 @@ scale-down:
 	proporcion.*/
 }
 
-
-
-
 /*OBJET-POSITION: con esta propiedad podemos darle posiones; top,
  left,rigth, bottom y tambien pordemos moverla con px,em,%, etc.*/
 
@@ -2243,37 +1806,15 @@ scale-down:
   object-position: left;
 }
 
-
 /*============= EJEMPLO DE OBJET-FIT Y OBJET-POSITION FIN==============*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*============= EJEMPLO DE OBJET-FIT Y OBJET-POSITION MAS FILTER ==============*/
 
-
 .contenedor__perretes__filter div {
   margin: 20px;
-  width: 250px;
-  height: 350px;
+  width: 150px;
+  height: 250px;
   display: inline-block;
-
 }
 
 .perrete__filter1 img {
@@ -2286,7 +1827,6 @@ scale-down:
   object-fit: cover;
   /*con object-fit: cover; la img rellena el 
 	tamaño de la perrete div sin estirar ni alargar la imagen. */
-
 }
 
 .perrete__filter2 img {
@@ -2300,7 +1840,6 @@ scale-down:
   /* con object-fit: contain; la imagen se ajusta
 	lo máximo posible a la perrete pero sin deformar la img */
 }
-
 
 .perrete__filter3 {
   filter: contrast(3);
@@ -2334,7 +1873,6 @@ scale-down:
   /*con object-fit: fill; la imagen de adapta al 
 	tamaño de la la perrete sin respetar las proporciones de la imagen, 
 	se alarga o estrecha si es necesario. */
-
 }
 
 .perrete__filter5 {
@@ -2355,7 +1893,6 @@ scale-down:
 	real, si la perrete es mas pequeña la img se adapta mantenido la 
 	proporcion.*/
 }
-
 
 /*OBJET-POSITION: con esta propiedad podemos darle posiones; top,
  left,rigth, bottom y tambien pordemos moverla con px,em,%, etc.*/
@@ -2444,37 +1981,31 @@ scale-down:
   filter: drop-shadow(10px 10px 5px black);
   /*Con drop-shadow podemos dar sombra al dibujo
   de imagenes .svg (transparentes), en este caso vemos sombra en todo el logo de react.*/
-  box-shadow: 30px 30px 100px blue;
-  /*no aplica como drop-shadow, se aplica a la dimensión de la caja. Podemos combinar box-shadow con filte:drop-shadow.*/
 }
 
 .contenedor__animacion {
   width: 90%;
+  padding: 20px;
   min-width: 250px;
   max-width: 1140px;
   align-self: center;
   filter: contrast(30);
-  border-radius: 40px;
   background-color: rgb(223, 213, 213);
   margin: auto;
-
-
-
+  border-radius: 10px;
 }
 
 .contenedor__animacion div {
-
   filter: blur(20px);
   position: relative;
-  margin: 50px;
+  margin: 20px;
   display: inline-block;
   border-radius: 50%;
-
+  width: 80px;
+  height: 80px;
 }
 
 .bola1 {
-  width: 100px;
-  height: 100px;
   animation-name: transladar;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -2486,42 +2017,23 @@ scale-down:
 }
 
 .bola2 {
-
-  width: 100px;
-  height: 100px;
-  left: 25%;
+  left: 15%;
   background: red;
 }
 
 @keyframes transladar {
   0% {
-    left: 20%;
+    left: 10%;
   }
 
   100% {
-    left: 45%;
-
+    left: 35%;
   }
 }
 
 /*============= EJEMPLO DE OBJET-FIT Y OBJET-POSITION MAS FILTER FIN ==============*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*================ OTRAS PORPIEDADES CSS ===========================*/
-
 
 /*Propiedad DIRECTION:*/
 .contenedor__otras-propiedades {
@@ -2561,8 +2073,6 @@ h3 {
   padding: 40px;
   background: #c0c569;
   border-radius: 5px;
-
-
 }
 
 .ir-a {
@@ -2593,24 +2103,7 @@ h3 {
 
 /*================ OTRAS PORPIEDADES CSS FIN ===========================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*========== EJEMPLO PSEUDO-ELEMENTOS ========================*/
-
 
 /*PSEUDO-ELEMENTOS: Son elementos que no son elementos...es decir,
 los pseudo-elemendo no forman parte del DOM, pero si podemos ver 
@@ -2635,7 +2128,6 @@ texto seleccionado en un input type text.
 
  */
 
-
 /*Ejemplo*/
 
 .text__first-line-first-letter::first-line {
@@ -2648,7 +2140,6 @@ texto seleccionado en un input type text.
   color: #297396;
   font-size: 50px;
 }
-
 
 /*Ejemplo */
 form {
@@ -2665,20 +2156,17 @@ input {
   border-radius: 10px;
   margin: auto;
   display: block;
-  background:white;
-  
+  background: white;
 }
 
 /* input::placeholder { */
-  .ejemplo-placeholder::placeholder{
+.ejemplo-placeholder::placeholder {
   /* con ::placeholder pordemos cambiar
   algunas propiedades de lo que se muestra en casilla antes
   de empezar a escribir */
-  
+
   color: #297396;
   background: #c0c569;
-  
-
 }
 
 input::selection {
@@ -2689,26 +2177,22 @@ propiedades cuando ya hemos escrito algo y luego lo
   background: green;
 }
 
-
 /*Ejemplo: En html tenemos un <p> que contiene la letra "a",
  y en css podemos añadirle texto antes y después 
  con before y after, tenemos que poner usar la propiedad content:"aquí el texto"*/
 
-.ejemplo__before-y-after{
+.ejemplo__before-y-after {
   margin: 50px auto;
   display: block;
   padding: 20px;
   text-align: center;
 }
 
-
-
 .ejemplo__before-y-after p::before {
   content: "me suscribí";
   background: green;
   color: orange;
-  border-radius: 20px;
-  padding: 10px;
+
   letter-spacing: 5px;
 }
 
@@ -2716,8 +2200,7 @@ propiedades cuando ya hemos escrito algo y luego lo
   content: "almasindomitas";
   color: pink;
   background: brown;
-  padding: 10px;
-  border-radius: 20px;
+
   letter-spacing: 5px;
 }
 

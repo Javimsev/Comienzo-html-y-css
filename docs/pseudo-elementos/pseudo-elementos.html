@@ -47,7 +47,16 @@
     </div>
     <div class="contenedor">
         <h1>Pseudo-elementos</h1>
+        <p>Pseudo-elementos: Son elementos que no son elementos...es decir,
+            los pseudo-elementos que no forman parte del DOM, pero si podemos ver 
+            cambios visuales (como OUTLINE).</p>
         <!--ejemplo para ver cpmo funciona ::first-line y ::first-letter.-->
+        <div class="explicacion">
+            <h2>first-line y first-letter</h2>
+        </div>
+        <hr/>
+        <p>::first-line: (no funciona en inline),::first-letter: (no funciona en inline). El pseudo-elemento first-line y first-letter 
+            si forman parte del DOM. Con estas propiedades podemos cambiar el estilo a la primera letra y primera linea del párrafo.</p>
         <div class="text__first-line-first-letter">
             <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -59,12 +68,31 @@
 
 
         <!--ejemplo para ver como funciona ::placeholder y ::selection-->
+        <div class="explicación">
+            <h2>Input: Placeholder y selection</h2>
+            <hr/>
+            <p>
+                Con ::placeholder pordemos cambiar
+  algunas propiedades de lo que se muestra en casilla antes
+  de empezar a escribir. Con ::selection podemos cambiar algunas 
+  propiedades cuando ya hemos escrito algo y luego lo
+   seleccionamos.
+            </p>
+          </div>
         <form>
             <input class="ejemplo-placeholder" type="text" placeholder="inserte aquí su nombre ">
         </form>
 
         <!--ejemplo para ver como funciona ::before y ::after.-->
-
+        <div class="explicación">
+            <h2>Before y After</h2>
+            <hr />
+            <p>
+                Ejemplo: En html tenemos una etiqueta p, que contiene la letra "a",
+                    y en css podemos añadirle texto antes y después 
+                    con before y after, tenemos que usar la propiedad content:"aquí el texto"
+            </p>
+          </div>
         <div class="ejemplo__before-y-after">
             <p> a </p>
         </div>
