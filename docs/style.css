@@ -1996,12 +1996,11 @@ h6 {
   /*Hemos definido una variable dentro de h6 (variable local), en este caso sólo 
   podemos usar la variable dentro de los h6.*/
   --color-verde: rgb(6, 134, 76);
-  --color-azul: rgb(120, 171, 207);
-  /*esta variable definida en dentro de h6,
+  --color-azul: rgb(120, 171, 207);  /*esta variable definida dentro de h6,
   tiene el mismo nombre que la definida en :root, pero son distintas porque esta sólo
   se puede usar en h6, aunque comparte el mismo nombre son distintas*/
   --color-rojo: rgb(179, 46, 46);
-  --font-size: px;
+  --font-size: 50px;
 }
 
 .contenedor__variables div {
