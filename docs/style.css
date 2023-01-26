@@ -2687,7 +2687,10 @@ propiedades cuando ya hemos escrito algo y luego lo
   height: 30px;
   
 }
-
+.contenedor-menu-pie {
+  display: flex;
+  align-items: flex-end;
+}
 .menu-pie {
   display: flex;
    
