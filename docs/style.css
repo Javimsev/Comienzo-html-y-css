@@ -10,7 +10,238 @@ html {
 
 body {
   background: rgb(238, 235, 235);
+  background: var(--color-body-background);
 }
+
+:root {
+  /* Colores generales */
+  /* --azul-principal:#297396;
+  --naranja-principal:orange;
+  --color-body-background: rgb(224, 207, 175);
+  --azul-hover:#6bacc9;
+  --blanco-principal:#fff;
+  --color-contenedor-background:rgb(223, 213, 213);
+  --color-parrafo:#7b888e;
+  --h1-background-gradient: linear-gradient(to top,rgb(223, 213, 213),rgba(238, 235, 235, 0.46));
+  --h2-background-gradient: linear-gradient(to top,var(--color-contenedor-background), rgb(238, 235, 235)); */
+  /* Coloeres generales FIN */
+
+  /* Colores generales alternativos */
+  --azul-principal:rgb(0, 0, 0);
+  --naranja-principal:rgb(205, 162, 119);
+  --color-body-background: rgba(255, 255, 255, 0.979);
+  --azul-hover:rgb(124, 164, 124);
+  --blanco-principal:rgb(234, 234, 234);
+  --color-contenedor-background:rgb(207, 178, 150);
+  --color-parrafo:black;
+  --h1-background-gradient: linear-gradient(to top,var(--color-contenedor-background),rgba(238, 235, 235, 0.46));
+  --h2-background-gradient: linear-gradient(to top,var(--color-contenedor-background), rgb(238, 235, 235));
+  /* Coleres generales alternativos FIN */
+}
+
+/*============== MENU PRINCIPAL Y RESPONSIVE ============================*/
+.contenedor-contenedor-nav-principal-y-logo {
+  background: var(--azul-principal);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  z-index: 20;
+}
+.contenedor-nav-principal-y-logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1140px;
+}
+.nav {
+  position: relative;
+  width: 90%;
+  display: flex;
+  justify-content: right;
+}
+.logo-container {
+  display: flex;
+  position: relative;
+  justify-content: left;
+  font-size: 10px;
+  width: 10%;
+  
+}
+.logo {
+  position: relative;
+  align-self: center;
+  margin-left: 40px;
+  text-decoration: none;
+  color:var(--naranja-principal);
+  font-size: 30px;
+  display: inline-block;
+  user-select: none;
+}
+
+.nav__li {
+  display: inline-block;
+  padding: 15px;
+  margin-right: 20px;
+}
+
+.nav__li a {
+  color:var(--blanco-principal);
+  text-decoration: none;
+  padding: 14px;
+}
+
+.nav__li:hover > a {
+  color: var(--naranja-principal);
+}
+
+
+.nav__li i {
+  margin-right: 8px;
+}
+
+/*fin menu*/
+
+/*menu responsive*/
+.nav__responsive-button {
+  padding: 15px 50px;
+  text-align: right;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/*fin menu responsive*/
+.nav__responsive-ul {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    min-width: 300px;
+  }
+  .logo-container {
+    width: 30%;
+  }
+  .nav__ul {
+    display: none;
+  }
+
+  .nav__responsive-ul {
+    min-width: 250px;
+    top: -2px;
+    display: block;
+
+    height: auto;
+    width: 100%;
+    list-style: none;
+  }
+
+  .nav__li-container {
+    text-align: left;
+    position: absolute;
+    display: block;
+    width: 100%;
+    margin-top: -270px;
+    transition: 0.2s;
+  }
+
+  .nav__responsive-button-container {
+    position: relative;
+    background: var(--azul-principal);
+    padding: 2px;
+    text-align: right;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 20;
+  }
+
+  .nav__responsive-li {
+    z-index: 10;
+    position: relative;
+    padding: 10px;
+    background:var(--azul-principal);
+    box-shadow: -5px -5px 10px -10px rgb(106, 153, 182);
+  }
+
+  .nav__responsive-li i {
+    margin-right: 8px;
+  }
+
+  .nav__responsive-li a {
+    color:var(--blanco-principal);
+    text-decoration: none;
+  }
+
+  .nav__responsive-li a:hover {
+    color: var(--naranja-principal);
+    text-decoration: none;
+  }
+
+  .nav__responsive-ul:hover > .nav__li-container {
+    margin-top: 0px;
+  }
+}
+
+/*============== MENU PRINCIPAL Y RESPONSIVE FIN============================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===================== BOTON VOLVER A EJERCICIOS ===========================*/
+
+.boton {
+  box-sizing: border-box;
+  display: block;
+  width: 35%;
+  margin: 25px auto;
+  padding: 15px;
+  border: none;
+  background: var(--azul-hover);
+  text-align: center;
+  text-decoration: none;
+  color: var(--blanco-principal);
+  border-radius: 5px;
+}
+
+.boton:hover {
+  display: block;
+  width: 35%;
+  margin: 25px auto;
+  padding: 15px;
+  border: none;
+  background: var(--azul-principal);
+  text-align: center;
+  text-decoration: none;
+  color: var(--naranja-principal);
+  border-radius: 5px;
+}
+
+/*===================== BOTON VOLVER A EJERCICIOS FIN ===========================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -21,7 +252,7 @@ body {
   width: 90%;
   min-width: 250px;
   max-width: 1100px;
-  background: rgb(223, 213, 213);
+  background: var(--color-contenedor-background);
   border-radius: 5px;
   padding: 20px;
   margin: 80px auto;
@@ -29,20 +260,17 @@ body {
 }
 
 .contenedor h1 {
-  background: linear-gradient(
-     to top,
-    rgb(223, 213, 213),
-    rgba(238, 235, 235, 0.46)
-  );
+  background:var(--h1-background-gradient);
   border-radius: 5px;
   text-align: center;
   padding: 10px;
-  color: #297396;
+  color: var(--azul-principal);
 }
 
 .contenedor p {
   margin-bottom: 30px;
-  color: #7b888e;
+  color: var(--color-parrafo);
+  padding: 20px;
 }
 
 .explicación {
@@ -51,7 +279,7 @@ body {
   margin-top: 50px;
   width: auto;
   height: auto;
-  background: rgb(223, 213, 213);
+  
 }
 
 .explicación2 {
@@ -59,21 +287,18 @@ body {
   margin: 30px auto;
   width: auto;
   height: auto;
-  background: rgb(223, 213, 213);
+  
 }
 
 h2 {
   margin-top: 60px;
-  background: linear-gradient(to top, rgb(223, 213, 213), rgb(238, 235, 235));
+  background: var(--h2-background-gradient);
   border-radius: 5px;
   text-align: center;
   padding: 10px;
-  color: #297396;
+  color: var(--azul-principal);
 }
 
-p {
-  padding: 20px;
-}
 
 /*================== ESTILOS CONTENEDOR FIN =================*/
 
@@ -291,36 +516,6 @@ propiedades flex.*/
 
 
 
-/*===================== BOTON VOLVER A EJERCICIOS ===========================*/
-
-.boton {
-  box-sizing: border-box;
-  display: block;
-  width: 35%;
-  margin: 25px auto;
-  padding: 15px;
-  border: none;
-  background: #6bacc9;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  border-radius: 5px;
-}
-
-.boton:hover {
-  display: block;
-  width: 35%;
-  margin: 25px auto;
-  padding: 15px;
-  border: none;
-  background: #297396;
-  text-align: center;
-  text-decoration: none;
-  color: orange;
-  border-radius: 5px;
-}
-
-/*===================== BOTON VOLVER A EJERCICIOS FIN ===========================*/
 
 
 
@@ -388,157 +583,6 @@ caja, y hace que la imagen vuelva a su posición de origen con margin-top: 0px*/
 
 
 
-
-
-
-/*============== MENU PRINCIPAL Y RESPONSIVE ============================*/
-.contenedor-contenedor-nav-principal-y-logo {
-  background: #297396;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  position: fixed;
-  top: 0px;
-  z-index: 20;
-}
-.contenedor-nav-principal-y-logo {
-  background: pink;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 1140px;
-}
-.nav {
-  position: relative;
-  width: 90%;
-  display: flex;
-  background: #297396;
-  justify-content: right;
-}
-.logo-container {
-  display: flex;
-  position: relative;
-  justify-content: left;
-  font-size: 10px;
-  width: 10%;
-  background: #297396;
-}
-.logo {
-  position: relative;
-  align-self: center;
-  margin-left: 40px;
-  text-decoration: none;
-  color: orange;
-  font-size: 30px;
-  display: inline-block;
-  user-select: none;
-}
-
-.nav__li {
-  display: inline-block;
-  padding: 15px;
-  color: white;
-  margin-right: 20px;
-}
-
-.nav__li a {
-  color: white;
-  text-decoration: none;
-  padding: 14px;
-}
-
-.nav__li:hover > a {
-  color: orange;
-}
-
-
-.nav__li i {
-  margin-right: 8px;
-}
-
-/*fin menu*/
-
-/*menu responsive*/
-.nav__responsive-button {
-  padding: 15px 50px;
-  text-align: right;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/*fin menu responsive*/
-.nav__responsive-ul {
-  display: none;
-}
-
-@media only screen and (max-width: 800px) {
-  body {
-    min-width: 300px;
-  }
-  .logo-container {
-    width: 30%;
-  }
-  .nav__ul {
-    display: none;
-  }
-
-  .nav__responsive-ul {
-    min-width: 250px;
-    top: -2px;
-    display: block;
-
-    height: auto;
-    width: 100%;
-    list-style: none;
-  }
-
-  .nav__li-container {
-    text-align: left;
-    position: absolute;
-    display: block;
-    width: 100%;
-    margin-top: -270px;
-    transition: 0.2s;
-  }
-
-  .nav__responsive-button-container {
-    position: relative;
-    background: #297396;
-    padding: 2px;
-    text-align: right;
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 20;
-  }
-
-  .nav__responsive-li {
-    z-index: 10;
-    position: relative;
-    padding: 10px;
-    background: #297396;
-    box-shadow: -5px -5px 10px -10px rgb(106, 153, 182);
-  }
-
-  .nav__responsive-li i {
-    margin-right: 8px;
-  }
-
-  .nav__responsive-li a {
-    color: white;
-    text-decoration: none;
-  }
-
-  .nav__responsive-li a:hover {
-    color: orange;
-    text-decoration: none;
-  }
-
-  .nav__responsive-ul:hover > .nav__li-container {
-    margin-top: 0px;
-  }
-}
-
-/*============== MENU PRINCIPAL Y RESPONSIVE FIN============================*/
 
 
 
@@ -1292,7 +1336,6 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
 .contenerdor-sobre-mi-y-foto-de-javi {
   display: flex;
   width: 60%;
-  background: rgb(223, 213, 213);
   margin: 0px auto;
 }
 .contenedor-sobre-mi {
@@ -1963,10 +2006,6 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   font-family: "Courier New", Courier, monospace;
 }
 
-.lorem {
-  color: #7b888e;
-}
-
 /*============ EJEMPLO PROPIEDADES DE BACKGROUND ===========*/
 
 
@@ -1990,6 +2029,8 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   usarla con cualquier elemento*/
   --color-rojo: rgb(179, 46, 46);
   --color-azul: rgb(26, 96, 146);
+ 
+  
 }
 
 h6 {
@@ -2001,6 +2042,7 @@ h6 {
   se puede usar en h6, aunque comparte el mismo nombre son distintas*/
   --color-rojo: rgb(179, 46, 46);
   --font-size: 50px;
+  
 }
 
 .contenedor__variables div {
@@ -2460,8 +2502,8 @@ h3 {
   padding: 2px;
   border-radius: 5px;
   text-decoration: none;
-  background: orange;
-  color: #297396;
+  background: var(--azul-principal);
+  color: var(--blanco-principal);
   text-align: center;
   margin: 10px auto;
   display: inline-block;
@@ -2471,9 +2513,9 @@ h3 {
   width: 120px;
   padding: 2px;
   border-radius: 5px;
-  color: orange;
+  color: var(--blanco-principal);
   text-decoration: none;
-  background: #297396;
+  background: var(--azul-principal);
   text-align: center;
   margin: 10px auto;
   display: block;
