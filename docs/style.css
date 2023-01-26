@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  
   background: rgb(238, 235, 235);
   background: var(--color-body-background);
 }
@@ -23,8 +24,9 @@ body {
   --color-contenedor-background:rgb(223, 213, 213);
   --color-parrafo:#7b888e;
   --h1-background-gradient: linear-gradient(to top,rgb(223, 213, 213),rgba(238, 235, 235, 0.46));
-  --h2-background-gradient: linear-gradient(to top,var(--color-contenedor-background), rgb(238, 235, 235)); */
-  /* Coloeres generales FIN */
+  --h2-background-gradient: linear-gradient(to top,var(--color-contenedor-background), rgb(238, 235, 235)); 
+  --color-logo-pie:black; */
+    /* Colores generales FIN*/
 
   /* Colores generales alternativos */
   --azul-principal:rgb(0, 0, 0);
@@ -36,8 +38,14 @@ body {
   --color-parrafo:black;
   --h1-background-gradient: linear-gradient(to top,var(--color-contenedor-background),rgba(238, 235, 235, 0.46));
   --h2-background-gradient: linear-gradient(to top,var(--color-contenedor-background), rgb(238, 235, 235));
+  --color-logo-pie:black;
   /* Coleres generales alternativos FIN */
 }
+
+
+
+
+
 
 /*============== MENU PRINCIPAL Y RESPONSIVE ============================*/
 .contenedor-contenedor-nav-principal-y-logo {
@@ -90,6 +98,9 @@ body {
   color:var(--blanco-principal);
   text-decoration: none;
   padding: 14px;
+}
+.nav__li a::selection{
+  color: var(--naranja-principal);
 }
 
 .nav__li:hover > a {
@@ -255,7 +266,7 @@ body {
   background: var(--color-contenedor-background);
   border-radius: 5px;
   padding: 20px;
-  margin: 80px auto;
+  margin: 80px auto 20px;
   box-shadow: 0px 0px 25px -15px rgb(0, 0, 0);
 }
 
@@ -1360,9 +1371,9 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
     width: 100%;
     display: block;
     border: none;
-    border: 1px solid #297396;
+    border: 1px solid var(--azul-principal);
     border-radius: 5px;
-    background: linear-gradient(#297396, rgb(223, 213, 213));
+    background: linear-gradient(var(--azul-principal), rgb(223, 213, 213));
   }
   .contenedor-sobre-mi {
     position: relative;
@@ -1372,7 +1383,7 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
     border: none;
   }
   .contenedor-sobre-mi p {
-    color: orange;
+    color: var(--naranja-principal);
   }
   .contenedor-foto-de-javi {
     width: 100%;
@@ -2640,3 +2651,90 @@ propiedades cuando ya hemos escrito algo y luego lo
 }
 
 /*========== EJEMPLO PSEUDO-ELEMENTOS FIN ========================*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============== ESTILOS FOOTER ========================*/
+
+.contenedor-pie-pagina {
+  width:100%;
+ 
+  display: flex;
+  justify-content: center;
+  
+}
+.pie-pagina {
+  box-sizing: border-box;
+  display: flex;
+  justify-content:space-around;
+  gap: 40px;
+  padding: 20px;
+  width: 1140px;
+  align-self: center;
+}
+
+.pie-pagina div img{
+  width: 30px;
+  height: 30px;
+  
+}
+
+.menu-pie {
+  display: flex;
+   
+  gap: 20px;
+  
+  
+  
+}
+.menu-pie a {
+ 
+  color: var(--color-parrafo);
+  text-decoration: none;
+}
+.menu-pie a:hover {
+  color: var(--naranja-principal);
+  
+}
+.contenedor-logos-redes {
+display: flex;
+align-items: flex-end;
+gap: 30px;
+}
+
+.box-facebook img:hover {
+
+  transition-duration: .4;
+  transform: scale(1.2);
+  
+}
+.box-twitter img:hover {
+  transition-duration: .4;
+  transform: scale(1.2);
+}
+.box-instagram img:hover {
+  transition-duration: .4;
+  transform: scale(1.2);
+}
+.contenedor-logo-pie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.logo-pie {
+  display: block;
+  color: var(--color-logo-pie);
+  font-size: 30px;
+}
+
+/*=============== ESTILOS FOOTER ========================*/
