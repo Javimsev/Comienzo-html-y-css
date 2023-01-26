@@ -2675,6 +2675,7 @@ propiedades cuando ya hemos escrito algo y luego lo
 .pie-pagina {
   box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   justify-content:space-around;
   gap: 40px;
   padding: 20px;
@@ -2695,7 +2696,7 @@ propiedades cuando ya hemos escrito algo y luego lo
   display: flex;
    
   gap: 20px;
-  
+  order: 2;
   
   
 }
@@ -2712,6 +2713,7 @@ propiedades cuando ya hemos escrito algo y luego lo
 display: flex;
 align-items: flex-end;
 gap: 30px;
+order:3 ;
 }
 
 .box-facebook img:hover {
@@ -2729,6 +2731,7 @@ gap: 30px;
   transform: scale(1.2);
 }
 .contenedor-logo-pie {
+
   display: flex;
   flex-direction: column;
   align-items: center;
