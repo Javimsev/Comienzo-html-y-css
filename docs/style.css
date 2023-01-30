@@ -264,6 +264,7 @@ body {
 /*================== ESTILOS CONTENEDOR =================*/
 .contenedor {
   width: 90%;
+  min-height: 70vh;
   min-width: 250px;
   max-width: 1100px;
   background: var(--color-contenedor-background);
@@ -1980,6 +1981,47 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   margin: auto;
   display: block;
 }
+
+/* EJEMPLO animación dado transform*/
+.contenedor-cubo {
+  min-height:50vh ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.cubo {
+  
+  perspective: 700px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: #c0c569;
+}
+.cara {
+  position:absolute;
+  width: 100px;
+  height: 100px;
+}
+#uno {
+  background: crimson;
+  transform: translateZ(100px);
+}
+#dos {
+  background: orange;
+  transform: translateX(50px) rotateY(90deg);
+}
+#tres {
+  background: yellow;
+  transform: translateZ(-100px);
+  }
+  #cuatro {
+    background: blue;
+    transform: translateX(-100px) rotateY(90deg);
+  }
+/* EJEMPLO animación dado transform*/
+
+
 
 /*=============== EJEMPLO TRANSFORM FIN ========================*/
 
