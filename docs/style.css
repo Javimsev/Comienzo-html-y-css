@@ -2060,7 +2060,7 @@ https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor*/
   }
 
   to {
-      transform: rotateY(360deg);
+      transform: rotateY(-360deg);
   }
 }
 
