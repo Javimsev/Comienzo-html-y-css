@@ -1,175 +1,83 @@
-<!DOCTYPE html>
+<!DOCTYPE html />
 <html>
-
 <head>
 
-	<title>Web de Javi</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://kit.fontawesome.com/011cc9ac28.js" crossorigin="anonymous"></script>
-</head>
+    <meta charset="utf-8"/>
+    <title>Piedra, papel o tijera</title>
+    <script>
+        
+        function seleccionPC(min,max){
+           return Math.floor(Math.random() * (max - min + 1) + min)
+        }  
+       
+        function elegirMano(jugada)
+        {  
+            if(jugada == 1){eleccion = "Piedra ✊"}
+            else if(jugada == 2){eleccion = "Papel 🖐"}
+            else if(jugada == 3){eleccion = "Tijeras ✌"}
+            else {eleccion = "Mala elección"}
+            return eleccion
+                   
+        }
+       
+        let jugador = 0
+        let PC = 0
+        let ganadas = 0
+        let perdidas = 0
+        let empate = 0
+        
 
+        while(ganadas < 3 && perdidas < 3){
+
+            //ELECCIÓN DE JUGADAS
+            jugador =  prompt("Elige: 1-Piedra, 2-Papel, 3-Tijeras")
+            PC = seleccionPC(1,3)
+            
+        
+        
+            alert("Eliges: "+ elegirMano(jugador) + " | PC elige: "+ elegirMano(PC)) 
+            
+
+        
+            //COMBATE
+                if(jugador == PC) {
+                alert("Habéis empatado")
+                    empate++
+                }else if(jugador == 1 && PC == 3){
+                    alert("Has ganado!")
+                    ganadas++
+                }else if(jugador == 2 && PC == 1){
+                    alert("Has ganado!")
+                    ganadas++
+                }else if(jugador == 3 && PC == 2){
+                    alert("Has ganado!")
+                    ganadas++
+                }else {
+                    alert("Has perdido!")
+                    perdidas++
+                }
+                
+        }   
+
+            if(ganadas == 3){
+                alert("Ganaste: " + ganadas + " | Perdiste: " + perdidas + " | Empataste: " + empate)
+                alert("🎉🎉¡ENHORABUENA CAMPEÓN!🎉🎉")
+            }
+            else if(perdidas == 3){
+                alert("Ganaste: " + ganadas + " | Perdiste: " + perdidas + " | Empataste: " + empate)
+                alert("🎃🎃¡LO SIENTO, PERO TE HAN ROTO EL CULO!🎃🎃")
+            }
+
+
+
+            
+                </script>
+                </head>
 <body>
-	<div id="inicio"></div>
-	<div class="contenedor-contenedor-nav-principal-y-logo">
-		<div class="contenedor-nav-principal-y-logo">
-			<div class="logo-container">
-				<a class="logo" href="index.html">JM</a>
-			</div>
-			<nav class="nav">
-				<ul class="nav__ul">
-					<li class="nav__li"></i><a href="index.html"><i class="fas fa-home"></i>Inicio</a></li>
-					<li class="nav__li"><a href="sobre-mi.html" class="nav__item"><i
-								class="fa-solid fa-circle-user"></i>Sobre mi</a></li>
-					<li class="nav__li"><a href="ejercicios.html" class="nav__item"><i
-								class="fa-solid fa-dumbbell"></i>Ejercicios</a></li>
-					<li class="nav__li"><a href="contacto.html" class="nav__item"><i
-								class="fa-solid fa-address-book"></i>Contacto</a></li>
-				</ul>
-				<ul class="nav__responsive-ul">
-					<div class="nav__responsive-button-container">
-						<div class="nav__responsive-button fa-solid fa-bars"></div>
-					</div>
-					<div class="nav__li-container">
-						<li class="nav__responsive-li "><a href="index.html" class="nav__item"><i
-									class="fas fa-home"></i>Inicio</a></li>
-						<li class="nav__responsive-li"><a href="sobre-mi.html" class="nav__item"><i
-									class="fa-solid fa-circle-user"></i>Sobre mi</a></li>
-						<li class="nav__responsive-li"><a href="ejercicios.html" class="nav__item"><i
-									class="fa-solid fa-dumbbell"></i>Ejercicios</a></li>
-						<li class="nav__responsive-li"><a href="contacto.html" class="nav__item"><i
-									class="fa-solid fa-address-book"></i>Contacto</a></li>
-					</div>
-				</ul>
-			</nav>
-		</div>
-	</div>
+    <h1>Piedra, papel o tijeras</h1>
+    <p>El juego de Piedra, Papel o Tijeras es fácil de entender y se juega de manera rápida. También se pueden agregar variantes y reglas adicionales para hacerlo más interesante. Es un juego divertido para jugar entre amigos, familiares o incluso en competencias más formales.
 
-	<div class="contenedor">
-		<h1>Bienvenidos a mi web de aprendizaje</h1>
-		<p>Aquí ire subiendo todo el trabajo que vaya realizando.
-			Toda esta web está realizada con lo aprendido con el curso de html y CSS del canal de youtube Soy Dalto.
-			Ésta web y sus ejemplos estan hechos para visualizarse en versión escritorio, si usted se esta web desde su
-			dispositivo movil no podrá apreciar de forma correcta su contenido.<br>
-			<br>
-			**** MENU DEL CURSO CSS**** <br><br>
-
-			0:00 - Introducción<br>
-			5:05 - Comienzo del Curso<br>
-			8:10 - Editor de texto<br>
-			17:55 - Estructura<br>
-			20:26 - Selectores<br>
-			39:57 - Especificidad<br>
-			52:33 - Metodología BEM<br>
-			59:05 - Unidades<br>
-			1:09:00 - Propiedades de Texto<br>
-			1:14:20 - Tipografías externas<br>
-			1:18:18 - Normalize<br>
-			1:25:10 - Cajas<br>
-			1:33:17 - Padding<br>
-			1:39:07 - Width y Height<br>
-			1:39:26 - Box Sizing<br>
-			1:41:53 - Margin<br>
-			1:44:10 - Bordes<br>
-			1:47:03 - Box Model<br>
-			1:49:41 - Sombras<br>
-			1:55:32 - Outline<br>
-			2:05:28 - Position<br>
-			2:06:56 - Position Static<br>
-			2:08:19 - Position Relative<br>
-			2:13:56 - Z Index<br>
-			2:23:10 - Position Absolute<br>
-			2:39:37 - Position Fixed<br>
-			2:44:28 - Position Sticky<br>
-			<br>
-			-------------- CSS Intermedio --------------<br><br>
-
-			2:47:19 - Display<br>
-			2:55:30 - Overflow<br>
-			3:02:06 - Float<br>
-			3:10:19 - Pseudoelementos<br>
-			3:24:05 - Pseudoclases<br>
-			3:43:42 - Objet Fit<br>
-			3:52:35 - Objet Positio<br>n
-			3:53:58 - Cursor<br>
-			3:56:31 - Colorización (ColorName, Hex, RGB/A)<br>
-			4:09:53 - Conceptos Básicos de Responsive<br>
-			4:18:25 - Menu Responsive<br>
-			4:46:44 - Introducción a Flexbox<br>
-			4:48:55 - Conceptos de Flexbox<br>
-			4:53:23 - Display Flex<br>
-			4:57:14 - Flex direction<br>
-			5:01:55 - Flex wrap<br>
-			5:06:20 - Alineacion en Flex<br>
-			5:21:10 - Flex Grow<br>
-			5:25:47 - Flex Basis<br>
-			5:27:29 - Flex Shrink<br>
-			5:36:15 - Order<br>
-			5:40:22 - Formulario con Flex<br>
-			6:05:00 - Conceptos de Grid<br>
-			6:15:47 - Display Grid<br>
-			6:17:44 - Grid Templates<br>
-			6:20:26 - Medidas especiales de Grid<br>
-			6:23:30 - Grid Gap<br>
-			6:25:15 - Asignación de espacios<br>
-			6:34:06 - Repeat()<br>
-			6:38:41 - Grid Implícito y Explícito<br>
-			6:40:51 - Grid Auto<br>
-			6:48:41 - Grid Dinámico<br>
-			6:59:16 - Alineación en Grid<br>
-			7:15:49 - Galería en Grid<br>
-			7:23:17 - Grid Areas<br>
-			7:31:09 - Nombrar Grid Lines<br>
-			7:37:14 - Grid Shorthands<br>
-			7:40:06 - Responsive Design<br>
-			7:57:01 - Estructura Responsive Básica<br>
-			<br>
-			-------------- CSS Avanzado --------------<br><br>
-
-			8:08:09 - Transition<br>
-			8:23:31 - Animaciones<br>
-			8:36:50 - Cubic Bezier<br>
-			8:42:21 - Transform<br>
-			8:49:21 - Clip Path<br>
-			8:55:34 - Background<br>
-			9:07:00 - Variables<br>
-			9:11:47 - Filtros<br>
-			9:21:24 - Práctica con Filter<br>
-			9:24:34 - Direction<br>
-			9:25:51 - Letter Spacing<br>
-			9:26:36 - Scroll Behavior<br>
-			9:28:42 - User Selected<br>
-			9:31:20 - Práctica Final<br>
-			9:40:11 - Continua Aprendiendo<br>
-
-			<br>
-			****** Enlaces ****** <br><br>
-
-			Cursor: <a
-				href="https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor">https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor</a><br>
-			Font Awesome: <a href="https://fontawesome.com/">https://fontawesome.com/</a><br>
-			Transform: <a
-				href="https://www.w3schools.com/cssref/css3_pr_transform.php">https://www.w3schools.com/</a><br>
-			Códigos de Colores: <a href="https://htmlcolorcodes.com/es/">https://htmlcolorcodes.com/es/</a><br>
-			Generador de Cubic Bezier: <a
-				href="https://cubic-bezier.com/#.17,.67,.83,.67">https://cubic-bezier.com/#.17,.67,.83,.67</a><br>
-			Generador de Clip Path: <a href="https://bennettfeely.com/clippy/">https://bennettfeely.com/clippy/</a><br>
-			Generador de Box-Shadows: <a
-				href="https://www.cssmatic.com/es/box-shadow">https://www.cssmatic.com/es/box-shadow</a><br>
-			Selectores:<a
-				href="https://www.w3schools.com/cssref/css_selectors.php">https://www.w3schools.com</a><br>
-
-
-		</p>
-		<a class="scroll-inicio" href="#inicio">volver arriba </a>
-	</div>
-
-
-
-
-
-
+        ¡ Bienvenidos diviértanse jugando a mi primer juego !  </p>
 </body>
 
 </html>
