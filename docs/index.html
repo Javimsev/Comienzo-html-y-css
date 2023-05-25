@@ -9,7 +9,7 @@
         function seleccionPC(min,max){
            return Math.floor(Math.random() * (max - min + 1) + min)
         }  
-       
+        -
         function elegirMano(jugada)
         {  
             if(jugada == 1){eleccion = "Piedra ✊"}
@@ -17,7 +17,6 @@
             else if(jugada == 3){eleccion = "Tijeras ✌"}
             else {eleccion = "Mala elección"}
             return eleccion
-                   
         }
        
         let jugador = 0
@@ -25,20 +24,14 @@
         let ganadas = 0
         let perdidas = 0
         let empate = 0
-        
 
         while(ganadas < 3 && perdidas < 3){
 
             //ELECCIÓN DE JUGADAS
-            jugador =  prompt("Elige: 1-Piedra, 2-Papel, 3-Tijeras")
+            jugador =  prompt("Escribe 1,2 o 3. 1 es Piedra, 2 es Papel y 3 Tijeras. ¡Suerte!")
             PC = seleccionPC(1,3)
-            
-        
         
             alert("Eliges: "+ elegirMano(jugador) + " | PC elige: "+ elegirMano(PC)) 
-            
-
-        
             //COMBATE
                 if(jugador == PC) {
                 alert("Habéis empatado")
@@ -56,7 +49,6 @@
                     alert("Has perdido!")
                     perdidas++
                 }
-                
         }   
 
             if(ganadas == 3){
@@ -68,16 +60,11 @@
                 alert("🎃🎃¡LO SIENTO, PERO TE HAN ROTO EL CULO!🎃🎃")
             }
 
-
-
-            
                 </script>
                 </head>
 <body>
     <h1>Piedra, papel o tijeras</h1>
     <p>El juego de Piedra, Papel o Tijeras es fácil de entender y se juega de manera rápida. También se pueden agregar variantes y reglas adicionales para hacerlo más interesante. Es un juego divertido para jugar entre amigos, familiares o incluso en competencias más formales.
-
         ¡ Bienvenidos diviértanse jugando a mi primer juego !  </p>
 </body>
-
 </html>
