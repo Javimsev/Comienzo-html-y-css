@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> JAVI MOKEPON </title>
+
+    <script src="/MOKEPON JAVI/JS/mokeponJavi.js"></script>
+    <link rel="stylesheet" href="/MOKEPON JAVI/styles.css">
+</head>
+<body>
+    <div>
+    <section id="combate-mokepon">
+        <img src="./pokemon.jpg" alt="">
+        <h1>Combate de Mokepon</h1>
+    </section>
+
+    <section id="seleccionar-mascota">
+        <h2>Elige tu mascota:</h2>
+        <label for="Hipodoge">Hipodoge</label>
+        <input type="radio" name="mascota" id="Hipodoge"/> 
+        <label for="Capipepo">Capipepo</label>
+        <input type="radio" name="mascota" id="Capipepo"/>
+        <label for="Ratigueya">Ratigueya</label> 
+        <input type="radio" name="mascota" id="Ratigueya"/> 
+        <button id="boton-seleccion-mascota">Seleccionar</button>
+                
+    </section>
+    
+    <section id="mensajes-mascotas-vidas">
+        <p>Tu mascota es <span id="mascota-jugador"></span> y tiene <span id="vidas-jugador"> 3 </span> vidas.</p>
+        <p>El enemigo es <span id="mascota-enemigo">Hipo</span> y tiene <span id="vidas-enemigo"> 3 </span> vidas.</p>
+    </section>
+
+
+    <section id="elige-ataque">
+        <h2>Elige tu ataque:</h2>
+        <button id="boton-fuego">Fuego 🔥</button>
+        <button id="boton-agua">Agua 💧</button>
+        <button id="boton-tierra">Tierra 🌱</button>
+
+    </section>
+
+    <section id="mensajes">
+        <p> <span id="ataque-jugador"></span><span id="ataque-enemigo"></span><span id="mensaje-final"></span></p>
+        
+    </section>
+
+    <section id="section-boton-reinicio">
+        <button id="boton-reinicio">Reinicio</button>
+    </section>
+</div>
+</body>
+
+</html>
