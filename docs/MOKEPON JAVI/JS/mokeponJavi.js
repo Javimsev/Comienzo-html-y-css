@@ -2,13 +2,15 @@ let ataqueJugador
 let mascotaEnemigo
 let ataqueEnemigo
 let resultado    
-let vidaJugador = 3
-let vidaEnemigo = 3
+let vidaJugador =  3
+let vidaEnemigo =  3
+
 
 
 function inicioJuego(){
-    let sectionMensajesMascotasVidas = document.getElementById('mensajes-mascotas-vidas')
-    sectionMensajesMascotasVidas.style.display = 'none'
+ 
+
+    let sectionEligeTuMascota = document.getElementById('seleccionar-mascota')
     let sectionEligeAtaque = document.getElementById('elige-ataque')
     sectionEligeAtaque.style.display = 'none'
     let sectionReinicio = document.getElementById('section-boton-reinicio')
@@ -29,42 +31,72 @@ function seleccionMascotaJugador(){
     let mascotaHipodoge = document.getElementById('Hipodoge')
     let mascotaCapipepo = document.getElementById('Capipepo')
     let mascotaRatigueya = document.getElementById('Ratigueya')
-    
     let spanMascotaJugador = document.getElementById('mascota-jugador')
+
+    let imgPerrita = document.getElementById('img-perrita') 
+    let imgSquizo = document.getElementById('img-squizo')
+    let imgVeletas = document.getElementById('img-veletas')
+
+   
     
     if(mascotaHipodoge.checked){    
-        spanMascotaJugador.innerHTML = 'Hipodoge'
+        spanMascotaJugador.innerHTML = 'Perrita'
+        imgPerrita.style.display = 'block'
+        imgSquizo.style.display = 'none'
+        imgVeletas.style.display = 'none'
+        
     }
     else if(mascotaCapipepo.checked){
-        spanMascotaJugador.innerHTML = 'Capipepo'
+        spanMascotaJugador.innerHTML = 'Squizo'
+        imgPerrita.style.display = 'none'
+        imgSquizo.style.display = 'block'
+        imgVeletas.style.display = 'none'
     }
     else if(mascotaRatigueya.checked){
-        spanMascotaJugador.innerHTML = 'Ratigueya'
+        spanMascotaJugador.innerHTML = 'Veletas'
+        imgPerrita.style.display = 'none'
+        imgSquizo.style.display = 'none'
+        imgVeletas.style.display = 'block'
     }
     else{
         alert("Debes elegir tu mascota!")
     }
     
     enemigoAleatorio(1,3)
+    let sectionEligeTuMascota = document.getElementById('seleccionar-mascota')
+    sectionEligeTuMascota.style.display = 'none'
     let sectionEligeAtaque = document.getElementById('elige-ataque')
-    sectionEligeAtaque.style.display = 'block'
+    sectionEligeAtaque.style.display = 'flex'
     let sectionMensajesMascotasVidas = document.getElementById('mensajes-mascotas-vidas')
-    sectionMensajesMascotasVidas.style.display = 'block'
+
 }
 
 function enemigoAleatorio(min,max){
     let eleccionEnemigo = Math.floor(Math.random() * (max - min + 1)) + min;
     let spanMascotaEnemigo = document.getElementById('mascota-enemigo')
+
+    let imgPerritaEnemigo = document.getElementById('img-perrita-enemigo') 
+    let imgSquizoEnemigo = document.getElementById('img-squizo-enemigo')
+    let imgVeletasEnemigo = document.getElementById('img-veletas-enemigo')
     
     
     if(eleccionEnemigo == 1){
-        spanMascotaEnemigo.innerHTML = 'Hipodoge'
+        spanMascotaEnemigo.innerHTML = 'Perrita'
+        imgPerritaEnemigo.style.display = 'block'
+        imgSquizoEnemigo.style.display = 'none'
+        imgVeletasEnemigo.style.display = 'none'
     }
     else if(eleccionEnemigo == 2){
-        spanMascotaEnemigo.innerHTML = 'Capipepo'
+        spanMascotaEnemigo.innerHTML = 'Squizo'
+        imgPerritaEnemigo.style.display = 'none'
+        imgSquizoEnemigo.style.display = 'block'
+        imgVeletasEnemigo.style.display = 'none'
     }
     else if(eleccionEnemigo == 3){
-        spanMascotaEnemigo.innerHTML = 'Ratigueya'
+        spanMascotaEnemigo.innerHTML = 'Veletas'
+        imgPerritaEnemigo.style.display = 'none'
+        imgSquizoEnemigo.style.display = 'none'
+        imgVeletasEnemigo.style.display = 'block'
     }   
     
     
@@ -75,32 +107,32 @@ function ataqueAleatorioEnemigo(min,max){
     
     if(ataqueEnemigo == 1){
         
-        ataqueEnemigo = 'FUEGO'
+        ataqueEnemigo = 'Mentira Evasiva'
     }
     else if(ataqueEnemigo == 2){
         
-        ataqueEnemigo = 'AGUA'
+        ataqueEnemigo = ' Puñalada Traicionera'
     }
     else if(ataqueEnemigo == 3){
         
-        ataqueEnemigo = 'TIERRA'
+        ataqueEnemigo = 'Arrebato De Balbuceos'
     }
     
 }
 
 
 function ataqueFuego(){
-    ataqueJugador = 'FUEGO'
+    ataqueJugador = 'Mentira Evasiva'
     ataqueAleatorioEnemigo(1,3)
     combate()
 }
 function ataqueAgua(){
-    ataqueJugador = 'AGUA'
+    ataqueJugador = 'Puñalada Traicionera'
     ataqueAleatorioEnemigo(1,3)
     combate()
 }
 function ataqueTierra(){
-    ataqueJugador = 'TIERRA'
+    ataqueJugador = 'Arrebato De Balbuceos'
     ataqueAleatorioEnemigo(1,3)
     combate()
 }
@@ -110,23 +142,23 @@ function ataqueTierra(){
 function combate(){
     
     if(ataqueJugador == ataqueEnemigo){
-        resultado = ' | EMPATE'
+        resultado = 'EMPATE'
     }
-    else if(ataqueJugador == 'FUEGO' && ataqueEnemigo == 'TIERRA'){
-        resultado = ' | HAS GANADO'
-        vidaJugador--
+    else if(ataqueJugador == 'Mentira Evasiva' && ataqueEnemigo == 'Arrebato De Balbuceos'){
+        resultado = 'HAS GANADO'
+        vidaEnemigo--
     }
-    else if(ataqueJugador == 'AGUA' && ataqueEnemigo == 'FUEGO'){
-        resultado = ' | HAS GANADO'
-        vidaJugador-- 
+    else if(ataqueJugador == ' Puñalada Traicionera' && ataqueEnemigo == 'Mentira Evasiva'){
+        resultado = 'HAS GANADO'
+        vidaEnemigo-- 
     }
-    else if(ataqueJugador == 'TIERRA' && ataqueEnemigo == 'AGUA'){
-        resultado = ' | HAS GANADO'
-        vidaJugador--
+    else if(ataqueJugador == 'Arrebato De Balbuceos' && ataqueEnemigo == ' Puñalada Traicionera'){
+        resultado = 'HAS GANADO'
+        vidaEnemigo--
     }
     else{
-        resultado = ' | HAS PERDIDO'
-        vidaEnemigo--
+        resultado = 'HAS PERDIDO'
+        vidaJugador--
     }   
     
     crearMensaje()
@@ -136,40 +168,68 @@ function combate(){
 }
 
 function crearMensaje(){
-    let spanAtaqueJugador = document.getElementById('ataque-jugador') 
-    let spanAtaqueEnemigo = document.getElementById('ataque-enemigo')
-    let spanMensajeFinal = document.getElementById('mensaje-final')
-    spanAtaqueJugador.innerHTML = "Tu mascota ataca con " + ataqueJugador + " | "
-    spanAtaqueEnemigo.innerHTML = "El enemigo ataca con " + ataqueEnemigo
-    spanMensajeFinal.innerHTML = resultado
-    
+    let sectionMensajes = document.getElementById('resultado')
+    let ataqueDelJugador = document.getElementById('ataque-del-jugador')
+    let ataqueDelEnemigo = document.getElementById('ataque-del-enemigo')
+
+   
+    sectionMensajes.innerHTML = resultado
+    /* ataqueDelJugador.innerHTML = "Ataque: " +  ataqueJugador
+    ataqueDelEnemigo.innerHTML = "Ataque: " + ataqueEnemigo  */
+    let nuevoPJugador = document.createElement('p')
+    nuevoPJugador.textContent = ataqueJugador
+    ataqueDelJugador.appendChild(nuevoPJugador)
+
+    let nuevoPEnemigo = document.createElement('p')
+    nuevoPEnemigo.textContent = ataqueEnemigo
+    ataqueDelEnemigo.appendChild(nuevoPEnemigo)
+
+
 }
 
 function restarVida(){
     let spanVidasJugador = document.getElementById('vidas-jugador')
     let spanVidasEnemigo = document.getElementById('vidas-enemigo')
-    spanVidasJugador.innerHTML = vidaJugador
-    spanVidasEnemigo.innerHTML = vidaEnemigo
+    spanVidasJugador.innerHTML = "Vidas Jugador: "+ vidaJugador
+    spanVidasEnemigo.innerHTML = "Vidas Enemigo: " + vidaEnemigo
 }
 
 function comprobarVidas(){
     let sectionReinicio = document.getElementById('section-boton-reinicio')
     let sectionEligeAtaque = document.getElementById('elige-ataque')
-    let spanMensajeFinal = document.getElementById('mensaje-final')
-    if(vidaJugador == 0){
-        sectionEligeAtaque.style.display = 'none'
+    let sectionMensajes = document.getElementById('resultado')
+    if(vidaJugador <= 0){
         sectionReinicio.style.display ='block'
-        spanMensajeFinal.innerHTML = resultado + " | 🎉🎉🎉 ENHORABUENA, HAS VENCIDO ESTA PARTIDA! 🎉🎉🎉"
+        sectionMensajes.innerHTML = "Enhorabuena,!has vencido! después de todo parece que si hay huevos debajo de tu pantalón, aun así no te confíes, siempre puede aparecer alguien que te recuerde lo maricón que eres."
+        let botonFuego = document.getElementById('boton-fuego')
+        botonFuego.addEventListener('click', anularAtaques)
+        let botonAgua = document.getElementById('boton-agua')
+        botonAgua.addEventListener('click', anularAtaques)
+        let botonTierra = document.getElementById('boton-tierra')
+        botonTierra.addEventListener('click', anularAtaques)
+        
     }
-    else if(vidaEnemigo == 0){
-        sectionEligeAtaque.style.display = 'none'
+    else if(vidaEnemigo <= 0){
         sectionReinicio.style.display ='block'
-        spanMensajeFinal.innerHTML = resultado + " 🎃🎃🎃 LO SIENTO, HAS SIDO DERROTADO EN ESTA PARTIDA 🎃🎃🎃"
+        sectionMensajes.innerHTML = " Lo siento, has sido derrotado en esta partida, parece que te has dejado los huevos en casa. Suerte en tu próxima ronda, tal vez si no juegas como una maricona te salves de que te vuelvan a taladrar el culo."
+        let botonFuego = document.getElementById('boton-fuego')
+        botonFuego.addEventListener('click', anularAtaques)
+        let botonAgua = document.getElementById('boton-agua')
+        botonAgua.addEventListener('click', anularAtaques)
+        let botonTierra = document.getElementById('boton-tierra')
+        botonTierra.addEventListener('click', anularAtaques)
+        
     }
+    
+   
     
 }
 
+function anularAtaques(){
+   ataqueJugador = alert("LA PARTIDA HA TERMINADO, REINICIA PARA JUGAR OTRA PARTIDA")
 
+
+}
 
 function reinicio(){
     location.reload()
