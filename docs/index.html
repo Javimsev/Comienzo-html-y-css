@@ -8,47 +8,95 @@
     <link rel="stylesheet" href="./MOKEPON JAVI/styles.css">
 </head>
 <body>
-    <div>
-    <section id="combate-mokepon">
-        <img src="./pokemon.jpg" alt="">
-        <h1>Combate de Mokepon</h1>
-    </section>
-
     <section id="seleccionar-mascota">
-        <h2>Elige tu mascota:</h2>
-        <label for="Hipodoge">Hipodoge</label>
-        <input type="radio" name="mascota" id="Hipodoge"/> 
-        <label for="Capipepo">Capipepo</label>
-        <input type="radio" name="mascota" id="Capipepo"/>
-        <label for="Ratigueya">Ratigueya</label> 
-        <input type="radio" name="mascota" id="Ratigueya"/> 
+        <h1 class="titulo">Debate de Julandros</h1>
+  
+        <h2 class="subtitulo">Elige tu mascota:</h2>
+  
+        <div class="tarjetas">
+          <input type="radio" name="mascota" id="Hipodoge" />
+          <label class="tarjeta-de-mokepon" for="Hipodoge">
+            <p>Perrita</p>
+            <img src="./MOKEPON JAVI/asset/SmartSelect_20230606_085701_WhatsApp.png" alt=""
+          /></label>
+  
+          <input type="radio" name="mascota" id="Capipepo" />
+          <label class="tarjeta-de-mokepon" for="Capipepo"
+            ><p>Squizo</p>
+            <img src="./MOKEPON JAVI/asset/Loko.png" alt=""
+          /></label>
+  
+          <input type="radio" name="mascota" id="Ratigueya" />
+          <label class="tarjeta-de-mokepon" for="Ratigueya">
+            <p>Veletas</p>
+            <img src="./MOKEPON JAVI/asset/Veletas.png" alt=""
+          /></label>
+        </div>
+  
         <button id="boton-seleccion-mascota">Seleccionar</button>
-                
-    </section>
-    
-    <section id="mensajes-mascotas-vidas">
-        <p>Tu mascota es <span id="mascota-jugador"></span> y tiene <span id="vidas-jugador"> 3 </span> vidas.</p>
-        <p>El enemigo es <span id="mascota-enemigo">Hipo</span> y tiene <span id="vidas-enemigo"> 3 </span> vidas.</p>
-    </section>
-
-
-    <section id="elige-ataque">
-        <h2>Elige tu ataque:</h2>
-        <button id="boton-fuego">Fuego 🔥</button>
-        <button id="boton-agua">Agua 💧</button>
-        <button id="boton-tierra">Tierra 🌱</button>
-
-    </section>
-
-    <section id="mensajes">
-        <p> <span id="ataque-jugador"></span><span id="ataque-enemigo"></span><span id="mensaje-final"></span></p>
-        
-    </section>
-
-    <section id="section-boton-reinicio">
-        <button id="boton-reinicio">Reinicio</button>
-    </section>
-</div>
-</body>
-
-</html>
+      </section>
+  
+      <section id="elige-ataque">
+        <h1 class="titulo">Debate de Julandros</h1>
+        <h2 class="subtitulo">Elige tu ataque:</h2>
+  
+        <div class="tarjetas-ataques">
+          <button id="boton-fuego" class="boton-ataque">
+            Mentira Evasiva 🥌
+          </button>
+          <button id="boton-agua" class="boton-ataque">
+            Puñalada Traicionera 🧻
+          </button>
+          <button id="boton-tierra" class="boton-ataque">
+            Arrebato De Balbuceos ✂
+          </button>
+        </div>
+  
+        <div>
+          <div id="mensajes">
+            <p id="resultado">Échale huevos, ¡SUERTE!</p>
+  
+            <section id="section-boton-reinicio">
+              <button id="boton-reinicio">Reinicio</button>
+            </section>
+          </div>
+        </div>
+  
+        <div class="ataques">
+          <div id="ataques-jugador">
+            <p><span id="vidas-jugador">Vidas Jugador: 3</span></p>
+            <div><span id="ataque-del-jugador">Ataques:</span></div>
+  
+            <img
+              src="./asset/SmartSelect_20230606_085701_WhatsApp.png"
+              id="img-perrita"
+              alt=""
+            />
+            <img src="./asset/Loko.png" id="img-squizo" alt="" />
+            <img src="./asset/Veletas.png" id="img-veletas" alt="" />
+  
+            <p><span id="mascota-jugador"></span></p>
+          </div>
+  
+          <div class="vs">
+            <p>VS</p>
+          </div>
+  
+          <div id="ataques-enemigo">
+            <p><span id="vidas-enemigo">Vidas Enemigo: 3</span></p>
+            <div id="ataque-del-enemigo">Ataques:</div>
+  
+            <img
+              src="./asset/SmartSelect_20230606_085701_WhatsApp.png"
+              id="img-perrita-enemigo"
+              alt=""
+            />
+            <img src="./asset/Loko.png" id="img-squizo-enemigo" alt="" />
+            <img src="./asset/Veletas.png" id="img-veletas-enemigo" alt="" />
+  
+            <p><span id="mascota-enemigo">Hipo</span></p>
+          </div>
+        </div>
+      </section>
+    </body>
+  </html>
